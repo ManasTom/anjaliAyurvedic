@@ -1,0 +1,90 @@
+.breadcumb-menu {
+    max-width: 100%;
+    padding: 0;
+    margin: 28px 0 -0.5em 0; 
+    list-style-type: none;
+    position: relative;
+    li {
+        display: inline-block;
+        margin-right: 3px;
+        padding-right: 5px;
+        list-style: none;
+        position: relative;
+
+        &:after {
+            content: "\f30b"; 
+            position: relative;
+            margin-left: 10px;
+            font-weight: 500; 
+            font-size: 20px;
+            color: $body-color;
+            font-family: $icon-font;
+        }
+
+        &:last-child {
+            padding-right: 0;
+            margin-right: 0;
+            color: $body-color;
+ 
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    li,
+    a,
+    span {
+        white-space: normal;
+        color: inherit;
+        word-break: break-word; 
+        font-weight: 400;
+        font-size: 20px;
+        color: $body-color;
+    }
+}
+
+.breadcumb-title {
+    color: $title-color; 
+    margin: -0.20em 0 -0.18em 0;
+	line-height: 1.1;
+    font-weight: 600;
+}
+
+.breadcumb-wrapper {
+    background-color: #F7F7F7;
+    padding: 153px 0; 
+    overflow: hidden;
+}
+
+@include lg {
+    .breadcumb-wrapper {
+        padding: 130px 0;
+    }
+	.breadcumb-menu {
+        margin: 25px 0 -0.5em 0;
+        li,
+        a,
+        span {
+            font-size: 16px;
+        }
+    }
+}
+
+@include md {
+    .breadcumb-wrapper {
+        padding: 120px 0;
+    }
+}
+
+@include sm {
+    .breadcumb-wrapper {
+        padding: 100px 0;
+    }
+}
+
+@include xs {
+	.breadcumb-title {
+		font-size: 34px;
+	}
+}

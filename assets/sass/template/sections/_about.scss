@@ -1,0 +1,1142 @@
+/* About 1 ---------------------------------- */
+.img-box1 {
+    position: relative;
+
+    .img2 {
+        position: absolute;
+        bottom: -20%;
+        right: 0px;
+
+        @include lg {
+            right: 30%;
+            bottom: 20%;
+        }
+
+        @include md {
+            bottom: 0;
+            right: 20%;
+        }
+
+        @include sm {
+            right: 0;
+        }
+
+        @include xs {
+            display: none;
+        }
+    }
+
+    .img3 {
+        position: absolute;
+        bottom: -15%;
+        left: -21%;
+        animation: movingX 8s linear infinite;
+
+        @include lg {
+            bottom: -10%;
+            left: 30%;
+        }
+
+        @include sm {
+            display: none;
+        }
+    }
+}
+
+.img-box4 {
+    position: relative;
+
+    @include xl {
+        padding-right: 40px;
+    }
+
+    @include lg {
+        margin-bottom: 50px;
+    }
+
+    .img4 {
+        margin-left: -50px;
+        max-width: 343px;
+
+        @include xl {
+            margin-left: 0;
+        }
+
+        img {
+            border-radius: 100px 0 0 0;
+        }
+
+        @include xl {
+            margin-bottom: 40px;
+        }
+
+    }
+
+    .img5 {
+        position: absolute;
+        right: 0;
+        bottom: -22%;
+
+        @include lg {
+            right: 10%;
+            bottom: -10%;
+        }
+
+        @include xs {
+            display: none;
+        }
+
+        img {
+            border-radius: 0 0 100px 0;
+        }
+    }
+
+    .about-shape {
+        position: absolute;
+        left: -20%;
+        bottom: -18%;
+        animation: spin 15s linear infinite;
+        z-index: -1;
+
+        @include lg {
+            display: none;
+        }
+    }
+
+    .badge-inner {
+        position: absolute;
+        left: 40%;
+        top: 40%;
+        background-color: $smoke-color;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+
+        .about-icon {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            transform: translate(-50%, -50%);
+            background: $smoke-color;
+            width: 90px;
+            height: 90px;
+            line-height: 90px;
+            border-radius: 50%;
+            text-align: center;
+        }
+    }
+
+
+    .counter-card {
+        &_number {
+            font-family: $title-font;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 70px;
+            margin-bottom: 0;
+
+            @include sm {
+                font-size: 40px;
+                line-height: 50px;
+            }
+
+            @include xs {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+
+        &_text {
+            font-family: $title-font;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 0;
+            max-width: 142px;
+
+            @include xs {
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+
+}
+
+.img-box5 {
+    position: relative;
+    z-index: 3;
+    padding-bottom: 60px;
+
+    .img1 {
+        img {
+            border-radius: 300px 300px 0px 0px;
+        }
+    }
+
+    .img2 {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        z-index: -1;
+
+        @include xs {
+            display: none;
+        }
+
+        img {
+            border-radius: 300px 300px 0px 0px;
+        }
+    }
+
+    .img3 {
+        position: absolute;
+        bottom: 0%;
+        left: -30%;
+
+        @include xs {
+            display: none;
+        }
+    }
+}
+
+.journey-wrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 25px;
+
+    @include xs {
+        display: block;
+    }
+
+    .checklist {
+        margin-top: -0.4rem;
+
+        @include xs {
+            margin-top: 20px;
+        }
+
+        li {
+            position: relative;
+            color: $body-color;
+            font-weight: 400;
+            gap: 10px;
+            padding-left: 28px;
+            margin-bottom: 8px;
+
+            &:before {
+                content: "\f5bb";
+                font-family: var(--icon-font);
+                font-weight: 700;
+                color: $theme-color;
+                position: absolute;
+                left: 0;
+                transition: 0.3s ease-in-out;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 7px;
+            }
+        }
+    }
+}
+
+.about-company-since-wrap {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    display: inline-block;
+    z-index: 1;
+
+    .about-icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+        background: $smoke-color;
+        @include equal-size-lineHeight(90px);
+        border: 1px solid $theme-color;
+        border-radius: 50%;
+        text-align: center;
+        margin-top: -5px;
+    }
+}
+
+.about-tag {
+    background: $smoke-color;
+    display: inline-block;
+    min-height: 142px;
+    min-width: 142px;
+    border-radius: 50%;
+    z-index: 1;
+    font-size: 18px;
+    font-family: $title-font;
+    font-weight: 700;
+    color: $theme-color;
+    line-height: 12px;
+    text-align: center;
+    font-feature-settings: 'pnum'on, 'lnum'on;
+    animation: spin 10s infinite alternate-reverse;
+
+    span {
+        --rotate-letter: 17deg;
+        min-height: 65px;
+        position: absolute;
+        min-width: 65px;
+        left: 20px;
+        top: 0px;
+        transform-origin: bottom center;
+        transform: rotate(var(--rotate-letter));
+
+        &.char2 {
+            transform: rotate(calc(var(--rotate-letter) * 2));
+        }
+
+        &.char3 {
+            transform: rotate(calc(var(--rotate-letter) * 3));
+        }
+
+        &.char4 {
+            transform: rotate(calc(var(--rotate-letter) * 4));
+        }
+
+        &.char5 {
+            transform: rotate(calc(var(--rotate-letter) * 5));
+        }
+
+        &.char6 {
+            transform: rotate(calc(var(--rotate-letter) * 6));
+        }
+
+        &.char7 {
+            transform: rotate(calc(var(--rotate-letter) * 7));
+        }
+
+        &.char8 {
+            transform: rotate(calc(var(--rotate-letter) * 8));
+        }
+
+        &.char9 {
+            transform: rotate(calc(var(--rotate-letter) * 9));
+        }
+
+        &.char10 {
+            transform: rotate(calc(var(--rotate-letter) * 10));
+        }
+
+        &.char11 {
+            transform: rotate(calc(var(--rotate-letter) * 11));
+        }
+
+        &.char12 {
+            transform: rotate(calc(var(--rotate-letter) * 12));
+        }
+
+        &.char13 {
+            transform: rotate(calc(var(--rotate-letter) * 13));
+        }
+
+        &.char14 {
+            transform: rotate(calc(var(--rotate-letter) * 14));
+        }
+
+        &.char15 {
+            transform: rotate(calc(var(--rotate-letter) * 15));
+        }
+
+        &.char16 {
+            transform: rotate(calc(var(--rotate-letter) * 16));
+        }
+
+        &.char17 {
+            transform: rotate(calc(var(--rotate-letter) * 17));
+        }
+
+        &.char18 {
+            transform: rotate(calc(var(--rotate-letter) * 18));
+        }
+
+        &.char19 {
+            transform: rotate(calc(var(--rotate-letter) * 19));
+        }
+
+        &.char20 {
+            transform: rotate(calc(var(--rotate-letter) * 20));
+        }
+
+        &.char21 {
+            transform: rotate(calc(var(--rotate-letter) * 21));
+        }
+
+        &.char22 {
+            transform: rotate(calc(var(--rotate-letter) * 22));
+        }
+
+        &.char23 {
+            transform: rotate(calc(var(--rotate-letter) * 23));
+        }
+
+        &.char24 {
+            transform: rotate(calc(var(--rotate-letter) * 24));
+        }
+
+        &.char25 {
+            transform: rotate(calc(var(--rotate-letter) * 25));
+        }
+
+        &.char26 {
+            transform: rotate(calc(var(--rotate-letter) * 26));
+        }
+
+        &.char27 {
+            transform: rotate(calc(var(--rotate-letter) * 27));
+        }
+
+        &.char28 {
+            transform: rotate(calc(var(--rotate-letter) * 28));
+        }
+
+        &.char29 {
+            transform: rotate(calc(var(--rotate-letter) * 29));
+        }
+
+        &.char30 {
+            transform: rotate(calc(var(--rotate-letter) * 30));
+        }
+
+        &.char31 {
+            transform: rotate(calc(var(--rotate-letter) * 31));
+        }
+
+        &.char32 {
+            transform: rotate(calc(var(--rotate-letter) * 32));
+        }
+
+        &.char33 {
+            transform: rotate(calc(var(--rotate-letter) * 33));
+        }
+    }
+}
+
+.about-counter {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    align-items: center;
+    border-bottom: 1px solid $smoke-color2;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+
+    @include xs {
+        display: block; 
+    }
+
+
+    .th-counterup {
+        @include lg {
+            border: 0;
+            padding: 0;
+            text-align: left;
+        }
+
+        .inner {
+            max-width: 270px;
+
+            @include lg {
+                display: flex;
+            }
+            @include xs {
+                justify-content: flex-start;
+                margin: 0; 
+                margin-bottom: 10px; 
+            }
+        }
+
+        .icon {
+            background-color: $white-color;
+            width: 70px;
+            height: 70px;
+            border-radius: 0 0 0 50px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .content {
+            .counter {
+                color: $theme-color;
+
+                @include xl {
+                    font-size: 45px;
+                    line-height: 45px;
+                }
+
+                @include lg {
+                    justify-content: flex-start;
+                }
+            }
+
+            .counter-card_text {
+                font-size: 20px;
+                font-family: $title-font;
+                color: $title-color;
+                font-weight: 700;
+                line-height: 20px;
+                margin-top: -9px;
+
+                @include xl {
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+
+                @include xl {
+                    font-size: 18px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+
+.about-title-area {
+    max-width: 884px;
+    display: block;
+    margin: auto;
+}
+
+.about-desc {
+    border-left: 3px solid $theme-color;
+    padding-left: 15px;
+    font-weight: 700;
+}
+
+.video-group {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;  
+
+    @include xs {
+        display: block;
+    }
+
+    @include vxs {
+        display: block;
+        margin: auto;
+        margin-bottom: 30px;
+
+        .th-btn {
+            &:first-child {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.choose-about {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    max-width: 516px;
+    margin-bottom: 35px;
+    transition: all 0.4s ease-in-out;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .box-title {
+        margin-bottom: 8px;
+    }
+
+    &_icon {
+        transition: all 0.4s ease-in-out;
+    }
+
+    &_text {
+        margin-bottom: 0;
+    }
+
+    &:hover {
+        .choose-about {
+            &_icon {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}
+
+.choose-image {
+    position: relative;
+    min-width: 524px;
+    min-height: 620px;
+    border-radius: 200px 0px 0px 0px;
+
+    @include xl {
+        min-width: 100%;
+        min-height: 100%;
+    }
+    @include md {
+        margin-top: 40px;  
+    }
+
+    .img1 {
+        text-align: right;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .img2 {
+        position: absolute;
+        left: -18%;
+        bottom: -10%;
+
+        @include xl {
+            bottom: 0;
+        }
+
+        @include lg {  
+            left: 0;
+        }
+
+        @include md {
+            display: none;
+        }
+    }
+}
+
+.achive-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-top: 28px;
+    margin-bottom: 20px;
+
+    @include sm {
+        display: block;
+    }
+
+
+    .achive-about-wrap {
+        margin-bottom: 20px;
+
+        .achive-about {
+            max-width: 336px;
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+
+        }
+    }
+}
+
+.about-wrap {
+    .about-content {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+        margin-top: 27px;
+
+        .about_title {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 14px;
+        }
+
+        .about_text {
+            max-width: 410px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.about-profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+    .title {
+        margin-bottom: 5px;
+        line-height: 30px;
+    }
+
+    .desig {
+        font-family: $body-font;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 0;
+    }
+
+    &.style2 {
+        gap: 30px;
+
+        @include xs {
+            gap: 10px;
+        }
+
+        .avater {
+            min-width: 70px;
+
+            img {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.about-avater {
+    min-width: 56px;
+
+    img {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+    }
+}
+
+.about-counter1 {
+    background-color: $smoke-color2;
+    padding: 80px 40px 40px 40px;
+    max-width: 164px;
+    min-height: 211px;
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+
+    @media(max-width: 1399px) {
+        right: 0;
+    }
+
+    @include sm {
+        position: relative;
+        max-width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    @media(max-width: 640px) {
+        right: 0;
+    }
+
+
+    @include xs {
+        padding: 40px;
+        min-width: 100%;
+        gap: 20px;
+    }
+
+    .counter-title {
+        color: $white-color;
+        font-size: 40px;
+        line-height: 60px;
+        margin-top: -10px;
+    }
+
+    .counter-text {
+        text-align: left;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: $white-color;
+    }
+
+    .counter-shape {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.counter-title {
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    color: $white-color;
+    margin-bottom: 0;
+
+    @include xs {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+.counter-text {
+    font-family: $title-font;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: $white-color;
+    max-width: 128px;
+    text-align: center;
+
+    @include xs {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+.img-box3 {
+    position: relative;
+
+    @include lg {
+        margin-bottom: 40px;
+    }
+
+    @include xs {
+        text-align: center;
+    }
+
+    .img1 {
+        text-align: right;
+
+        @include lg {
+            text-align: center;
+        }
+    }
+
+    .img3 {
+        position: absolute;
+        top: 17%;
+        right: 15%;
+
+        img {
+            border: 10px solid $white-color;
+        }
+
+        @include lg {
+            right: 25%;
+        }
+
+        @include md {
+            right: 0;
+        }
+
+        @include xs {
+            display: none;
+        }
+    }
+
+
+    &.style2 {
+        @include lg {
+            margin-bottom: 30px;
+        }
+    }
+
+}
+
+.about-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @include lg {
+        justify-content: flex-start;
+        gap: 50px;
+    }
+
+    @include sm {
+        gap: 30px;
+    }
+
+    @include xs {
+        gap: 20px;
+    }
+
+    @media(max-width: 440px) {
+        display: block;
+        max-width: 220px;
+    }
+
+    .about-content {
+        @include xs {
+            margin-bottom: 30px;
+
+            .th-btn {
+                padding: 17px 28px;
+            }
+        }
+
+        .header-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 15px;
+            border-top: 1px solid $gray-color;
+            padding-top: 30px;
+            margin-top: 40px;
+            margin-bottom: 30px;
+
+            &_label {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                color: #787878;
+            }
+
+            &_link {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 28px;
+                color: $title-color;
+                margin-bottom: 0;
+
+                @include xs {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+
+                &:hover {
+                    color: $theme-color;
+                }
+
+                a {
+                    color: inherit;
+                }
+            }
+        }
+    }
+
+    .counter-wrapper {
+        background-color: $smoke-color2;
+        padding: 40px;
+
+        @include xs {
+            min-width: 200px;
+            padding: 30px 20px;
+        }
+
+        .th-counterup {
+            border: none;
+            border-bottom: 1px solid $gray-color;
+            margin-bottom: 35px;
+            margin-right: 0;
+            padding: 0 0 40px 0;
+
+            &:last-child {
+                border-bottom: none;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+
+            .inner {
+                display: flex;
+                justify-content: flex-start;
+                gap: 15px;
+                max-width: 255px;
+
+                @include lg {
+                    justify-content: center;
+                    max-width: 100%;
+                }
+
+                @include sm {
+                    justify-content: flex-start;
+                    margin: 0;
+                }
+
+                .icon {
+                    min-width: 60px;
+
+                    @include sm {
+                        min-width: 100%;
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+
+            .content {
+                .counter {
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 40px;
+                    color: $theme-color;
+                    margin-bottom: 0;
+                }
+
+                .counter-card_text {
+                    font-family: var(--body-font);
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: $body-color;
+                }
+            }
+        }
+    }
+}
+
+.about-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 33px;
+    margin-bottom: 25px;
+
+    @include xs {
+        gap: 10px;  
+    }
+    @include vxs {
+        display: block;
+    }
+
+    .about-info {
+        background-color: $white-color;
+        padding: 15px 22px;
+        min-width: 260px;
+        @include xs {
+            min-width: 150px;  
+        }
+        @include vxs {
+            min-width: 100%;  
+            &:first-child {
+                margin-bottom: 10px;
+            }
+        }
+
+        &.style2 {
+            background-color: $smoke-color;
+        }
+
+
+        &_title {
+            margin-bottom: 0;
+
+            img {
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+
+.achive-about-wrap {
+    position: relative;
+    margin-bottom: 40px;
+
+    .achive-about {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+        max-width: 460px;
+        border-bottom: 1px solid #D2D2D2;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+
+        @include xs {
+            min-width: 100%;
+            line-height: auto;
+            height: auto;
+        }
+
+        &:last-child {
+            border-bottom: none;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        .media-body {
+            margin-top: -6px;
+        }
+
+        &:hover {
+            .achive-about {
+                &_icon {
+                    img {
+                        transform: translateY(5px) translate3d(0, 5px, 0);
+                    }
+                }
+            }
+        }
+
+        &_icon {
+            min-width: 60px;
+
+            img {
+                width: 60px;
+                height: 60px;
+                transition: all 0.4s ease-in-out;
+            }
+        }
+
+        &_title {
+            font-family: $title-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            color: $title-color;
+            margin-bottom: 4px;
+
+            @include xs {
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+
+        &_text {
+            font-family: $body-font;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: $body-color;
+            margin-bottom: 0;
+            max-width: 340px;
+
+            @include xs {
+                font-size: 14px;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+.profile-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 40px;
+
+    @include xs {
+        gap: 40px;
+    }
+
+    @media(max-width: 440px) {
+        display: block;
+    }
+
+    .title {
+        margin-bottom: 2px;
+    }
+
+    .desig {
+        font-size: 14px;
+    }
+}
+
+
+@include lg {
+    .img-box1 {
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+}
+
+.about-card {}
+
+
+.sec-text2 {
+    max-width: 500px;
+}

@@ -1,0 +1,93 @@
+/* video area --------------------------------- */
+.appointment-area2 {
+    @include md {
+        padding-top: 0px;
+    }
+}
+
+.appointment-form {
+    position: relative;
+    margin-right: 50px; 
+
+    @include md {
+        margin: 0;
+    }
+}
+
+.appoinment-image {
+    width: 625px;
+    height: 774px;
+
+    @include md {
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+    }
+}
+
+.appointment-video {
+    &.style2 {
+        @include md {
+            display: block;
+        }
+
+        .video-play-btn {
+            left: 30%;
+            right: unset;
+
+            @include md {
+                position: relative;
+                left: 50%;
+                margin: 30px 0;
+            }
+
+            >i {
+                width: var(--icon-size, 80px);
+                height: var(--icon-size, 80px);
+                line-height: var(--icon-size, 80px);
+                background-color: $white-color;
+                border-radius: 50%;
+                color: $theme-color;
+                font-size: 30px;
+                border: 1px solid var(--white-color);
+            }
+        }
+    }
+}
+
+.appointment-content {
+    &.style3 {
+        max-width: 539px;
+        margin-left: auto;
+    }
+}
+
+.appointment-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 697px;
+    z-index: -1;
+
+    @include md {
+        top: 0px;
+        bottom: unset;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.brand-area {
+    &.style2 {
+        margin: 0;
+        padding: 35px 35px 0 35px;
+    }
+}

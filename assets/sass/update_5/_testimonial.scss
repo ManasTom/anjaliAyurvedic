@@ -1,0 +1,115 @@
+.video-box5 {
+    &.style2 {
+        right: unset;
+        left: 0;
+    }
+    position: absolute;
+    top: 0;
+    right: 0;  
+    min-width: 841px; 
+    height: 760px;
+
+    @include lg {
+        position: relative;
+        min-width: 100%;
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        background-size: cover; 
+    }
+
+    .play-btn {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, 50%); 
+
+        @include sm { 
+            top: 30%;  
+        }
+
+        @include xs { 
+            top: 25%;    
+        }
+
+        &:after,
+        &:before {
+            background-color: var(--white-color);
+        }
+
+        >i {
+            background-color: var(--white-color);
+            color: var(--theme-color);
+            --icon-size: 87px;
+            font-size: 28px;
+        }
+    }
+}
+
+.testi-item {
+    &.style3 {
+        position: relative;
+        background-color: $smoke-color;
+        padding: 40px;
+        text-align: left;
+        z-index: 2;
+        @include xs {
+            padding: 30px;  
+        }
+
+        .testi-item {
+            &_img {
+                min-width: 50px;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            &_profile {
+                gap: 15px;
+            }
+
+            &_name {
+                font-size: 24px;
+                margin-bottom: 0px;
+            }
+        }
+
+        .star-icon {
+            text-align: right;
+            margin-bottom: 5px;
+        }
+
+        .testi-shape2 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+
+            @include xs {
+                display: none;
+            }
+        }
+
+        .testi-quote {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            z-index: -1;
+        }
+    }
+}
+
+.testi-area-wrapper {
+    margin-left: 60px;
+
+    @include lg {
+        margin: 50px 0 0 0;
+    }
+
+}

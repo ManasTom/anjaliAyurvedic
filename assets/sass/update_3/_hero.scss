@@ -1,0 +1,211 @@
+/* hero Five Start  ----------------------------------------*/
+.hero-6 {
+    background-color: $smoke-color3;
+
+    .th-hero-img {
+        min-width: 964px;
+        max-height: 829px;
+
+        @include xl {
+            min-width: 680px;
+            max-height: 100%;
+            margin: 0;
+        }
+
+        @include md {
+            min-width: 100%;
+            max-height: 550px;
+        }
+
+        @include sm {
+            max-height: 450px;
+        }
+
+        @include vxs {
+            max-height: 240px;
+        }
+
+
+    }
+
+    .slick-dots {
+        display: none !important;
+    }
+}
+
+.hero-style6 {
+    position: relative;
+    z-index: 6;
+    padding: 218px 0;
+    max-width: 750px;
+
+    @include xl {
+        padding: 150px 0 150px 0;
+    }
+
+    @include md {
+        padding: 100px 0 50px 0;
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    @include sm {
+        padding: 100px 0 80px 0;
+    }
+
+    @include xs {
+        padding: 80px 0 40px 0;
+    }
+
+    .sub-title {
+        color: $theme-color2;
+        display: block;
+        margin-top: -0.3rem;
+        margin-bottom: 0px;
+    }
+
+    .hero-title {
+        font-size: 84px;
+        line-height: 94px;
+
+        @include xl {
+            font-size: 64px;
+            line-height: 74px;
+        }
+
+        @include lg {
+            font-size: 54px;
+            line-height: 64px;
+        }
+
+        @include sm {
+            font-size: 44px;
+            line-height: 54px;
+        }
+
+        @include vxs {
+            font-size: 34px;
+            line-height: 44px;
+        }
+    }
+
+
+}
+
+.hero-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    @include sm {
+        width: 200px;
+    }
+
+    @include vxs {
+        width: 180px;     
+    }
+
+    .play-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &:after,
+        &:before {
+            background-color: $white-color;
+        }
+
+        >i {
+            background-color: $white-color;
+            color: $theme-color;
+            --icon-size: 34px;
+            font-size: 14px;
+        }
+    }
+}
+
+.indicator-number {
+    position: absolute;
+    left: 30%;
+    bottom: 15%;
+
+    @include md {
+        left: 0%;
+    }
+
+    @include sm {
+        left: unset;
+        right: 1%;
+    }
+
+    @include vxs {
+        bottom: 20%;
+    }
+}
+
+.indicator-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.pagingInfo {
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.number-pagi {
+    font-family: $body-font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: $theme-color;
+}
+
+.number-pagination {
+    width: 5%;
+}
+
+.total-pagination {
+    width: 5%;
+}
+
+.progress-wrapper {
+    min-width: 110px;
+
+    @include xs {
+        min-width: 80px;
+    }
+}
+
+.progress {
+    position: absolute;
+    bottom: 40%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 90px;
+    height: 2px;
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: $white-color;
+    background-image: linear-gradient(to right, $theme-color, $theme-color);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition: background-size .4s ease-in-out;
+
+    @include xs {
+        width: 60px;      
+        left: 44%;
+    }
+
+}
+
+/* hero Five end  ----------------------------------------*/

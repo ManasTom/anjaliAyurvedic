@@ -1,0 +1,222 @@
+.appointment-image {
+    text-align: right;
+    margin-left: 10px;
+
+    @include md {
+        margin: 30px 0 0 0;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.offer-box {
+    background-color: $white-color;
+    border: 1px dashed $title-color;
+    text-align: center;
+    padding: 50px;
+
+    @include xl {
+        padding: 50px 30px;
+    }
+
+    &_title {
+        margin: -0.3rem 0 0 0;
+
+        .title {
+            display: block;
+        }
+    }
+
+    .counter {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 64px;
+        font-weight: 700;
+        color: $theme-color;
+        font-feature-settings: 'pnum'on, 'lnum'on;
+        margin-bottom: -1.5rem;
+    }
+}
+
+.schedule-area {
+    background-size: auto;
+
+    @include lg {
+        background-size: cover;
+    }
+}
+
+.calendar-wrapper {
+    position: relative;
+    background-color: $white-color;
+
+    @include lg {
+        margin-top: 40px;
+    }
+
+    .calendar-title {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0 0 30px;
+
+        @include xs {
+            display: block;
+        }
+    }
+
+    .calendar-date {
+        display: flex;
+        align-items: flex-end;
+        gap: 30px;
+    }
+
+    .date {
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
+        text-align: center;
+        font-family: $title-font;
+        color: $white-color;
+        font-size: 48px;
+        font-weight: 700;
+        display: block;
+        background-color: $theme-color;
+        font-feature-settings: 'pnum'on, 'lnum'on;
+
+        @include xs {
+            font-size: 38px;
+        }
+    }
+
+    .year {
+        background-color: $theme-color;
+        padding: 12px 36px;
+        color: $white-color;
+        font-size: 48px;
+        line-height: 48px;
+        font-weight: 700;
+        border-radius: 30px 0px 0px 30px;
+        font-feature-settings: 'pnum'on, 'lnum'on;
+
+        @include xs {
+            font-size: 38px;
+            display: block;
+            max-width: 161px;
+            margin-top: 30px;  
+            margin-left: auto;  
+        }
+    }
+}
+
+.calender_area {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include sm {
+        display: block;
+    }
+    @include xs {
+        padding: 10px; 
+    }
+
+    .th-widget-about {
+        width: 170px;
+        border-left: 1px solid $title-color; 
+        padding-left: 30px;
+        @include xs {
+            padding-left: 20px; 
+        }
+
+        @include sm {
+            border: none;
+            padding: 0;
+            margin-top: 50px;
+        }
+    }
+
+    .about-logo {
+        margin-bottom: 30px;
+    }
+
+    .footer-info {
+        font-family: $body-font;
+        font-size: 14px;
+        line-height: 16px;
+        color: $title-color;
+        padding: 0 0 0 20px;
+        margin-bottom: 15px;
+
+        i {
+            width: 16px;
+            height: 16px;
+            line-height: 16px;
+            font-size: 8px;
+            background-color: $title-color;
+        }
+    }
+}
+
+.calendar_wrap {
+    &.style2 {
+        min-width: 330px;
+
+        @include lg {
+            min-width: 70%;
+        }
+
+        @include sm {
+            min-width: 100%;
+        }
+
+        .wp-calendar-table {
+            border: none;
+        }
+
+        thead {
+            background-color: rgba(194, 134, 102, 0.05);
+            border-radius: 5px;
+            margin-bottom: 20px;
+
+        }
+
+        th {
+            font-weight: 500;
+            font-size: 18px;
+            border: none;
+            @include vxs {
+                font-size: 16px;
+            }
+
+            &:first-child {
+                border-left: 1px solid transparent;
+            }
+        }
+
+        td {
+            font-size: 22px;
+            padding: 8px 10px;
+            color: $title-color;
+            border: none;
+            text-align: center;
+            background-color: transparent;
+            transition: all ease 0.4s;
+            @include vxs {
+                font-size: 16px;
+                padding: 3px;  
+            }
+        }
+
+        #today {
+            color: $theme-color;
+            background-color: $white-color;
+            border-color: transparent;
+        }
+
+    }
+}

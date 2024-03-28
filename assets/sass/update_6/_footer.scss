@@ -1,0 +1,21 @@
+.footer-layout9 {
+    .copyright-wrap {
+        background-color: #6E6E6E;
+
+        .copyright-text {
+            color: $white-color;
+        }
+    }
+
+    .sec-shape {
+        margin-bottom: 60px;
+
+        @include xs {
+
+            &:before,
+            &:after {
+                display: none;  
+            }
+        }
+    }
+}

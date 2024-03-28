@@ -1,0 +1,263 @@
+/* Contact 1 ---------------------------------- */
+.appoitment-form {
+
+    select,
+    .form-control,
+    .form-select,
+    textarea,
+    input {
+        background-color: $white-color;
+        border: 1px solid $border-color;
+    }
+}
+
+.appointment-quote-form {
+    background-color: $smoke-color3;
+    padding: 50px;
+
+    @include lg {
+        padding: 40px;
+    }
+
+    @include sm {
+        padding: 30px;
+    }
+}
+
+.contact-feature {
+    &-wrap {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 24px;
+        border-top: 1px solid $border-color;
+        padding-top: 40px;
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: $white-color;
+    box-shadow: 0px 10px 30px rgba(8, 14, 28, 0.06);
+    border-radius: 5px;
+
+    .icon-btn {
+        background-color: $theme-color;
+        color: $white-color;
+        font-size: 24px;
+        box-shadow: 0px 6px 20px rgba($color: #684DF4, $alpha: 0.6);
+        border-radius: 5px;
+        border: none;
+    }
+
+    &_label {
+        margin-bottom: 0;
+    }
+
+    &_link {
+        font-size: 20px;
+        font-weight: 600;
+        color: $title-color;
+
+        &:hover {
+            color: $theme-color;
+        }
+    }
+}
+
+@include xl {
+    .contact-feature {
+        padding: 20px;
+    }
+}
+
+@include sm {
+    .contact-feature {
+        &-wrap {
+            gap: 15px;
+        }
+
+        gap: 15px;
+        padding: 15px;
+    }
+}
+
+@include xs {
+    .contact-feature {
+        &-wrap {
+            grid-template-columns: auto;
+        }
+
+        padding: 22px;
+    }
+}
+
+/* Quote Form faq page ----------------------- */
+.quote-form {
+    background: $theme-color;
+    padding: 40px;
+
+    &.style2 {
+        background-color: $smoke-color3;
+    }
+
+    @include lg {
+        margin-bottom: 40px;
+    }
+
+    @include xs {
+        padding: 30px;
+    }
+
+    @include vxs {
+        padding: 20px;
+    }
+
+    select,
+    .form-control,
+    .form-select,
+    textarea,
+    input {
+        background-color: $white-color;
+    }
+
+    .form-group {
+        >i {
+            background-color: $white-color;
+            color: $theme-color;
+            width: 18px;
+            text-align: right;
+        }
+
+    }
+
+    textarea.form-control,
+    textarea {
+        min-height: 180px;
+        padding-top: 16px;
+        padding-bottom: 17px;
+    }
+}
+
+/* Contact Page ---------------------------------- */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    background-color: $white-color;
+    padding: 30px;
+    margin-bottom: 30px;
+
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &-wrap {
+        background-color: $smoke-color;
+        padding: 30px;
+
+        .sec-title {
+            position: relative;
+            margin-top: -0.6rem;   
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 66.486px;
+                height: 3px;
+                background-color: $theme-color;
+            }
+        }
+    }
+
+    .box-title {
+        margin-bottom: 0px;
+    }
+
+    &_icon {
+        display: inline-block;
+        width: 70px;
+        min-width: 70px;
+        height: 70px;
+        line-height: 70px;
+        background-color: $theme-color;
+        color: $white-color;
+        text-align: center;
+        font-size: 35px;
+        position: relative;
+    }
+
+    &_text {
+        margin-bottom: -0.2em;  
+        font-family: $body-font;
+        display: flex;
+        margin-top: 5px;
+
+        span,
+        a {
+            display: block;
+            max-width: fit-content;
+        }
+
+        a {
+            color: $body-color;
+
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+}
+.contact-form-wrapper{
+    padding-top: 80px;
+}
+.contact-form {
+    background-color: $white-color; 
+    box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.06);
+    padding: 60px;
+    @include lg {
+        padding: 30px;
+    }
+    @include sm { 
+        padding: 25px;
+    }
+
+    .form-group {
+        >i {
+            color: $theme-color;
+            width: 18px;
+            text-align: right;
+        }
+    }
+}
+
+.map-sec {
+    line-height: 0px;
+
+    iframe {
+        filter: grayscale(100);
+         height: 670px;  
+
+        @include xs {
+            height: 300px;
+        }
+    }
+}
+
+@include xs {
+    .contact-info {
+        padding: 20px;   
+    }
+}
+
+@include vxs {
+    .contact-info {
+        flex-direction: column;
+    }
+}

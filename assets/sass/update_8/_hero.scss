@@ -1,0 +1,291 @@
+/* hero Ten Start  ----------------------------------------*/
+.hero-11 {
+    .hero-slider-11 {
+        background: linear-gradient(81deg, #E8CDBF -5.01%, #F9F3F0 99.74%);
+
+        clip-path: path("M1 0C0.447715 0 0 0.447696 0 0.999981V687C0 703.569 13.4315 717 30 717H273C289.569 717 303 730.431 303 747V870C303 886.569 316.431 900 333 900H1919C1919.55 900 1920 899.552 1920 899V1C1920 0.447715 1919.55 0 1919 0H1Z");
+
+        @media(min-width: 1930px) {
+            clip-path: path("M1 0C0.447715 0 0 0.447696 0 0.999981V687C0 703.569 13.4315 717 30 717H273C289.569 717 303 730.431 303 747V870C303 886.569 316.431 900 333 900H1919C1919.55 900 1920 899.552 7520 899V1C1920 0.447715 1919.55 0 1919 0H1Z");
+        }
+
+        @include md {
+            clip-path: none;
+        }
+
+        @include sm {
+            margin-bottom: 30px;
+        }
+
+        .th-hero-img {
+            background-color: $smoke-color2;
+            min-width: 498px;
+            max-height: 550px;
+            margin: 0 0 0 100px;
+            clip-path: path("M418 20C418 8.95431 409.046 0 398 0H20C8.95431 0 0 8.9543 0 20V290C0 301.046 8.95431 310 20 310H60C71.0457 310 80 318.954 80 330V530C80 541.046 88.9543 550 100 550H478C489.046 550 498 541.046 498 530V100C498 88.9543 489.046 80 478 80H438C426.954 80 418 71.0457 418 60V20Z");
+
+            @media(max-width: 1699px) {
+                margin: 0 0 0 0px;
+            }
+
+            @include xl {
+                width: 100%;
+                height: 100%;
+            }
+
+            @include md {
+                min-width: 498px;
+                max-height: 550px;
+                margin-left: auto;
+            }
+
+            @include xs {
+                width: 100%;
+                height: 100%;
+                clip-path: none;
+            }
+
+            img {
+                width: 351px;
+                height: 541px;
+                margin: auto auto auto 110px;
+                display: block;
+                text-align: center;
+                object-fit: cover;
+
+                @include xs {
+                    width: 100%; 
+                    height: 100%;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+}
+
+.hero-video {
+    &.style3 {
+        position: absolute;
+        right: unset;
+        left: 20px;
+        bottom: 0;
+        border-radius: 24px;
+        z-index: 2;
+
+        @include md {
+            margin-bottom: 20px;
+        }
+
+        @include sm {
+            position: relative;
+            top: 50px;
+            margin-bottom: 50px;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 24px;
+            background-color: rgba(13, 13, 13, 0.60);
+        }
+
+        img {
+            border-radius: 24px;
+        }
+    }
+}
+
+.hero-image-area {
+    position: relative;
+    padding-top: 100px;
+
+    @include xl {
+        padding-top: 0px;
+    }
+
+    @include md {
+        margin-bottom: 230px;
+    }
+
+    @include sm {
+        margin-bottom: 50px;
+    }
+
+    .hero-indicator-wrapp {
+        position: absolute;
+        top: auto;
+        bottom: 80px;
+        right: unset;
+        left: 20px;
+
+        @media(max-width: 1699px) {
+            left: -80px;
+        }
+
+        @include xl {
+            position: relative;
+            bottom: -50px;
+            left: unset;
+            right: -50px;
+        }
+    }
+
+    .hero-indicator {
+        transform: rotate(-90deg);
+
+        @include xl {
+            transform: rotate(0deg);
+        }
+
+        .indicatior-btn {
+            position: relative;
+            overflow: hidden;
+            min-width: 70px;
+            transform: rotate(90deg);
+
+            @include xl {
+                transform: rotate(0deg);
+            }
+
+            &:hover {
+
+                img {
+                    border: 1px solid $theme-color;
+                }
+            }
+
+            &:after {
+                font-family: $icon-font;
+                content: "\f5bb";
+                position: absolute;
+                inset: 0;
+                font-size: 28px;
+                text-align: center;
+                line-height: 70px;
+                display: block;
+                border-radius: 70px;
+                background-color: rgba(13, 13, 13, 0.60);
+                color: var(--white-color);
+                transform: scale(0);
+                transition: 0.4s ease-in-out;
+            }
+
+            img {
+                width: 70px;
+                height: 70px;
+                border: 1px solid $theme-color;
+                transform: scale(1);
+            }
+
+            &.active {
+
+                img {
+                    transform: scale(1);
+                }
+
+                &:after {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+
+    .hero-shape {
+        position: absolute;
+        top: 100px;
+        right: -55%;
+    }
+}
+
+.hero-style11 {
+    position: relative;
+    z-index: 6;
+    max-width: 730px;
+    padding: 240px 0 260px 0;
+
+    @include md {
+        padding: 160px 0 50px 0;
+        display: block;
+        margin: auto;
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .sub-title {
+        margin-bottom: 15px;
+    }
+
+    .hero-title {
+        text-transform: capitalize;
+        margin-bottom: 15px;
+
+        @include sm {
+            font-size: 48px;
+            line-height: 58px;
+        }
+
+        @include xs {
+            font-size: 34px;
+            line-height: 44px;
+        }
+    }
+
+    .hero-text {
+        max-width: 757px;
+        display: block;
+        margin: auto auto 40px auto;
+    }
+}
+
+.hero-counter-content {
+    position: absolute;
+    left: 18%;
+    bottom: 90px;
+    display: flex;
+    gap: 30px;
+
+    @media(max-width: 1699px) {
+        left: 24%;
+    }
+
+    @include xl {
+        left: 28%;
+    }
+
+    @include xl {
+        left: 28%;
+        bottom: 40px;
+
+        .th-counterup {
+            padding: 0;
+            border: none;
+
+            .inner {
+                display: flex;
+            }
+
+            .content .counter {
+                justify-content: left;
+                margin-top: 15px;
+            }
+        }
+    }
+
+    @include lg {
+        left: unset;
+        right: 20px;
+    }
+
+    @include xs {
+        position: relative;
+        left: 20px;
+        top: 20px;
+        display: block;
+
+        .th-counterup {
+            margin-bottom: 30px;
+        }
+    }
+}

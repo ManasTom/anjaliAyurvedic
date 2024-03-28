@@ -1,0 +1,22 @@
+.service-item {
+    &.style5{
+        position: relative; 
+        padding: 80px 30px; 
+        text-align: center;
+        margin: 0; 
+        z-index: 2;
+        &:before {
+            content: ""; 
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(0deg, rgba(13, 13, 13, 0.60) 0%, rgba(13, 13, 13, 0.60) 100%);
+            z-index: -1;
+        }
+        .service-icon{ 
+            margin-bottom: 10px;  
+        }
+        .box-title {
+            margin-bottom: 0; 
+        }
+    }
+}

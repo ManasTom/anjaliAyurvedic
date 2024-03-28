@@ -1,0 +1,201 @@
+/* Service box start ----------------------------------  */
+.service-box {
+    &.style3 {
+        background-color: $theme-color;
+        box-shadow: none;
+        padding: 40px 30px;
+        margin: 0;
+        margin-top: 40px;
+
+        .dots {
+            display: flex;
+            gap: 7px;
+
+            span {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                width: 10px;
+                height: 10px;
+                background-color: $theme-color;
+                border-radius: 50%;
+                display: block;
+
+                &:nth-child(2) {
+                    right: 5px;
+                    left: unset;
+                }
+
+                &:nth-child(3) {
+                    top: unset;
+                    bottom: 5px;
+                }
+
+                &:nth-child(4) {
+                    top: unset;
+                    bottom: 5px;
+                    left: unset;
+                    right: 5px;
+                }
+            }
+        }
+
+        .service-box {
+            &_overlay {
+                content: "";
+                position: absolute;
+                inset: 0;
+                transform: skewX(10deg);
+                transform-origin: left;
+                opacity: 0;
+                visibility: hidden;
+                z-index: -1;
+                transition: all 0.4s ease-in-out;
+            }
+
+            &-content {
+                position: relative;
+                z-index: 9;
+            }
+
+            &_icon {
+                position: relative;
+                width: 65px;
+                height: 65px;
+                line-height: 68px;
+                border-radius: 50%;
+                display: block;
+                background-color: $theme-color;
+                border: none;
+                margin: auto;
+                margin-top: -70px;
+                transition: all 0.4s ease-in-out;
+                z-index: 2;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 0px;
+                    top: 2px;
+                    width: 65px;
+                    height: 68px;
+                    background-color: $white-color;
+                    border-radius: 50%;
+                    z-index: -1;
+                    transition: 0.4s;
+                }
+            }
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            inset: 10px;
+            border: 1px solid $theme-color2;
+            transition: all 0.4s ease-in-out;
+        }
+
+        &:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: $smoke-color;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            transition: 0.4s ease-in-out;
+        }
+
+        .box-title {
+            font-size: 24px;
+            line-height: 34px;
+            margin-top: 15px;
+            a {
+                color: inherit;
+            } 
+
+            &:hover {
+                color: $white-color;
+            }
+        }
+
+        &:hover {
+            &.style3 {
+                .dots {
+                    span {
+                        background-color: $white-color;
+                    }
+                }
+            }
+
+            .service-box {
+                &_overlay {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                &_text {
+                    color: $white-color;
+                }
+
+                &_icon {
+                    border: none;
+                }
+            }
+
+            .box-title {
+                color: $white-color;
+            }
+
+            &:before {
+                border: 1px solid $white-color;
+            }
+
+            &:after {
+                height: 0;
+            }
+        }
+    }
+
+}
+
+/* Service box end  ----------------------------------  */
+/* Service item start --------------------------------------*/
+.service-item {
+    &.style2 {
+        background-color: $smoke-color;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+
+        .service-item {
+            &_img {
+                margin-bottom: 0;
+            }
+
+            &_content {
+                padding: 30px;
+            }
+
+            &_text {
+                margin-bottom: -0.3rem;
+            }
+        }
+
+        .service_icon {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            display: block;
+            margin: -60px auto 25px auto;
+            z-index: 8;
+        }
+
+        .box-title {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.appointment-content {
+    &.style4 {
+        max-width: 560px;
+
+        .btn-group {
+            @include md {
+                justify-content: center;
+                margin-bottom: 30px;
+            }
+        }
+
+        .box-title {
+            @include vxs {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.appointment-form4 {
+    background-color: $smoke-color2;
+    padding: 50px;
+
+    @include sm {
+        padding: 30px;
+    }
+
+    @include vxs {
+        padding: 20px;
+    }
+
+    select,
+    .form-control,
+    .form-select.nice-select, 
+    .nice-select,
+    textarea,
+    input {
+        background-color: $white-color;
+    }
+    .form-group > i {
+        color: $theme-color; 
+    }
+
+}

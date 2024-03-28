@@ -1,0 +1,464 @@
+/* Why 1 ---------------------------------- */
+.newsletter-sec {
+    @include md {
+        background-size: cover;
+        background-position: 100%;
+    }
+}
+
+.newsletter-area {
+    position: relative;
+    z-index: 3;
+    margin: 0 100px;
+    border: 1px solid #53443D;
+}
+
+.newsletter-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include lg {
+        justify-content: center;
+    }
+}
+
+.video-box1 {
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+}
+
+.video-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    >i {
+        display: inline-block;
+        width: var(--icon-size, 100px);
+        height: var(--icon-size, 100px);
+        line-height: var(--icon-size, 100px);
+        text-align: center;
+        background-color: rgba(194, 133, 101, 0.85);
+        border-radius: 50%;
+        border: 1px solid $white-color;
+        color: $white-color;
+        font-size: var(--icon-font-size, 1.2em);
+    }
+}
+
+.appointment-work {
+    margin-top: 100px;
+    max-width: 549px;
+
+    @include md {
+        max-width: 100%;
+        display: block;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+}
+
+.work-title {
+    margin-bottom: 10px;
+
+    @include lg {
+        color: $white-color;
+    }
+}
+
+.working-list {
+    padding: 0;
+
+    li {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $smoke-color2;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        font-size: 18px;
+        color: $title-color;
+        font-family: $title-font;
+        font-weight: 700;
+        font-feature-settings: 'pnum'on, 'lnum'on;
+    }
+}
+
+.video-area-2 {
+    position: relative;
+    z-index: 3;
+}
+
+.video-content-box {
+    position: relative;
+    padding: 190px 0;
+    min-height: 500px;
+
+    @include lg {
+        padding: 120px 0;
+
+    }
+
+    @include sm {
+        min-height: 300px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+.card-area {
+    @include lg {
+        background-size: cover;
+    }
+}
+
+.card-item {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 0;
+
+    &_img {
+        width: 100%;
+
+        img {
+            max-width: 100%;
+            width: 100%;
+            transition: all 500ms linear 0s;
+        }
+    }
+
+    &_price {
+        font-family: $title-font;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        display: block;
+        font-feature-settings: 'pnum'on, 'lnum'on;
+        background-color: var(--theme-color);
+        color: var(--white-color);
+        position: absolute;
+        bottom: -45px;
+        right: -40px;
+        border-radius: 50%;
+        padding: 10px 15px 10px 10px;
+        width: 80px;
+        height: 70px;
+        line-height: 50px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .box-title {
+        font-size: 36px;
+        line-height: 46px;
+        color: $white-color;
+        margin-bottom: 10px;
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+            color: $theme-color;
+        }
+    }
+
+    .th-btn.style5:hover {
+        border-color: $white-color;
+        color: $title-color;
+
+        &:before,
+        &:after {
+            background-color: $white-color;
+        }
+    }
+
+    &_text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #E0E0E0;
+        margin-bottom: 35px;
+
+        @include vxs {
+            margin-bottom: 14px;
+        }
+    }
+
+    .content {
+        position: absolute;
+        left: 20px;
+        top: 30px;
+        max-width: 180px;
+
+        @include md {
+            max-width: 100%;
+        }
+
+        @include sm {
+            max-width: 180px;
+        }
+
+        @include vxs {
+            max-width: 100%;
+        }
+    }
+
+    .th-btn {
+        padding: 14px 25px;
+    }
+
+    &:hover {
+        .card-item {
+            &_price {
+                bottom: -10px;
+                right: -14px;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.choose-sec-2 {
+    .title-area {
+        max-width: 597px;
+        display: block;
+        margin: auto;
+        margin-bottom: calc(var(--section-title-space) - 12px);
+
+        @include md {
+            margin: 0;
+        }
+    }
+}
+
+.choose-title-area {
+    max-width: 838px;
+    display: block;
+    margin: auto;
+}
+
+.choose-slide-image {
+    position: relative;
+    width: 386px;
+    height: 100%;
+    height: 435px;
+    border: none;
+    background-color: transparent;
+    overflow: hidden;
+
+    @include xl {
+        width: 100%;
+    }
+
+    @include lg {
+        width: 386px;
+    }
+
+    @include vxs {
+        width: 386px;
+        height: 350px;
+    }
+
+    .img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @include vxs {
+            background-size: inherit;
+        }
+    }
+
+    .foreground-img {
+        background-position: left center;
+        width: 50%;
+
+    }
+
+    .slider {
+        position: absolute;
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        outline: none;
+        margin: 0;
+        padding: 0;
+        border: none;
+        transition: all .2s;
+        text-align: center;
+
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 1px;
+            height: 600px;
+            background: $white-color;
+            cursor: pointer;
+        }
+
+        &::-moz-range-thumb {
+            width: 1px;
+            height: 600px;
+            background: $white-color;
+            cursor: pointer;
+        }
+    }
+
+    .slider-button {
+        $size: 46px;
+        pointer-events: none;
+        position: absolute;
+        width: $size;
+        height: $size;
+        border: 1px solid $white-color;
+        border-radius: 50%;
+        padding: 8px;
+        background-color: $smoke-color2;
+        left: calc(50% - 24px);
+        top: calc(50% - 24px);
+        text-align: center;
+
+        @mixin arrow-helper() {
+            content: '';
+            padding: 3px;
+            display: inline-block;
+            border: solid $white-color;
+            border-width: 0 1px 1px 0;
+        }
+
+        &:after {
+            @include arrow-helper();
+            transform: rotate(-45deg);
+        }
+
+        &:before {
+            @include arrow-helper();
+            transform: rotate(135deg);
+        }
+    }
+}
+
+.choose-area {
+    padding-top: 60px;
+
+    @include md {
+        padding-top: 40px;
+    }
+}
+
+.choose-quote-tabs {
+    border-top: 1px solid $smoke-color2;
+    border-bottom: 1px solid $smoke-color2;
+    margin: 40px auto 40px auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+    gap: 20px;
+
+    @include md {
+        padding: 0;
+    }
+
+    @include vxs {
+        gap: 0;
+        flex-wrap: nowrap;
+    }
+
+    .nav-link {
+        background-color: transparent;
+        color: $title-color;
+        padding: 0;
+        font-family: $title-font;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        position: relative;
+        border-radius: 0;
+        height: 57px;
+        margin-right: 100px;
+        padding-right: 100px;
+        border: none;
+        border-right: 1px solid $smoke-color2;
+
+        &:last-child {
+            padding-right: 0;
+            margin-right: 0;
+            border-right: 1px solid transparent;
+        }
+
+        @include lg {
+            padding-right: 50px;
+            margin-right: 50px;
+        }
+
+        @include md {
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        @include sm {
+            padding-right: 20px;
+            margin-right: 20px;
+        }
+
+        @include xs {
+            font-size: 14px;
+            line-height: 20px;
+            padding-right: 10px;
+            margin-right: 10px;
+        }
+
+        &:after {
+            content: '';
+            height: 2px;
+            background: $theme-color;
+            width: 0;
+            left: 0px;
+            bottom: 0px;
+            position: absolute;
+            transition: 0.4s all;
+        }
+
+        &:hover,
+        &.active {
+            background-color: transparent;
+            border: none;
+            border-right: 1px solid $smoke-color2;
+            border-radius: 0;
+            color: $theme-color;
+
+            &:last-child {
+                border-right: 1px solid transparent;
+            }
+
+            &:after {
+                width: 200px;
+
+                @include sm {
+                    width: 100px;
+                }
+
+                @include xs {
+                    width: 50px;
+                }
+            }
+        }
+    }
+}

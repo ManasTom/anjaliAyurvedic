@@ -1,0 +1,31 @@
+.blog-box {
+    &.style5 { 
+        .blog-img {
+            margin: 0;
+        }
+
+        .blog-box {
+            &_content {
+                padding: 30px;
+            }
+            &_name {
+                position: absolute;
+                right: 15px;
+                bottom: 15px;
+                background-color: $theme-color;
+                color: $white-color;
+                padding: 5px 20px;
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+
+        .half-line-btn {
+            color: $theme-color;
+
+            &:before {
+                background-color: $theme-color;
+            }
+        }
+    }
+}

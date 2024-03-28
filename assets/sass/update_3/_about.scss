@@ -1,0 +1,137 @@
+/* About us -------------------------------- */
+.img-box7 {
+    position: relative;
+
+    @include lg {
+        margin-top: 50px;
+    }
+
+    .img1 {
+        margin-left: -30px;
+
+        @include vxs {
+            margin-left: 0;
+        }
+    }
+
+    .img2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include vxs {
+            display: none;
+        }
+    }
+
+    .about-company-since-wrap {
+        left: 35%;
+    }
+}
+
+.counter-content {
+    &.style4 {
+        background-color: $smoke-color3;
+        padding: 22px;
+
+        @include lg {
+            margin-bottom: 30px;
+            padding: 18px;
+        }
+
+        @media(max-width: 480px) {
+            display: block;
+        }
+
+        .th-counterup {
+            .counter {
+                font-size: 30px;
+                line-height: 30px;
+                color: $theme-color;
+            }
+
+            @include lg {
+                padding: 0;
+                border: none;
+                text-align: left;
+            }
+
+            @media(max-width: 480px) {
+                margin-bottom: 20px;
+            }
+
+            .inner {
+                max-width: 216px;
+
+                @include lg {
+                    display: flex;
+                    margin: 0;
+                }
+            }
+
+            .counter-card_text {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.journey-wrap {
+    &.style3 {
+        justify-content: space-between;
+
+        @include xl {
+            display: block;
+        }
+
+        .checklist {
+            @include xl {
+                margin-bottom: 30px;
+            }
+
+            li {
+                font-family: $title-font;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            @include sm {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.journey-image {
+    &.style2 {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .play-btn {
+            position: absolute;
+            left: 42%;
+            top: 35%;
+
+            >i {
+                width: var(--icon-size, 46px);
+                height: var(--icon-size, 46px);
+                line-height: var(--icon-size, 46px);
+            }
+        }
+    }
+}
+
+/* About us -------------------------------- */
+@include vxs {   
+    .img-box7 {
+        .img1 { 
+            margin-left: 0;
+            img {
+                width: 100%; 
+            }
+        }
+    }
+}

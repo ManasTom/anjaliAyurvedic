@@ -1,0 +1,49 @@
+/* counter start ----------------------------------*/
+.counter-sec {
+    &.style3 {
+        padding: 60px 0;
+
+        .th-counterup {
+            &.style4 {
+                .counter {
+                    justify-content: center;
+                    color: $theme-color;
+                    font-size: 120px;
+                    line-height: 110px;
+
+                    @include sm {
+                        font-size: 80px;
+                        line-height: 70px;  
+                    }
+
+                    .counter-number {
+                        line-height: 80px;
+
+                        @include sm {
+                            line-height: 60px;
+                        }
+                    }
+                }
+
+                .counter-shape {
+                    margin-top: -10px;
+                    margin-bottom: 20px;
+                }
+
+                .counter-card_text {
+                    font-size: 36px;
+                    line-height: 46px;
+                    color: $white-color;
+                    text-align: center;
+
+                    @include sm {
+                        font-size: 26px;
+                        line-height: 36px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* counter end ----------------------------------*/

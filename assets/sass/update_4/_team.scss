@@ -1,0 +1,60 @@
+.team-grid {
+    &.style2 {
+        background-color: transparent;
+        border: 5px solid $smoke-color2;
+        padding: 0px;
+        border-radius: 200px;
+        text-align: center;
+        box-shadow: none;
+        overflow: hidden;
+
+        .team-img {
+            background-color: $smoke-color2;
+            border-radius: 200px 200px 0 0;
+            margin-bottom: 0;
+
+            img {
+                border-radius: 200px 200px 0 0;
+            }
+        }
+
+        .box-title {
+            font-size: 30px;
+            margin-bottom: 0;
+
+            @include sm {
+                font-size: 24px; 
+            }
+        }
+
+
+        .team-grid {
+            &_content {
+                background-color: $white-color;
+                padding: 30px;
+                border-radius: 0 0 200px 200px;
+                clip-path: path("M0.351562 0C22.7941 77.7772 94.5115 134.66 179.515 134.66C264.518 134.66 336.235 77.7771 358.677 0H0.351562Z");
+            }
+        }
+
+        .social-links {
+            a {
+                font-size: 16px;
+
+                &:not(:hover) {
+                    color: $body-color;
+                }
+            }
+        }
+
+        .team-desig {
+            margin-bottom: 10px;
+        }
+
+        &:hover {
+            .team-desig {
+                color: $theme-color;
+            }
+        }
+    }
+}

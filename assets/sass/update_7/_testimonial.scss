@@ -1,0 +1,74 @@
+.testi-grid {
+    &.style4 {
+        position: relative;
+        background-color: $theme-color;
+        padding: 30px;
+        z-index: 2;
+        transition: all 0.4s ease-in-out;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $title-color;
+            z-index: -1;
+            transition: all 0.4s ease-in-out;
+
+        }
+
+        .testi-grid {
+            &_img {
+                min-width: 137px;
+
+                img {
+                    width: 137px;
+                    height: 137px;
+                }
+            }
+
+            &_name {
+                font-size: 24px;
+                color: $white-color;
+            }
+
+            &_desig {
+                margin-bottom: 15px;
+            }
+
+            &_text {
+                color: $white-color;
+            }
+        }
+
+        .testi-quote {
+            top: 5%;
+            left: 22%;
+        }
+
+        &:hover {
+            &:before {
+                height: 0%;
+            }
+
+            .testi-grid {
+                &_desig {
+                    color: $white-color;
+                }
+            }
+
+            .star-icon {
+                a {
+                    color: $white-color;  
+                }
+            }
+            .testi-quote {
+                img {
+                    filter: brightness(0.2) invert(1);  
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+/* Service item start --------------------------------------*/
+.service-item {
+    &.style4 {
+        padding: 0;
+        margin: 0;
+        border: 1px solid #B2B2B2;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+
+        .service-item {
+            &_content {
+                position: relative;
+                background-color: $white-color;
+                padding: 30px;
+                z-index: 2;
+                transition: all 0.4s ease-in-out;
+
+            }
+
+            &_img {
+                margin: 0;
+            }
+        }
+
+
+        .box-title {
+            font-size: 30px;
+            margin-bottom: -0.2rem;
+            transition: all 0.4s ease-in-out;
+
+            a {
+                color: inherit; 
+            }
+        }
+
+        &:hover {
+            .service-item {
+                &_content {
+                    background-color: $theme-color;
+                }
+            }
+
+            .box-title {
+                color: $white-color; 
+                a {
+                    color: inherit; 
+                }
+            }
+        }
+    }
+}

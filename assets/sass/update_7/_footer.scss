@@ -1,0 +1,21 @@
+.footer-layout10 {
+    .copyright-wrap {
+        background-color: #251913;
+    }
+}
+
+.th-widget-schedule {
+    &.style2 {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding-right: 40px;
+
+        .schedule-info {
+            color: $title-color;
+            border-bottom: 1px solid #E8CDBF; 
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+    }
+}

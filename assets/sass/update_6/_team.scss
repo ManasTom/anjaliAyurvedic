@@ -1,0 +1,58 @@
+.team-block {
+    &.style3 {
+        position: relative;
+        border-radius: 0;
+        border: none;
+
+        .team-img {
+            border-radius: 0;
+            margin-bottom: 0px;
+
+            img {
+                border-radius: 0;
+                transition: 1.3s all ease;
+            }
+        }
+
+        .team-desig {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .box-title {
+            font-size: 30px;
+            margin-bottom: 0;
+        }
+
+        .social-wrapp {
+            transform: scaleX(0);
+            transition: all 0.4s ease-in-out;
+
+            .th-social {
+                transform: translateY(-15px);
+
+                a {
+                    --icon-size: 30px;
+                    background-color: $smoke-color;
+
+                    &:hover {
+                        background-color: $theme-color;
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            .team-img {
+                img {
+                    transform: scale(1.3);
+                }
+
+            }
+
+            .social-wrapp {
+                transform: scaleX(1);  
+            }
+        }
+    }
+}

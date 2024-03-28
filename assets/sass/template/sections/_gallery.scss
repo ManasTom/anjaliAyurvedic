@@ -1,0 +1,193 @@
+/* Gallery 1 ---------------------------------- */
+.gallery-title-area {
+    max-width: 441px;
+    margin-bottom: 60px;
+
+    @media(max-width: 1399px) {
+        display: block;
+        margin: auto;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+
+
+
+.gallery-row {
+    --bs-gutter-y: 1.9rem;
+}
+
+.gallery-wrapper {
+    &.style2 {
+        max-width: 1920px;
+        display: block;
+        margin: auto;
+
+        .gallery-card {
+
+            .icon-btn {
+                width: var(--btn-size, 80px);
+                height: var(--btn-size, 80px);
+                line-height: var(--btn-size, 80px);
+                font-size: var(--btn-font-size, 20px);
+            }
+
+            .gallery-img {
+                text-align: right;
+            }
+        }
+    }
+}
+
+.gallery-card {
+    --box-space: 40px;
+    position: relative;
+    text-align: center;
+
+    .gallery-img {
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            transition: 0.4s ease-in-out;
+        }
+    }
+
+    .gallery-content {
+        position: absolute;
+        top: var(--box-space);
+        left: var(--box-space);
+        width: calc(100% - var(--box-space)*2);
+        height: calc(100% - var(--box-space)*2);
+        z-index: 2;
+        border: 1px solid $theme-color;
+        background-color: rgba(13, 13, 13, 0.699);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        visibility: hidden;
+        opacity: 0;
+        transform: scale(0);
+        transition: 0.4s ease-in-out;
+    }
+
+    .gallery-title {
+        color: $white-color;
+        font-size: 36px;
+        font-weight: 500;
+        margin-bottom: 3px;
+        transition: 0.4s ease-in-out;
+    }
+
+    .gallery-text {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 26px;
+        color: $white-color;
+        text-transform: uppercase;
+    }
+
+    .gallery-chef {
+        display: block;
+        margin-bottom: 23px;
+        color: $border-color;
+    }
+
+    .icon-btn {
+        background-color: transparent;
+        width: var(--btn-size, 60px);
+        height: var(--btn-size, 60px);
+        line-height: var(--btn-size, 60px);
+        font-size: var(--btn-font-size, 25px);
+        color: $theme-color;
+        border-color: $theme-color;
+        transition: 0.4s ease-in-out;
+        margin-bottom: 20px;
+
+        &:hover {
+            background-color: $white-color;
+            border-color: $white-color;
+        }
+    }
+
+    &:hover {
+        .gallery-img {
+            img {
+                transform: scale(1.2) rotate(-5deg);
+            }
+        }
+
+        .gallery-content {
+            visibility: visible;
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}
+
+@include lg {
+    .gallery-card {
+        --box-space: 25px;
+    }
+}
+
+@include sm {
+    .gallery-card {
+        --box-space: 15px;
+    }
+}
+
+/* Flip Slider --------------------------------------*/
+.flip-gallery {
+    &-area {
+        position: relative;
+    }
+
+    .flipster__nav {
+        display: none;
+    }
+
+    overflow: visible;
+
+    .flipster__nav__item--current {
+        .flipster__nav__child {
+            display: none;
+        }
+    }
+}
+
+
+.flipster__nav__item {
+    display: none;
+}
+
+.flipster__button {
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    border: 1px solid rgba(194, 133, 101, 0.20);
+    background: rgba(194, 133, 101, 0.15);
+    color: $theme-color;
+    font-size: 18px;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+        background-color: $theme-color;
+        border-color: $theme-color;
+        color: $white-color;
+    }
+
+    svg {
+        max-width: 13px;  
+    }
+
+    &--prev {
+        left: -10%;
+    }
+
+    &--next {
+        right: -10%;
+    }
+}

@@ -1,0 +1,137 @@
+.cta-area {
+    position: relative;
+    padding: 50px 60px;
+    z-index: 10;
+    overflow: hidden; 
+
+    @include sm {
+        padding: 30px;
+    }
+}
+
+.cta-content {
+    @include md {
+        text-align: center;
+    }
+}
+
+.cta-title {
+    margin: 0;
+    color: #AB6A49;
+    font-weight: 400; 
+    font-size: 18px;
+    line-height: 28px;
+    display: block; 
+    margin-bottom: 5px; 
+
+    @include md {
+        text-align: center;
+    }
+}
+
+
+.btn-group {
+    .cta-btn {
+        background-color: $title-color;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+        color: $white-color;
+        text-transform: uppercase;
+        padding: 4px 16px;
+        margin-bottom: 0;
+        border-radius: 4px;
+    }
+
+    &.style5 {
+        @include md {
+            justify-content: center;
+        }
+    }
+}
+
+@include md {
+    .sec-title.cta-title {
+
+
+        img {
+            max-width: 64px;
+        }
+    }
+
+    .cta-text {
+        text-align: center; 
+        margin-bottom: 20px; 
+    }
+}
+
+@include sm {
+    .sec-title.cta-title {
+
+
+        img {
+            display: none;
+        }
+    }
+}
+
+
+.cta-sec {
+    position: relative;
+    // max-width: 1700px;  
+    margin: 0 100px;
+    padding: 46px 0 46px 0;   
+    // margin: auto;
+    overflow: hidden;
+    z-index: 9;
+
+    @media(min-width: 1922px) {
+        display: block;
+        margin: auto;
+    }
+
+    @media(max-width: 1799px) {
+        margin-right: 0;
+    }
+
+    @media(max-width: 1599px) {
+        max-width: 100%;
+    }
+
+    @media(max-width: 1499px) { 
+        padding: 50px 0 50px 0;
+    }
+
+    @include md {
+        background-size: cover;
+    }
+
+    .btn-group {
+        margin-right: -200px;
+
+        @media(max-width: 1699px) {
+            margin-right: -60px; 
+        }
+
+        @media(max-width: 1399px) {
+            margin-right: 0px;
+        }
+    }
+
+}
+
+.cta-thumb {
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+
+    @media(max-width: 1499px) { 
+        width: 480px; 
+    }
+    @media(max-width: 1399px) { 
+        width: 550px;  
+    }
+    @include lg{
+        img{
+            display: none; 
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.footer-layout7 {
+    position: relative;
+    z-index: 2;
+
+    .copyright-wrap {
+        background-color: #1A1A1A;  
+    }
+}
+
+.th-widget-about {
+    &.style2 {
+        .footer-info {
+            i {
+                background-color: var(--white-color);
+                color: var(--theme-color);
+            }
+        }
+    }
+}
+
+.th-social.footer-social {
+    &.style2 {
+        a {
+            background-color: $white-color;
+            color: $theme-color;
+            border-color: $white-color;
+
+            &:hover {
+                background-color: $theme-color;
+                color: $white-color;
+                border-color: $theme-color;
+            }
+        }
+    }
+}
+
+.sidebar-gallery-area {
+    &.style2 {
+        margin: 0;
+
+        .gallery-thumb { 
+
+            &:hover {
+
+            }
+        }
+    }
+}

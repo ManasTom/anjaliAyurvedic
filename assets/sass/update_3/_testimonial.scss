@@ -1,0 +1,51 @@
+.testi-item {
+    &.style4 {
+
+        .testi-item {
+            &_img {
+                min-width: 162px;
+                height: 199px;
+                border-radius: 200px 200px 0 0;
+
+                img {
+                    width: 162px;
+                    height: 199px;
+                    border-radius: 200px 200px 0 0;
+                }
+            }
+
+            &_name {
+                margin-bottom: 15px;
+            }
+
+            &_text {
+                font-style: italic;
+                margin-bottom: 0;
+            }
+        }
+
+        .star-icon {
+            margin-bottom: 30px;
+        }
+
+    }
+}
+
+.testi-area2 {
+    position: relative;
+    z-index: 2;
+
+   
+
+    .testi-quote {
+        position: absolute;
+        bottom: 45px;
+        left: 39%;
+        z-index: -1;
+        transform: translate(50%, -50%);
+
+        @include xl {
+            left: 30%;
+        }
+    }
+}

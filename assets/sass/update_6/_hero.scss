@@ -1,0 +1,184 @@
+/* Hero area 9 --------------------*/
+.hero-9 {
+    .th-hero-bg {
+        &:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(100deg, #AB6A49 13.75%, rgba(171, 106, 73, 0.00) 99.75%);
+        }
+    }
+
+    .slick-dots {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 12%;
+        transform: rotate(90deg);
+        z-index: 4;
+
+        &:before,
+        &:after {
+            filter: brightness(0) invert(1);
+        }
+
+        @media(max-width: 1899px) {
+            left: 0;
+        }
+
+        @media(max-width: 1699px) {
+            display: none !important;
+        }
+    }
+
+    .number-dots {
+        li {
+            button {
+                background-color: $white-color;
+
+                &:before {
+                    border: 1px solid $white-color;
+                }
+            }
+        }
+    }
+
+    .hero_wrap {
+        @include xxl {
+
+            &:last-child {
+                display: none !important;
+            }
+        }
+
+    }
+}
+
+.hero-style9 {
+    padding: 218px 0;
+    max-width: 700px;
+    text-align: left;
+
+
+    .sub-title {
+        color: $white-color;
+
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
+
+    .hero-title {
+        font-size: 84px;
+        line-height: 94px;
+        color: $white-color;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+
+    }
+}
+
+.hero-offer {
+    position: absolute;
+    right: 127px;
+    bottom: 0;
+    width: 269px;
+    height: 324px;
+    text-align: center;
+    border-radius: 200px 200px 0px 0px;
+    background-color: $smoke-color;
+    padding: 70px 50px 50px;
+
+
+    &:before {
+        content: "";
+        position: absolute;
+        inset: 20px;
+        border: 1px dashed $title-color;
+        border-radius: 200px 200px 0px 0px;
+    }
+
+    .box-subtitle {
+        font-family: $title-font;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 58px;
+        letter-spacing: 4.8px;
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .offer-text {
+        font-family: $title-font;
+        font-size: 84px;
+        font-weight: 700;
+        line-height: 94px;
+        display: block;
+        font-feature-settings: 'pnum'on, 'lnum'on;
+    }
+}
+
+@include xl {
+    .hero-style9 {
+        .hero-title {
+            font-size: 74px;
+            line-height: 84px;
+        }
+    }
+}
+
+@include md {
+    .hero-style9 {
+        padding: 180px 0 300px 0;
+        text-align: center;
+
+        .hero-title {
+            font-size: 60px;
+            line-height: 70px;
+        }
+
+    }
+
+    .hero-offer {
+        right: unset;
+        left: 0;
+        width: 220px;
+        height: 250px;
+        padding: 40px 30px 30px;
+
+
+        .box-subtitle {
+            font-size: 28px;
+            line-height: 38px;
+        }
+
+        .offer-text {
+            font-size: 64px;
+            line-height: 74px;
+        }
+    }
+}
+
+@include sm {
+    .hero-style9 {
+        padding: 120px 0 300px 0;
+
+        .hero-title {
+            font-size: 50px;
+            line-height: 60px;
+        }
+
+    }
+}
+
+@include vxs {
+    .hero-style9 {
+        padding: 120px 0 280px 0;   
+
+        .hero-title {
+            font-size: 35px;
+            line-height: 45px;
+        }
+
+    }
+}

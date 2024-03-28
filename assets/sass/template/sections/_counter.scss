@@ -1,0 +1,389 @@
+/* Counter 1 ---------------------------------- */
+.counter-sec {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9;
+    padding-bottom: 90px;
+
+    @include lg {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+    }
+
+    @media(max-width: 460px) {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+
+    &.style4 {
+        position: relative;
+        background-color: $smoke-color;
+        border: 6px solid $white-color;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+        padding: 60px;
+        z-index: 4;
+
+        @include lg {
+            padding: 40px;
+        }
+
+        @include md {
+            padding: 30px;
+        }
+    }
+
+}
+
+.th-counterup {
+
+    @include lg {
+        border-right: 1px dashed $theme-color;
+        border-bottom: 1px dashed $theme-color;
+        padding: 50px;
+        margin-right: 0;
+        text-align: center;
+
+        &:nth-child(2) {
+            border-right: 1px dashed transparent;
+            margin-right: 0;
+        }
+
+        &:nth-child(3) {
+            border-bottom: 1px dashed transparent;
+        }
+
+        &:last-child {
+            border-bottom: 1px dashed transparent;
+        }
+    }
+
+    @include md {
+        padding: 25px;
+    }
+
+
+    @media(max-width: 460px) {
+        border: none;
+        padding: 20px 0;
+
+    }
+
+    &:hover {
+        .icon {
+            svg {
+
+                path {
+                    stroke: $theme-color !important;
+                    stroke-width: 1;
+                }
+            }
+        }
+    }
+
+    @include md {
+        padding: 30px;
+    }
+
+    @include sm {
+        text-align: center;
+    }
+
+    @media(max-width: 460px) {
+        border: none;
+        padding: 20px 0;
+
+    }
+
+    .inner {
+        display: flex;
+        justify-content: flex-start;
+        gap: 15px;
+        max-width: 255px;
+
+        @include lg {
+            display: block;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        @media(max-width: 600px) {
+            display: block;
+            max-width: 100%;
+            margin: auto;
+        }
+    }
+
+    &:last-child {
+        border-right: 1px dashed transparent;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .content {
+
+        .counter {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            color: $title-color;
+            margin-bottom: 0;
+            font-family: 'Cormorant Garamond';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 55px;
+            font-feature-settings: 'pnum'on, 'lnum'on;
+
+            @include lg {
+                justify-content: center;
+                margin-top: 15px;
+            }
+
+        }
+
+        .counter-card_text {
+            font-family: $body-font;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: $body-color;
+            margin-top: -7px;
+
+            @include sm {
+                font-size: 14px;
+                line-height: 28px;
+            }
+        }
+    }
+
+    &.style2 {
+        background-color: $smoke-color;
+        padding: 0 16px 30px 16px;
+        text-align: center;
+
+        @include lg {
+            border: none;
+        }
+
+        .inner {
+            display: block;
+
+            .icon {
+                background-color: $white-color;
+                width: 99px;
+                height: 100px;
+                line-height: 100px;
+                text-align: center;
+                margin: 0 auto 20px auto;
+                border-radius: 50%;
+                margin-top: -30px;
+            }
+        }
+
+        .counter {
+            justify-content: center;
+        }
+
+        .counter-card_text {
+            line-height: 20px;
+            margin-top: -8px;
+        }
+    }
+
+    &.style3 {
+        @include lg {
+            border: none;
+            padding: 0;
+            margin-right: 0;
+            text-align: left;
+
+            &:nth-child(2) {
+                border-right: 1px dashed transparent;
+                margin-right: 0;
+            }
+
+            &:nth-child(3) {
+                border-bottom: 1px dashed transparent;
+            }
+
+            &:last-child {
+                border-bottom: 1px dashed transparent;
+            }
+        }
+
+        @include md {
+            padding: 0;
+        }
+
+
+        @media(max-width: 460px) {
+            border: none;
+            padding: 20px 0;
+
+        }
+
+        .inner {
+            @include lg {
+                display: flex;
+            }
+
+            @include xs {
+                display: block;
+            }
+
+            @include vxs {
+                display: flex;
+            }
+
+            .icon {
+                background-color: $white-color;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                text-align: center;
+            }
+        }
+
+        .content {
+            .counter {
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 45px;
+
+                @include lg {
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+}
+
+.counter-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    &.style2 {
+        @include vxs {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+
+    @include vxs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.sec-shape {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 560px;
+        height: 2px;
+
+        @include xs {
+            width: 100%;
+        }
+    }
+
+    &:before {
+        background: linear-gradient(270deg, #C28565 0%, rgba(194, 133, 101, 0.00) 100%);
+        margin-left: -38rem;
+
+        @include xs {
+            margin-left: -20rem;
+        }
+    }
+
+    &:after {
+        background: linear-gradient(90deg, #C28565 0%, rgba(194, 133, 101, 0.00) 100%);
+        margin-left: 3rem;
+
+        @include xs {
+            margin-left: 2rem;
+        }
+    }
+
+    &_img {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        background-color: $theme-color;
+        border-radius: 50%;
+        padding: 5px;
+        display: block;
+        margin: auto;
+
+        img {
+            border: 1px solid $white-color;
+            padding: 9px;
+            border-radius: 50%;
+        }
+    }
+}
+
+
+
+.counter-card {
+    position: relative;
+    text-align: center;
+
+    .border-line {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 1px;
+        height: 100%;
+
+    }
+
+
+    &_icon {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    &_number {
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 60px;
+        color: $title-color;
+        margin-bottom: 2px;
+        margin-top: -0.24em;
+    }
+
+    &_text {
+        font-family: $body-font;
+        color: $body-color;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        display: block;
+        margin-bottom: -6px;
+    }
+}
+
+@include md {
+    .counter-card_number {
+        font-size: 40px;
+    }
+}
+
+.counter-area {
+    @media (min-width: 1400px) {
+        .th-container {
+            --main-container: 1340px;  
+        }
+    }
+}

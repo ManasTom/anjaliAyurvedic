@@ -1,0 +1,194 @@
+/* ------------------------------Header 6  Start ---------------------------------- */
+.header-layout6 {
+    position: relative;
+
+    .header-top {
+        background-color: $theme-color;
+        --body-color: #fff;
+        padding: 14.3px 0;
+
+        .header-links {
+
+            li {
+                &:after {
+                    background-color: $white-color;
+                }
+
+                @include xl {
+                    &:nth-child(3) {
+                        display: none;
+                    }
+
+                    &:nth-child(2) {
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+
+                a {
+                    transition: all 0.4s ease-in-out;
+
+                    &:hover {
+                        color: $title-color;
+                    }
+                }
+
+                i {
+                    color: $white-color;
+                }
+            }
+        }
+
+        .social-links {
+            .social-title {
+                color: $white-color;
+            }
+
+            a {
+                color: $white-color;
+                transition: all 0.4s ease-in-out;
+
+                &:hover {
+                    color: $title-color;
+                }
+            }
+        }
+
+    }
+
+    .header-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .header-button {
+        .icon-btn {
+            background-color: $smoke-color;
+            border-color: $smoke-color;
+            color: $title-color;
+
+            &:first-child {
+                @include sm {
+                    display: none;  
+                }
+            }
+
+            .badge {
+                &:hover {
+                    background-color: $title-color;
+                    color: $white-color;
+                }
+            }
+
+            &:hover {
+                .badge {
+                    background-color: $title-color;
+                    color: $white-color;
+                }
+            }
+        }
+
+        .th-btn {
+            margin-left: 0;
+        }
+
+        .th-menu-toggle {
+            width: 46px;
+            height: 46px;
+            padding: 0;
+            font-size: 18px;
+            background-color: $smoke-color;
+            color: $title-color;
+            border-radius: 50%;
+        }
+    }
+
+
+    .sticky-wrapper {
+
+        &.sticky {
+            .header-logo {
+                padding-top: 0;
+            }
+
+            @include md {
+                padding: 0;
+
+                .menu-area {
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+
+    .header-social {
+
+        a {
+            font-size: 14px;
+            display: inline-block;
+            color: $white-color;
+            margin: 0 0px 0 16px;
+            transition: all 0.4s;
+
+            &:hover {
+                color: $theme-color;
+            }
+        }
+
+        .social-title {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: $white-color;
+            display: inline-block;
+            margin: 0 0px 0 0;
+        }
+    }
+
+    // .menu-area {
+    //     @include md {
+    //         padding: 12px 0;
+    //     }
+
+    //     @include sm {
+    //         padding: 0;
+    //     }
+    // }
+
+}
+
+
+@media (min-width: 1300px) {
+    .header-layout6 .th-container {
+        --main-container: 1620px;
+    }
+}
+
+@include xl {
+    .header-layout6 {
+        .header-button {
+            .icon-btn {
+                &:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@include xs {
+    .header-layout6 {
+
+        .header-logo {
+            img {
+                max-height: 50px;
+                max-width: 160px;
+            }
+        }
+    }
+}
+
+/* ------------------------------ Header 6  End ---------------------------------- */

@@ -1,0 +1,27 @@
+/* Service block -------------------------*/
+.service-block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &.style1 {
+        direction: rtl;
+
+        @include sm {
+            direction: ltr; 
+        }
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 60px;
+    }
+
+    &_img {
+        min-width: 80px;
+    }
+
+    .box-title {
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+}

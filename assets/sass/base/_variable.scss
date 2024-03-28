@@ -1,0 +1,136 @@
+:root {
+  --theme-color         : #C28565;  
+  --theme-color2        : #AB6A49;
+  --title-color         : #0D0D0D; 
+  --body-color          : #6E6E6E;    
+  --smoke-color         : #F9F3F0;   
+  --smoke-color2        : #E8CDBF; 
+  --smoke-color3        : #F4E8E1;
+  --black-color         : #000000;
+  --black-color2        : #1b1b1b;
+  --gray-color          : #B2B2B2;
+  --white-color         : #ffffff;
+  --light-color         : #CDCDCD; 
+  --yellow-color        : #FFB539;
+  --success-color       : #28a745;
+  --error-color         : #dc3545;
+  --border-color        : #E0E0E0; 
+  --title-font          :  'Cormorant Garamond', serif;
+  --body-font           : 'DM Sans', sans-serif;
+  --style-font          : 'Red Hat Display', cursive;  
+  --icon-font           : "Font Awesome 6 Pro";
+  --main-container      : 1220px;  
+  --container-gutters   : 30px; 
+  --section-space       : 120px;
+  --section-space-mobile: 80px;
+  --section-title-space : 60px;
+  --ripple-ani-duration : 5s;
+}
+.home3 {
+  --theme-color         : #F9F3F0;   
+}
+
+// Color Variation
+$theme-color          : var(--theme-color);  
+$theme-color2         : var(--theme-color2);  
+$title-color          : var(--title-color);
+$body-color           : var(--body-color);
+$smoke-color          : var(--smoke-color);
+$smoke-color2         : var(--smoke-color2);
+$smoke-color3         : var(--smoke-color3); 
+$white-color          : var(--white-color);
+$light-color          : var(--light-color);
+$black-color          : var(--black-color);
+$black-color2         : var(--black-color2);
+$gray-color           : var(--gray-color);
+$yellow-color         : var(--yellow-color);
+$success-color        : var(--success-color);
+$error-color          : var(--error-color);
+$border-color         : var(--border-color);
+
+// Font Variation
+$icon-font   : var(--icon-font);
+
+// Typography
+$title-font      : var(--title-font);
+$body-font       : var(--body-font);
+$style-font      : var(--style-font);
+$body-font-size  : 16px;
+$body-line-Height: 26px;
+$body-font-weight: 400;
+$p-line-Height   : 1.75;
+
+// Device Variation
+$hd: 1921px; // Large Device Than 1920
+$xxl: 1500px; // Extra large Device
+$ml: 1399px; // Medium Large Device
+$xl: 1299px; // Medium Large Device
+$lg: 1199px; // Large Device (Laptop)
+$md: 991px; // Medium Device (Tablet) 
+$sm: 767px; // Small Device
+$xs: 575px; // Extra Small Device
+$vxs: 375px; // Extra Small Device
+
+// Spacing Count with 5x
+$space-count: 10;
+
+// Section Space  For large Device
+$space         : var(--section-space);
+$space-extra   : calc(var(--section-space) - 30px);
+$space-extra2   : calc(var(--section-space) - 40px);
+
+// Section Space On small Device
+$space-mobile         : var(--section-space-mobile);
+$space-mobile-extra: calc(var(--section-space-mobile) - 30px);
+
+
+// BG Color Mapping 
+$bgcolorMap  : ();
+$bgcolorMap  : map-merge((
+  "theme"    : $theme-color,
+  "theme2"   : $theme-color2,
+  "smoke"    : $smoke-color,
+  "smoke2"   : $smoke-color2,
+  "white"    : $white-color,
+  "black"    : $black-color,
+  "black2"   : $black-color2, 
+  "title"    : $title-color,
+), $bgcolorMap);
+
+
+// Overlay Color Mapping 
+$overlaycolorMap : ();
+$overlaycolorMap : map-merge((
+  "theme"        : $theme-color,
+  "theme2"       : $theme-color2,
+  "title"        : $title-color,
+  "white"        : $white-color,
+  "black"        : $black-color,
+  "black2"        : $black-color2,
+  "overlay1"     : #131B23,
+), $overlaycolorMap);
+
+
+// Text Color Mapping 
+$textColorsMap : ();
+$textColorsMap : map-merge((
+  "theme"      : $theme-color,
+  "theme2"     : $theme-color2,
+  "title"      : $title-color,
+  "body"       : $body-color,
+  "white"      : $white-color,
+  "light"      : $light-color,
+  "yellow"     : $yellow-color,
+  "success"    : $success-color,
+  "error"      : $error-color), 
+$textColorsMap);
+
+
+// Font Mapping 
+$fontsMap    : ();
+$fontsMap    : map-merge((
+  "icon"     : $icon-font,
+  "title"    : $title-font,
+  "body"     : $body-font,
+  "style"    : $style-font, 
+), $fontsMap);

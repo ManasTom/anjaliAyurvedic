@@ -1,0 +1,66 @@
+/* About us -------------------------------- */
+.video-box1 {
+    &.style2 {
+        width: 100%;
+        height: 526px;
+        object-fit: cover; 
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  
+            background-size: cover;
+        }
+
+        .play-btn {
+            top: 40%;
+
+            &:after,
+            &:before {
+                background-color: var(--white-color);
+            }
+
+            >i {
+                background-color: var(--white-color);
+                color: var(--theme-color);
+                --icon-size: 87px;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+.video-big {
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    transform: translate(-50%, 50%); 
+
+
+    &_text {
+        font-family: $body-font;
+        font-size: 84px;
+        font-weight: 700;
+        line-height: 94px;
+        color: $white-color;
+        text-align: center;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $white-color;
+
+        @include xl {
+            font-size: 64px;
+            line-height: 74px;
+        }
+
+        @include md {
+            font-size: 54px;
+            line-height: 64px;
+        }
+    }
+}
+
+.about-title-area {
+    &.style2 {
+        max-width: 708px;
+    }
+}

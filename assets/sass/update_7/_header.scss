@@ -1,0 +1,258 @@
+/* -------------------------------- Header 3 Start ---------------------------------- */
+.header-layout10 {
+
+    .header-top {
+        --body-color: #fff;
+
+        .container {
+            padding-left: 290px;
+
+            @media(max-width: 1799px) {
+                padding-left: 330px;
+            }
+
+            @media(max-width: 1699px) {
+                padding-left: 300px;
+            }
+
+            @media(max-width: 1499px) {
+                padding-left: 320px;
+            }
+
+            @include lg {
+                padding-left: 0;
+            }
+        }
+    }
+
+    .sticky-wrapper {
+        background-color: $smoke-color;
+        position: relative;
+        z-index: 3;
+
+        @include md {
+            .menu-area {
+                padding: 7px 0;
+            }
+        }
+
+        &.sticky {
+            padding: 5px 0;
+
+            @include md {
+                padding: 0;
+
+                .menu-area {
+                    padding: 10px 0;
+                }
+            }
+
+            .logo-bg {
+                top: -40%;
+
+                @include xs {
+                    border-radius: 0px 0px 100px 0px;
+                }
+
+            }
+
+            .header-logo {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    .header-links {
+
+        li {
+
+            @media(max-width: 1399px) {
+                &:nth-child(3) {
+                    display: none;
+                }
+
+                &:nth-child(2) {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .social-links {
+        .social-title {
+            color: $white-color;
+        }
+
+        a {
+            &:not(:hover) {
+                color: $white-color;
+            }
+        }
+
+        @media(max-width: 480px) {
+            display: none;
+        }
+    }
+
+    .header-button {
+        .icon-btn {
+            background-color: #353535;
+            border-color: #353535;
+            color: $white-color;
+
+            .badge {
+                &:hover {
+                    background-color: $white-color;
+                    color: $theme-color;
+                }
+            }
+        }
+
+        .search-form {
+            position: relative;
+
+            @media(max-width: 1399px) {
+                display: none;
+            }
+
+            input {
+                width: 200px;
+                height: 46px;
+                border-radius: 30px;
+                background-color: #353535;
+            }
+
+            button {
+                position: absolute;
+                top: 10px;
+                right: 15px;
+                background-color: transparent;
+                border: 0;
+                color: $white-color;
+            }
+        }
+    }
+
+    .header-logo {
+        margin: -50px 0 0 -50px;
+
+        @media(max-width: 1899px) {
+            margin: -50px 0 0 -40px;
+        }
+
+        @media(max-width: 1799px) {
+            margin: -50px 0 0 -30px;
+        }
+
+        @media(max-width: 1699px) {
+            margin: -50px 0 0 0px;
+        }
+
+        @include sm {
+            margin: -30px 0 0 0px;
+        }
+
+        @include vxs {
+            margin: 0;
+
+            img {
+                max-height: 50px;
+                max-width: 160px;
+            }
+        }
+    }
+
+    .logo-bg {
+        position: absolute;
+        top: -54%;
+        left: 0;
+        width: 18.4%;
+        height: 155px;
+        border-radius: 0px 100px 100px 0px;
+        z-index: -1;
+
+        &:before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: $theme-color;
+            border-radius: inherit;
+            z-index: -1;
+        }
+
+        @media(min-width: 2099px) {
+            width: 26%;
+        }
+
+        @media(max-width: 1699px) {
+            width: 16%;
+        }
+
+        @media(max-width: 1499px) {
+            width: 18%;
+        }
+
+        @include xl {
+            width: 24%;
+        }
+
+        @include lg {
+            width: 29%;
+        }
+
+        @include md {
+            top: -72%;
+            width: 40%;
+            height: 123px;
+        }
+
+        @include sm {
+            top: -44%;
+            width: 48%;
+        }
+
+        @include xs {
+            width: 45%;
+        }
+
+        @media(max-width: 480px) {  
+            width: 70%;  
+        }
+        @include vxs {
+            top: -30%;  
+        }
+    }
+
+    .main-menu {
+        padding-left: 100px;
+
+        @media(max-width: 1699px) {
+            padding-left: 30px;
+        }
+
+        @media(max-width: 1499px) {
+            padding-left: 50px;
+        }
+
+        @include lg {
+            padding-left: 0;
+        }
+    }
+
+    .main-menu>ul>li>a {
+        padding: 36.5px 0;
+    }
+
+}
+
+
+@media (min-width: 1300px) {
+    .header-layout10 {
+        .th-container {
+            --main-container: 1680px;
+        }
+    }
+}

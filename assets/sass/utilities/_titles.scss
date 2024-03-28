@@ -1,0 +1,154 @@
+.sec-title {
+    margin-bottom: calc(var(--section-title-space) - 12px);
+}
+
+.sub-title {
+    display: block;
+    color: $theme-color;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: $title-font;
+    position: relative;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+
+    &:has(img) {
+        margin-top: 0;
+    }
+
+    img {
+        margin: -5px 8px 0 8px;
+        @include md {  
+            display: none;
+        }
+    }
+
+    &.style2 {
+        img {
+            margin: 8px 0 0 0;
+        }
+    }
+}
+
+.box-title {
+    font-size: 24px;
+    line-height: 1.417;
+    font-weight: 700;
+    margin-top: -0.32em;
+
+    @media(max-width: 1399px) {
+        font-size: 20px;
+        line-height: 30px;
+
+    }
+
+    @include md {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    a {
+        color: inherit;
+
+        &:hover {
+            color: $theme-color;
+        }
+    }
+}
+
+
+.title-area {
+    margin-bottom: calc(var(--section-title-space) - 12px);
+    position: relative;
+    z-index: 2;
+    margin-top: -6px;
+
+    .sec-title {
+        margin-bottom: 20px;
+    }
+    .sub-title img {
+        margin: -5px 8px 0 8px;
+    }
+    img {
+        margin-bottom: 15px;  
+    }
+
+    .sec-text {
+        max-width: 810px;
+        display: block;
+        margin: auto; 
+    }
+
+    .th-btn {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+hr.title-line {
+    margin-top: 0;
+    background-color: $border-color;
+    opacity: 1;
+}
+
+.sec-btn,
+.title-line {
+    margin-bottom: var(--section-title-space);
+}
+
+@include lg {
+    .sub-title {
+        margin-bottom: 20px;
+    }
+
+    .shadow-title {
+        font-size: 120px;
+        margin-bottom: -82px;
+    }
+
+    .title-area,
+    .sec-title {
+        --section-title-space: 60px;
+
+        &.mb-45 {
+            margin-bottom: 36px;
+        }
+
+        &.mb-50 {
+            margin-bottom: 40px;
+        }
+    }
+
+    .sec-btn,
+    .title-line {
+        --section-title-space: 55px;
+    }
+}
+
+@include md {
+    .shadow-title {
+        font-size: 100px;
+    }
+
+    .title-area,
+    .sec-title {
+        --section-title-space: 50px;
+
+        &.mb-45 {
+            margin-bottom: 35px;
+        }
+    }
+
+    .sec-btn,
+    .title-line {
+        --section-title-space: 50px;
+    }
+}
+
+@include xs {
+    .sub-title {
+        img {
+            max-width: 60px;
+        }
+    }
+}

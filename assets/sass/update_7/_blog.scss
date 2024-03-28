@@ -1,0 +1,35 @@
+.blog-box {
+    &.style4 {
+        .blog-img {
+            margin: 0;
+        }
+
+        .blog-box {
+            &_content {
+                padding: 30px;
+            }
+
+            &_month {
+                font-size: 14px;
+            }
+
+            &_year {
+                font-size: 14px;
+                color: $white-color;
+            }
+        }
+
+        .blog-wrapper { 
+            left: unset; 
+            right: 30px;
+        }
+
+        .half-line-btn {
+            color: $theme-color;
+
+            &:before {
+                background-color: $theme-color;
+            }
+        }
+    }
+}

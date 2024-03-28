@@ -1,0 +1,44 @@
+/* Blog grid start ------------------------------*/
+.blog-grid {
+    &.style4 {
+        background-color: $title-color;
+        text-align: center;
+
+        .blog-grid {
+            &-content {
+                background-color: $title-color;
+                padding: 10px 30px 30px;
+
+                @include xs {
+                    padding: 10px 20px 20px;  
+                }
+            }
+        }
+
+        .blog_icon {
+            transform: translateY(-30px);
+        }
+
+        .blog-meta span,
+        .blog-meta a {
+            color: $white-color;   
+        }
+
+        .box-title {
+            color: $white-color;
+            font-size: 30px;
+        }
+
+        .line-btn {
+            &:hover {
+                color: $white-color;
+
+                &:before {
+                    background-color: $white-color;
+                }
+            }
+        }
+    }
+}
+
+/* Blog grid end ------------------------------*/

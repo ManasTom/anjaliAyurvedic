@@ -1,0 +1,41 @@
+/* Blog block start ------------------------------*/
+.blog-grid {
+    &.style2 {
+        position: relative;
+
+        .blog-grid {
+            &-content {
+                padding: 30px;
+                background-color: $title-color;
+
+                @include xl {
+                    padding: 25px !important; 
+                }
+            }
+        }
+
+        .blog-shape {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .line-btn {
+            &:hover {
+                color: $white-color;
+
+                &:before {
+                    background-color: $white-color;
+                }
+            }
+        }
+
+        .box-title {
+            font-size: 30px;
+            color: $white-color;
+        }
+    }
+}
+
+
+/* Blog block end ------------------------------*/

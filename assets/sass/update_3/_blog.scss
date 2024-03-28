@@ -1,0 +1,35 @@
+/* Blog block start ------------------------------*/
+.blog-block {
+    background-color: $smoke-color;
+
+    .blog-meta {
+        padding: 25px;
+    }
+
+    .blog-content {
+        padding: 25px;
+    }
+
+    .blog-img {
+        width: 100%;
+
+        img {
+            width: 100%; 
+        }
+    }
+
+    .blog-title {
+        font-size: 30px;
+    }
+}
+
+.footer-widget {
+    .recent-post {
+        &.style4 {
+            max-width: 320px;
+            margin-bottom: 27px;
+        }
+    }
+}
+
+/* Blog block end ------------------------------*/

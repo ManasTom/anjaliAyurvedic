@@ -1,0 +1,40 @@
+.footer-layout8 {
+    position: relative;
+    z-index: 2;
+
+    .widget-area {
+        border: 1px solid #B2B2B2;
+        padding: 60px;
+        margin: 60px;
+
+        @include xl {
+            padding: 40px;
+        }
+
+        @include md {
+            padding: 30px;
+        }
+
+        @include xs {
+            border: none; 
+            margin: 0;
+            padding: 80px 0 40px 0;    
+        }
+    }
+
+    .copyright-wrap {
+        background-color: #1A1A1A;
+    }
+}
+
+.footer-widget-about {
+    max-width: 700px;
+    display: block;
+    margin: auto;
+    text-align: center;
+
+    .about-text {
+        color: $white-color;
+        text-transform: uppercase;
+    }
+}

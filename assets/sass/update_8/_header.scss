@@ -1,0 +1,26 @@
+/* -------------------------------- Header 11 Start ---------------------------------- */
+.header-layout11 {
+    .header-button {
+        .icon-btn {
+            &:not(:hover) {
+                background-color: rgba(13, 13, 13, 0.5);
+                color: $white-color;
+            }
+        }
+    }
+
+    @include xs {
+        .header-logo {  
+            max-width: 200px;
+        }
+    }
+}
+
+
+@media (min-width: 1300px) {
+    .header-layout11 {
+        .th-container {
+            --main-container: 1620px;
+        }
+    }
+}

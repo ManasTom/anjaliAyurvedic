@@ -1,0 +1,152 @@
+/* ------------------------------Header 7  Start ---------------------------------- */
+.header-layout7 {
+    .header-links {
+
+        li {
+            &:after {
+                background-color: $smoke-color2;
+            }
+
+            @media(max-width: 1399px) {
+                &:nth-child(3) {
+                    display: none;
+                }
+
+                &:nth-child(2) {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+
+            i {
+                color: $theme-color;
+            }
+        }
+    }
+
+    .social-links {
+        &.header-social {
+            a {
+                display: inline-block;
+                width: var(--icon-size, 46px);
+                height: var(--icon-size, 46px);
+                line-height: var(--icon-size, 48px);
+                background-color: transparent;
+                border: 1px solid $theme-color;
+                color: $title-color;
+                font-size: 18px;
+                text-align: center;
+                margin: 0 0 0 5px;
+                border-radius: 50%;
+                transition: all 0.4s;
+
+                &:hover {
+                    background-color: $theme-color;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+
+    .sticky-wrapper {
+        &.sticky {
+            @include md {
+
+                .menu-area {
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+
+    .main-menu {
+        padding-left: 93px;
+
+        @media(max-width: 1799px) {
+            padding-left: 40px;
+        }
+    }
+
+    .main-menu>ul>li>a {
+        padding: 36.5px 0;
+    }
+
+    .header-social {
+        @include sm {
+            display: none;
+        }
+
+        li {
+            i {
+                color: $theme-color;
+            }
+        }
+
+        a {
+            font-size: 14px;
+            display: inline-block;
+            color: $white-color;
+            margin: 0 0px 0 16px;
+            transition: all 0.4s;
+
+            &:hover {
+                color: $theme-color;
+            }
+        }
+
+        .social-title {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: $white-color;
+            display: inline-block;
+            margin: 0 0px 0 0;
+        }
+    }
+
+    .header-button {
+        .icon-btn {
+            background-color: $theme-color;
+            border-color: $theme-color;
+            color: $white-color;
+
+            &:hover {
+                background-color: $title-color;
+                border-color: $title-color;
+            }
+
+            &:last-child {
+
+                @include xl {
+                    display: none;
+                }
+            }
+
+            .badge {
+                background-color: $title-color;
+
+            }
+
+            &:hover {
+                .badge {
+                    background-color: $theme-color;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+
+    .header-logo {
+        @include xl {
+            width: 180px;  
+        }
+    }
+
+}
+
+.header-layout7 {
+    --main-container: 1620px;
+}
+
+/* ------------------------------ Header 7  End ---------------------------------- */

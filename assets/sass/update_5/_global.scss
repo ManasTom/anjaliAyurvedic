@@ -1,0 +1,130 @@
+/* video area --------------------------------- */
+.newsletter-content {
+    &.style3 {
+        text-align: center;
+    }
+}
+
+.newsletter-form {
+    &.style3 {
+        position: relative;
+        min-width: 681px;
+        overflow: hidden;
+
+        @include sm {
+            min-width: 100%;
+        }
+
+        .th-btn {
+            min-width: 160px;
+            padding: 20.7px 12px;
+            text-transform: uppercase;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            border-radius: 0;
+
+            @include vxs {
+                position: relative;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.offer-card {
+    padding: 50px 40px;
+
+    .box-title {
+        font-size: 30px;
+        max-width: 231px;
+    }
+
+    .checklist {
+        ul {
+            li {
+                position: relative;
+                padding-left: 25px;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 10px;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+.newsletter-area3 {
+    position: relative;
+    background-attachment: fixed;
+}
+
+.product-grid {
+    &.style2 {
+        .product-action {
+            position: absolute;
+            top: 20%;
+            right: -30px;
+        }
+
+        .star-rating {
+
+            span:before {
+                content: "\e28b\e28b\e28b\e28b\e28b";
+                top: 0;
+                position: absolute;
+                left: 0;
+                color: $theme-color;
+                letter-spacing: 3px;
+            }
+        }
+
+        .price {
+            margin-bottom: 15px;
+        }
+
+        .box-title {
+            margin-bottom: 10px;
+        }
+
+        .product-category {
+            text-align: left;
+        }
+
+        &:hover {
+            .product-action {
+                &.style1 {
+                    a {
+                        right: 60px;
+                    }  
+                }
+            }
+        }
+    }
+}
+
+.price-block {
+    &.style2 {
+        background-color: $white-color;
+    }
+}
+
+.price-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 687px;
+    height: 863px;
+
+    @include lg {
+        display: none;
+    }
+
+}

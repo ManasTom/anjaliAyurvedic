@@ -1,0 +1,58 @@
+.blog-card-2 {
+    border: 1px solid #E0E0E0;
+    background: $white-color;
+
+    .blog-img {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &_wrapper {
+        position: relative;
+        display: flex;
+    }
+
+    .blog-wrapp {
+        background-color: $theme-color;
+        min-width: 57px;
+        min-height: 178px;
+    }
+
+    .blog-date {
+        position: absolute;
+        top: 50px;
+        left: -30px;
+        transform: rotate(-90deg);
+        display: inline-block;
+        padding: 30px 13px;
+        color: $white-color;
+        font-size: 16px;
+        margin: 0;
+        transform: rotate(-90deg);  
+        display: inline-block;
+
+        &.style2 {
+            left: -52px;
+        }
+    }
+
+    &-content {
+        padding: 30px 30px 30px 30px;
+
+        @include md {
+            padding: 20px;
+        }
+    }
+
+    .box-title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .blog-meta {
+        margin: -0.32rem 0 15px 0;
+    }
+}

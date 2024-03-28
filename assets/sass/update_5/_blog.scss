@@ -1,0 +1,42 @@
+/* Blog block start ------------------------------*/
+/* Blog block start ------------------------------*/
+.blog-grid {
+    &.style3 {
+        position: relative;
+
+        .blog-grid {
+            &-content {
+                padding: 30px;
+                background-color: $smoke-color;
+
+                @include xl {
+                    padding: 25px !important;
+                }
+            }
+
+            &_name {
+                position: absolute;
+                left: 30px;
+                top: 30px;
+                background-color: $theme-color;
+                color: $white-color;
+                padding: 5px 20px;
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+
+        .box-title {
+            font-size: 30px;
+
+            @include xs {
+                font-size: 20px;   
+            }
+        }
+    }
+}
+
+
+/* Blog block end ------------------------------*/
+
+/* Blog block end ------------------------------*/

@@ -1,0 +1,324 @@
+/* ------------------------------Header 1  Start ---------------------------------- */
+.header-layout5 {
+    position: relative;
+
+    .header-top {
+        background-color: $theme-color;
+        --body-color: #fff;
+        padding: 14.3px 0;
+
+        .container {
+            padding-left: 280px;
+
+            @media(max-width: 1799px) {
+                padding-left: 320px;
+            }
+
+            @include xl {
+                padding-left: 285px;
+            }
+
+            @include md {
+                padding-left: 0;
+            }
+        }
+
+        .header-links {
+
+            li {
+                &:after {
+                    background-color: $white-color;
+                }
+
+                @include xl {
+                    &:nth-child(3) {
+                        display: none;
+                    }
+
+                    &:nth-child(2) {
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+
+                a {
+                    transition: all 0.4s ease-in-out;
+
+                    &:hover {
+                        color: $title-color;
+                    }
+                }
+
+                i {
+                    color: $white-color;
+                }
+            }
+        }
+
+        .social-links {
+            .social-title {
+                color: $white-color;
+            }
+
+            a {
+                color: $white-color;
+                transition: all 0.4s ease-in-out;
+
+                &:hover {
+                    color: $title-color;
+                }
+            }
+        }
+
+    }
+
+    .header-button {
+        .icon-btn {
+            background-color: $white-color;
+            border-color: $white-color;
+            color: $title-color;
+
+            .badge {
+                &:hover {
+                    background-color: $title-color;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+
+    .header-logo {
+        margin-top: -60px;
+
+        @media(max-width: 1699px) {
+            padding-left: 30px;
+        }
+
+        @media(max-width: 1399px) {
+            padding-left: 50px;
+        }
+
+        @include xl {
+            padding-left: 30px;
+        }
+
+        @include lg {
+            padding-left: 0;
+        }
+
+        @include sm {
+            margin: 0;
+        }
+    }
+
+    .sticky-wrapper {
+        background-color: $title-color;
+        position: relative;
+        z-index: 3;
+
+        &.sticky {
+            background-color: $title-color;
+
+            @include md {
+                padding: 0;
+
+                .menu-area {
+                    padding: 10px 0;
+                }
+            }
+
+            .logo-bg {
+                display: none;
+            }
+
+            .header-logo {
+                margin-top: -15px;
+            }
+        }
+    }
+
+    .header-social {
+        // @include sm { 
+        //     display: none;
+        // }
+
+        a {
+            font-size: 14px;
+            display: inline-block;
+            color: $white-color;
+            margin: 0 0px 0 16px;
+            transition: all 0.4s;
+
+            &:hover {
+                color: $theme-color;
+            }
+        }
+
+        .social-title {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: $white-color;
+            display: inline-block;
+            margin: 0 0px 0 0;
+        }
+    }
+
+    .main-menu {
+        padding-left: 50px;
+
+        @media(max-width: 1699px) {
+            padding-left: 60px;
+        }
+
+        @media(max-width: 1399px) {
+            padding-left: 40px;
+        }
+
+        @include xl {
+            padding-left: 35px;
+        }
+
+        @media(max-width: 1024px) {
+            padding-left: 23px;
+        }
+
+        >ul>li>a {
+            color: var(--white-color);
+            padding: 36.5px 0;
+
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+
+    .main-menu>ul>li>a { 
+        &:after {
+            color: var(--white-color) !important;
+        }
+
+        &:hover {
+            &:after {
+                color: $theme-color !important; 
+            }
+        }
+    }
+
+    .logo-bg {
+        position: absolute;
+        top: -55%;
+        left: 0;
+        width: 20%;
+        height: 126px;
+        z-index: -1;
+
+
+        &:before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: $theme-color;
+            clip-path: path("M1 0C0.447715 0 0 0.447714 0 0.999999V54C0 54.5523 0.447724 55 1.00001 55H95C115.435 55 132 71.5655 132 92V92C132 112.435 148.565 129 169 129H313C333.435 129 350 112.435 350 92V92C350 71.5655 366.565 55 387 55H407C407.552 55 408 54.5523 408 54V1C408 0.447715 407.552 0 407 0H1Z");
+            z-index: 2;
+        }
+
+        @media(min-width: 2299px) {
+            width: 23%;
+            left: 12%;
+        }
+
+        @media(max-width: 1899px) {
+            width: 21%;
+            left: -3%;
+        }
+
+        @media(max-width: 1699px) {
+            width: 24%;
+            left: -6%;
+        }
+
+        @include xxl {
+            top: -57%;
+            width: 26%;
+        }
+
+        @media(max-width: 1399px) {
+            width: 28%;
+        }
+
+        @include xl {
+            width: 32%;
+        }
+
+        @include lg {
+            width: 32%;
+            left: -2%;
+        }
+
+        @media(max-width: 1080px) {
+            width: 40%;
+            left: -10%;
+        }
+
+        @include md {
+            top: -70%;
+            left: 0;
+        }
+
+        @media(max-width: 768px) {
+            width: 55%;
+            left: -15%;
+
+        }
+
+        @include sm {
+            display: none;
+        }
+    }
+
+    .menu-area {
+        @include md {
+            padding: 12px 0;
+        }
+
+        @include sm {
+            padding: 0;
+        }
+    }
+
+}
+
+
+@media (min-width: 1300px) {
+    .header-layout5 .th-container {
+        --main-container: 1640px;
+    }
+}
+
+@include xl {
+    .header-layout5 {
+        .header-button {
+            .icon-btn {
+                &:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@include xs {
+    .header-layout5 {
+
+        .header-logo {
+            img {
+                max-height: 50px;
+                max-width: 160px;
+            }
+        }
+    }
+}
+
+/* ------------------------------ Header 1  End ---------------------------------- */

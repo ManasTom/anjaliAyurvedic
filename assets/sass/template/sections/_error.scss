@@ -1,0 +1,46 @@
+.error-content {
+    text-align: center;
+}
+.error-img {
+    margin-bottom: -125px;
+	text-align: center;
+}
+.error-title {
+    margin-bottom: 20px;
+}
+.error-text {
+    margin-bottom: 35px;
+	max-width: 540px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@include md {
+	.error-img {
+		margin-bottom: -100px;
+	}
+	.error-title {
+		margin-bottom: 15px;
+	}
+}
+
+@include sm {
+	.error-img {
+		margin-bottom: -70px;
+	}
+	.error-title {
+		margin-bottom: 10px;
+	}
+}
+
+@include xs {
+	.error-img {
+		margin-bottom: -3em;
+	}
+}
+
+@include vxs {
+	.error-img {
+		margin-bottom: -2em;
+	}
+}

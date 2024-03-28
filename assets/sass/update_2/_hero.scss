@@ -1,0 +1,171 @@
+/* hero Five Start  ----------------------------------------*/
+.hero-5 {
+    background-color: $smoke-color3;
+
+    @include lg {
+        background-position: left center;
+    }
+
+    .number-dots {
+        text-align: left;
+    }
+
+    .slick-dots {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: rotate(90deg);
+
+        @media(max-width: 1699px) {
+            left: 0;
+        }
+
+        @include xxl {
+            display: none !important;
+        }
+    }
+
+    .text-bg {
+        position: relative;
+        display: inline-block;
+        background-color: $white-color;
+        color: $theme-color;
+        padding: 0 33px 0 30px;
+        z-index: 2;
+    }
+
+    .th-hero-img {
+        min-width: 800px;
+        max-height: 787px;
+        margin-left: -130px;
+
+        @include xl {
+            min-width: 550px;
+            max-height: 100%;
+            margin: 0;
+        }
+
+        @include md {
+            min-width: 100%;
+            max-height: 550px;
+        }
+
+        @include sm {
+            max-height: 450px;  
+        }
+        @include vxs { 
+            max-height: 240px;  
+        }
+
+        .th-hero-shape {
+            position: absolute;
+            content: "";
+            inset: 0;
+            top: 0;
+            width: 431.907px;
+            height: 408.591px;
+            display: block;
+            margin: auto;
+            background-color: rgba(225, 169, 139, 0.60);
+            opacity: 0.995;
+            clip-path: path("M106.81 0.730081C133.709 -1.47646 158.606 4.42639 181.499 18.4386C202.039 32.8455 213.738 52.6156 216.597 77.7483C220.951 43.6461 239.202 20.503 271.35 8.31946C310.936 -4.57968 348.748 -0.644442 384.787 20.1252C418.534 42.6814 434.352 74.4444 432.24 115.414C431.17 146.204 420.875 173.376 401.354 196.93C389.998 209.778 377.737 221.678 364.571 232.628C342.01 250.335 320.109 268.887 298.867 288.283C263.053 322.655 235.63 362.851 216.597 408.87C196.912 361.857 168.553 320.911 131.519 286.035C108.64 265.69 85.2413 246.014 61.3223 227.006C47.8772 215.609 35.8034 202.96 25.101 189.059C3.30247 157.159 -3.99795 122.117 3.1997 83.9322C10.7978 52.9079 28.6748 29.952 56.8297 15.0656C72.6801 7.21254 89.3397 2.43404 106.81 0.730081Z");
+            z-index: -1;
+        }
+
+        .th-hero-shape2 {
+            position: absolute;
+            inset: 0;
+            top: 20px;
+            width: 514.411px;
+            height: 486.767px;
+            display: block;
+            margin: auto;
+            background: rgba(194, 133, 101, 0.20);
+            opacity: 0.995;
+            clip-path: path("M126.922 0.845533C158.96 -1.78319 188.612 5.24907 215.878 21.9423C240.342 39.1057 254.276 62.6584 257.681 92.5998C262.867 51.9727 284.604 24.4016 322.893 9.88701C370.04 -5.48015 415.076 -0.791979 457.999 23.9515C498.193 50.8235 517.032 88.6637 514.517 137.472C513.243 174.153 500.981 206.524 477.73 234.584C464.205 249.891 449.602 264.068 433.921 277.113C407.051 298.208 380.966 320.31 355.666 343.417C313.012 384.365 280.35 432.251 257.681 487.076C234.236 431.067 200.459 382.287 156.351 340.738C129.102 316.501 101.234 293.06 72.7455 270.415C56.7321 256.838 42.352 241.769 29.6051 225.208C3.64263 187.204 -5.05233 145.458 3.52024 99.9669C12.5697 63.0067 33.8617 35.6586 67.3948 17.9239C86.2729 8.56829 106.115 2.87551 126.922 0.845533Z");
+            z-index: -2;
+        }
+
+        .th-hero-shape3 {
+            position: absolute;
+            inset: 0;
+            top: 0px;
+            width: 585.863px;
+            height: 553.639px;
+            display: block;
+            margin: auto;
+            background: rgba(194, 133, 101, 0.10);
+            opacity: 0.995;
+            clip-path: path("M144.976 0.610148C181.465 -2.37971 215.235 5.61864 246.289 24.6052C274.151 44.1265 290.021 70.9148 293.898 104.969C299.804 58.7612 324.561 27.4023 368.168 10.8937C421.865 -6.58455 473.155 -1.25232 522.041 26.8904C567.818 57.454 589.273 100.493 586.409 156.007C584.958 197.727 570.993 234.544 544.513 266.46C529.109 283.87 512.477 299.994 494.618 314.831C464.016 338.824 434.308 363.962 405.494 390.244C356.914 436.817 319.716 491.282 293.898 553.639C267.196 489.935 228.728 434.454 178.493 387.197C147.459 359.63 115.72 332.969 83.2748 307.213C65.0371 291.77 48.6595 274.631 34.1421 255.795C4.5734 212.571 -5.32932 165.089 4.434 113.349C14.7404 71.3109 38.9899 40.2058 77.1808 20.0347C98.6812 9.39385 121.279 2.919 144.976 0.610148Z");
+            z-index: -3;
+        }
+
+        .hero-shape_1 {
+            position: absolute;
+            right: -10%;
+            bottom: 0%;
+            z-index: -1;
+        }
+
+    }
+}
+
+.hero-style5 {
+    position: relative;
+    z-index: 6;
+    padding: 224px 0;
+    max-width: 750px;
+
+    @include xl {
+        padding: 150px 0 150px 0;
+    }
+
+    @include md {
+        padding: 100px 0 50px 0;
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    @include sm {
+        padding: 100px 0 80px 0;  
+    }
+    @include xs {
+        padding: 80px 0 40px 0;    
+    }
+
+    .sub-title {
+        color: $theme-color2;
+        display: block;
+        margin-top: -0.3rem;
+        margin-bottom: 15px;
+    }
+
+    .hero-title {
+        font-size: 84px;
+        line-height: 94px;
+
+        @include xl {
+            font-size: 64px;
+            line-height: 74px;
+        }
+
+        @include lg {
+            font-size: 54px;
+            line-height: 64px;
+        }
+
+        @include sm {
+            font-size: 44px;
+            line-height: 54px;
+        }
+        @include vxs {
+            font-size: 34px;
+            line-height: 44px; 
+        }
+    }
+}
+
+/* hero Five end  ----------------------------------------*/

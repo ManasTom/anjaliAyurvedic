@@ -1,0 +1,162 @@
+/* hero Five Start  ----------------------------------------*/
+.hero-8 {
+    position: relative;
+    .hero-slider-8 {
+        position: relative;
+        --main-container: 1760px;
+        margin: 0 80px;
+        border-radius: 45px;
+        z-index: 2;
+
+        @include xl {
+            margin: 0;
+        }
+    }
+    .scroll-bottom {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        width: 230px;
+        height: 64px;
+        display: block;
+        margin: auto;
+        font-size: 25px;
+        background-color: $white-color;
+        color: $title-color;
+        text-align: center;
+        padding: 15px;
+        transform: translateX(-50%);
+        clip-path: path("M84.3718 8.83496C99.9335 -1.21465 119.776 -1.83689 135.937 7.21791L235.498 63.0018L109.971 63.0018L0.498025 63L84.3718 8.83496Z");
+        z-index: 9;
+    }
+
+    .slick-arrow {
+        opacity: 1;
+        visibility: visible;
+
+        &.default {
+            position: absolute;
+            top: 35%;
+            left: 0;
+            height: 200px; 
+            border-radius: 0px 50px 50px 0px;
+        }
+
+        &.default2 {
+            left: unset;
+            right: 0;
+            border-radius: 50px 0px 0px 50px;
+        }
+    }
+
+    .th-hero-bg {
+        border-radius: 45px;
+        z-index: 3;
+
+        &:before {
+            content: "";
+            position: absolute;
+            height: 692px;
+            inset: 270px;
+            top: 0;
+            border-radius: 0px 0px 50px 50px;
+            background: rgba(194, 134, 102, 0.4);
+            mix-blend-mode: color-burn;
+            z-index: -1;
+
+            @include xxl {
+                inset: 200px;
+                top: 0;
+            }
+
+            @include xl {
+                inset: 170px;
+                top: 0;
+            }
+            @include md {
+                inset: 70px; 
+                top: 0;
+                height: 100%;
+            }
+            @include sm {
+                inset: 40px;  
+                top: 0;
+            }
+        }
+    }
+
+    .slick-dots {
+        margin: 0;
+        position: absolute;
+        bottom: 25%;
+        left: 50%;
+        z-index: 4;
+        transform: translate(-50%, 50%); 
+
+        &:before,
+        &:after {
+            filter: brightness(0) invert(1);
+        }
+    }
+
+    .number-dots {
+        li {
+            button {
+                background-color: $white-color;
+
+                &:before {
+                    border: 1px solid $white-color;
+                }
+            }
+        }
+    }
+}
+
+.hero-style8 {
+    position: relative;
+    z-index: 6;
+    padding: 110px 0 267px 0;
+    max-width: 671px;
+    display: block;
+    margin: auto;
+
+    @include md {
+        padding: 110px 0 160px 0;
+        display: block;
+        margin: auto;
+        min-width: 100%;
+        text-align: center;
+    } 
+
+    .sub-title {
+        color: $white-color;
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    img {
+        filter: brightness(0) invert(1);
+        display: block;
+        margin: auto auto 20px auto;
+    }
+
+    .hero-title {
+        color: $white-color;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+
+        @include xxl {
+            font-size: 58px;
+            line-height: 68px; 
+        }    
+
+        @include xs {
+            font-size: 34px;
+            line-height: 44px;
+        }
+    }
+
+    .hero-text {
+        margin-bottom: 40px;
+    }
+}

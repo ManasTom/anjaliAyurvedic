@@ -1,0 +1,98 @@
+/* team -------------------------------*/
+.team-box {
+    &.style3 {
+        transition: all 0.4s ease-in-out; 
+        .team-box {
+            &_content {
+                position: relative;
+                background-color: #DDA587;
+                display: block;
+                text-align: center; 
+                z-index: 3;
+
+                &:before {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background-color: $white-color;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    -webkit-transition: 0.4s ease-in-out;
+                    transition: 0.4s ease-in-out;
+                }
+            }
+        }
+
+        .box-title {
+            margin-bottom: 5px;
+
+            a {
+                color: inherit; 
+            }
+        }
+
+        .team-desig {
+        }
+
+        .team-border {
+            width: 106px;
+            height: 2px;
+            background: linear-gradient(270deg, rgba(194, 133, 101, 0.00) 4.24%, #C28565 52.64%, rgba(194, 133, 101, 0.00) 99.06%);
+            display: block;
+            margin: auto;
+            margin-bottom: 5px;
+        }
+
+        .th-social {
+            position: absolute;
+            top: -10%;  
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.4s ease-in-out; 
+            opacity: 0;
+            visibility: hidden; 
+
+            a {
+                --icon-size: 40px;
+                background-color: var(--white-color);
+                color: var(--body-color);
+                transition: 0.4s ease-in-out;
+
+                &:hover {
+                    background-color: $theme-color;
+                    color: $white-color;
+                }
+            }
+        }
+
+        &:hover {
+            .team-box {
+                &_content {
+                    &:before {
+                        height: 0;
+                    }
+                }
+            }
+
+            .team-border {
+                background: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 4.24%, #FFF 52.64%, rgba(255, 255, 255, 0.00) 99.06%);
+            }
+
+            .box-title {
+                color: $white-color;
+            }
+
+            .team-desig {
+                color: $white-color;
+            }
+
+            .th-social {
+                top: 50%;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
