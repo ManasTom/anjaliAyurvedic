@@ -88,7 +88,7 @@ Version: 1.0.0
 /*------------------- 1.2. Function -------------------*/
 /*------------------- 1.3. Variable-------------------*/
 :root {
-  --theme-color: #376C0E;
+  --theme-color: #C28565;
   --theme-color2: #AB6A49;
   --title-color: #0D0D0D;
   --body-color: #6E6E6E;
@@ -105,7 +105,7 @@ Version: 1.0.0
   --error-color: #dc3545;
   --border-color: #E0E0E0;
   --title-font:  'Cormorant Garamond', serif;
-  --body-font: 'DM Sans', sans-serif;
+  --body-font: 'Poppins', sans-serif;
   --style-font: 'Red Hat Display', cursive;
   --icon-font: "Font Awesome 6 Pro";
   --main-container: 1220px;
