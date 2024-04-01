@@ -17282,7 +17282,8 @@ span.select2-selection.select2-selection--single:focus {
 
 .counter-sec.style4 {
   position: relative;
-  background-color: var(--smoke-color);
+  border-radius: 2rem;
+  background-color: var(--theme-color);
   border: 6px solid var(--white-color);
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
   padding: 60px;
