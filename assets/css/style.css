@@ -32413,7 +32413,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 .hero_bg_wrapper_3{
   width: 100%;
-  height: auto;
+  height: 100%;
   background-image: url(../img/hero_3.png);
   background-repeat: no-repeat;
   z-index: -99999;
