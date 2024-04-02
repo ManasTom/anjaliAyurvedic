@@ -1,8 +1,3 @@
-// const firstDiva = document.querySelector('.services_page_section4_colItem1');
-// const secondDiva = document.querySelector('.services_page_section4_colItem2');
-// const thirdDiva = document.querySelector('.services_page_section4_colItem3');
-// secondDiva.style.height = `${firstDiva.clientHeight}px`;
-// thirdDiva.style.height = `${firstDiva.clientHeight}px`;
 
 
 const vhs1 = document.querySelector('.hs1');
