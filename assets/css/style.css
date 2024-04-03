@@ -32425,3 +32425,13 @@ span.select2-selection.select2-selection--single:focus {
   background-repeat: no-repeat;
   z-index: -99999;
 }
+
+
+
+
+.align_centre{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
