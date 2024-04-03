@@ -1340,7 +1340,7 @@ textarea.is-invalid {
 .th-menu-wrapper .th-menu-area {
   width: 100%;
   max-width: 310px;
-  background-color: #fff;
+  background-color: #ffff;
   border-right: 3px solid var(--theme-color);
   height: 100%;
   position: relative;
@@ -6207,8 +6207,8 @@ ol.wp-block-rss {
 .header-top {
   position: relative;
   padding: 12px 0;
-  background-color: var(--title-color);
-  --body-color: #B2B2B2;
+  background-color: var(--theme-color);
+  --body-color: #ffffff;
 }
 
 .header-top a:hover {
@@ -6400,20 +6400,20 @@ ol.wp-block-rss {
 }
 
 .header-layout1 .main-menu {
-  padding-left: 100px;
+  padding-left: 110px;
   /* Medium Large devices */
   /* Large devices */
 }
 
 @media (max-width: 1699px) {
   .header-layout1 .main-menu {
-    padding-left: 78px;
+    padding-left: 100px;
   }
 }
 
 @media (max-width: 1299px) {
   .header-layout1 .main-menu {
-    padding-left: 85px;
+    padding-left: 95px;
   }
 }
 
@@ -6447,7 +6447,7 @@ ol.wp-block-rss {
   content: '';
   position: absolute;
   inset: 0;
-  background-color: var(--theme-color);
+  background-color: #ffff;
   z-index: -1;
 }
 
@@ -8099,7 +8099,7 @@ ol.wp-block-rss {
   margin-left: 10px;
   font-weight: 500;
   font-size: 20px;
-  color: var(--body-color);
+  color: #ffff;
   font-family: var(--icon-font);
 }
 
@@ -17420,7 +17420,7 @@ span.select2-selection.select2-selection--single:focus {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
-  color: var(--title-color);
+  color: #fff;
   margin-bottom: 0;
   font-family: 'Cormorant Garamond';
   font-style: normal;
@@ -17447,7 +17447,7 @@ span.select2-selection.select2-selection--single:focus {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--black-color);
+  color: #ffff;
   margin-top: -7px;
   /* Small devices */
 }
