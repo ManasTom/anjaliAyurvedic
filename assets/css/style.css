@@ -32400,28 +32400,28 @@ span.select2-selection.select2-selection--single:focus {
 .hero_bg_wrapper_1{
   width: 100%;
   height: auto;
-  background-image: url(../img/hero_1.png);
+  background-image: url(../img/hero_1.webp);
   background-repeat: no-repeat;
   z-index: -99999;
 }
 .hero_bg_wrapper_2{
   width: 100%;
   height: auto;
-  background-image: url(../img/hero_2.png);
+  background-image: url(../img/hero_2.webp);
   background-repeat: no-repeat;
   z-index: -99999;
 }
 .hero_bg_wrapper_3{
   width: 100%;
   height: 100%;
-  background-image: url(../img/hero_3.png);
+  background-image: url(../img/hero_3.webp);
   background-repeat: no-repeat;
   z-index: -99999;
 }
 .hero_bg_wrapper_4{
   width: 100%;
   height: auto;
-  background-image: url(../img/hero_4.png);
+  background-image: url(../img/hero_4.webp);
   background-repeat: no-repeat;
   z-index: -99999;
 }
