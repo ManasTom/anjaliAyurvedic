@@ -145,7 +145,7 @@ Header Area
                         </div>
                         <div class="col-auto d-none d-xl-block">
                             <div class="header-button">
-                                <a href="" class="th-btn">Book Appointment<i
+                                <a href="#contact_form" class="th-btn">Book Appointment<i
                                         class="fa-regular fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>
@@ -205,11 +205,11 @@ Contact Area
                                 <h3 class="box-title">Phone Number</h3>
                                 <span class="contact-info_text">
                                     Mobile:
-                                    <a href="tel:">+971 555 88 7209</a>
+                                    <a href="tel:+971 555 88 7209">+971 555 88 7209</a>
                                 </span>
                                 <span class="contact-info_text">
                                     Email:
-                                    <a href=""> dranjalidevi@gmail.com</a>
+                                    <a href="mailto:dranjalidevi@gmail.com"> dranjalidevi@gmail.com</a>
                                 </span>
                             </div>
                         </div>
@@ -236,10 +236,10 @@ Contact Area
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div id="contact_form" class="row">
                 <div class="col-12">
                     <div class="contact-form-wrapper">
-                        <form action="send_message.php" method="POST" class="contact-form ajax-contact">
+                        <form action="contact-enquiry.php" method="POST" class="contact-form ajax-contact">
                             <h2 class="form-title text-center">Get In Touch</h2>
                             <div class="row">
                                 <div class="form-group col-md-6">
@@ -260,11 +260,13 @@ Contact Area
                                 <div class="form-group col-md-6">
                                     <i class="fa-regular fa-tag"></i>
                                     <select name="subject" id="subject" class="form-select nice-select">
-                                        <option value="" disabled selected hidden>Select</option>
-                                        <option value="">Select 1</option>
-                                        <option value="">Select 2</option>
-                                        <option value="">Select 3</option>
-                                        <option value="">Select 4</option>
+                                        <option value="" disabled selected hidden>Select Treatment</option>
+                                    <option value="Ayurvedic Consultation">Ayurvedic Consultation</option>
+                                    <option value="Therapeutic Treatments">Therapeutic Treatments</option>
+                                    <option value="Herbal Medicine">Herbal Medicine</option>
+                                    <option value="Yoga and Meditation">Yoga and Meditation</option>
+                                    <option value="Educational Workshops">Educational Workshops</option>
+                                    <option value="Philosophy">Philosophy</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-12">

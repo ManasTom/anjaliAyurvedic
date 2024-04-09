@@ -146,7 +146,7 @@ Header Area
                         </div>
                         <div class="col-auto d-none d-xl-block">
                             <div class="header-button">
-                                <a href="" class="th-btn">Book Appointment<i
+                                <a href="#contact-sec" class="th-btn">Book Appointment<i
                                         class="fa-regular fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>
@@ -337,55 +337,50 @@ appointment Area
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <form action="about-enquiry.php" method="post">
-                        <div class="appointment-quote-form wow fadeInUp">
-                            <div class="row">
-                                <div class="col-md-6 form-group">
-                                    <i class="fa-sharp fa-light fa-user"></i>
-                                    <input type="text" placeholder="First Name" class="form-control">
-                                </div>
-                                <div class="col-md-6 form-group">
-                                    <i class="fa-sharp fa-light fa-user"></i>
-                                    <input type="text" placeholder="Last Name" class="form-control">
-                                </div>
-                                <div class="col-md-6 form-group">
-                                    <i class="fa-light fa-envelope-open"></i>
-                                    <input type="text" placeholder="Email Address" class="form-control">
-                                </div>
-                                <div class="col-md-6 form-group">
-                                    <i class="fa-light fa-phone"></i>
-                                    <input type="text" placeholder="Phone Number" class="form-control">
-                                </div>
-                                <div class="form-group col-12">
-                                    <i class="fa-regular fa-tag"></i>
-                                    <select name="subject" id="subject" class="form-select nice-select">
-                                        <option value="" disabled selected hidden>Select Treatment</option>
-                                        <option value="Engine Diagnostics">Spa & Massage</option>
-                                        <option value="Facial & Massage">Facial & Massage</option>
-                                        <option value="Engine Diagnostics">Head Massage</option>
-                                        <option value="Sports Massage">Sports Massage</option>
-                                        <option value="Stone Massage">Stone Massage</option>
-                                    </select>
-                                </div>
-                                <!-- <div class="form-group col-12">
-                                <input type="text" class="date-pick form-control" name="date" id="date-pick"
-                                    placeholder="Select Date">
-                                <i class="fa-light fa-calendar-days"></i>
-                            </div> -->
-                                <div class="form-group col-12">
-                                    <textarea name="message" id="message" cols="30" rows="3" class="form-control"
-                                        placeholder="Write message...."></textarea>
-                                    <i class="fal fa-comment"></i>
-                                </div>
-                                <div class="btn-group justify-content-center justify-content-xl-start">
-                                    <button class="th-btn style3 fw-btn">Make An Appointment <i
-                                            class="fa-solid fa-arrow-right ms-2"></i></button>
-
-                                </div>
-                                <p class="form-messages mb-0 mt-3"></p>
+                <div id="about_form" class="col-lg-6">
+                    <form action="index-enquiry.php" method="POST" class="quote-form ajax-contact">
+                        <div class="title-area mb-40">
+                            <span class="sub-title text-white">Contact Us<img src="assets/img/title_right2.svg"
+                                    alt=""></span>
+                            <h3 class="sec-title text-white">Need to Make An Enquiry</h3>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
+                                <i class="fal fa-user"></i>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" name="email" id="email"
+                                    placeholder="Your Email">
+                                <i class="fal fa-envelope"></i>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="tel" class="form-control" name="number" id="number"
+                                    placeholder="Phone Number">
+                                <i class="fal fa-phone"></i>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <select name="subject" id="subject" class="form-select nice-select">
+                                    <option value="" disabled selected hidden>Select Treatment</option>
+                                    <option value="Ayurvedic Consultation">Ayurvedic Consultation</option>
+                                    <option value="Therapeutic Treatments">Therapeutic Treatments</option>
+                                    <option value="Herbal Medicine">Herbal Medicine</option>
+                                    <option value="Yoga and Meditation">Yoga and Meditation</option>
+                                    <option value="Educational Workshops">Educational Workshops</option>
+                                    <option value="Philosophy">Philosophy</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-12">
+                                <textarea name="message" id="message" cols="30" rows="3" class="form-control"
+                                    placeholder="Write message...."></textarea>
+                                <i class="fal fa-comment"></i>
+                            </div>
+                            <div class="form-btn col-12">
+                                <button class="th-btn style4">Send Messages<i
+                                        class="fa-solid fa-arrow-right ms-2"></i></button>
                             </div>
                         </div>
+                        <p class="form-messages mb-0 mt-3"></p>
                     </form>
                 </div>
             </div>
@@ -504,7 +499,7 @@ Testimonial Area
                 data-xs-slide-show="1">
                 <div class="col-md-6 col-lg-4">
                     <div class="testi-grid style2">
-                        <div class="testi-grid_img"><img src="assets/img/home_testimonial_r1.webp" alt=""></div>
+                        <div class="testi-grid_img"><img src="assets/img/customer1.png" alt=""></div>
                         <div class="testi-grid_content">
                             <div class="star-icon">
                                 <a href="#"><i class="fa-solid fa-star"></i></a>
@@ -518,7 +513,7 @@ Testimonial Area
                                 health. Highly recommended!"</p>
                             <div class="testi-grid_profile">
                                 <div class="media-body">
-                                    <h5 class="testi-grid_name">Angelina Margret</h5>
+                                    <h5 class="testi-grid_name">Disha</h5>
                                     <p class="testi-grid_desig">Customer</p>
                                 </div>
                             </div>
@@ -530,7 +525,7 @@ Testimonial Area
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="testi-grid style2">
-                        <div class="testi-grid_img"><img src="assets/img/home_testimonial_r2.webp" alt=""></div>
+                        <div class="testi-grid_img"><img src="assets/img/customer2.png" alt=""></div>
                         <div class="testi-grid_content">
                             <div class="star-icon">
                                 <a href="#"><i class="fa-solid fa-star"></i></a>
@@ -544,7 +539,7 @@ Testimonial Area
                                 better health and vitality."</p>
                             <div class="testi-grid_profile">
                                 <div class="media-body">
-                                    <h5 class="testi-grid_name">Senjuti das</h5>
+                                    <h5 class="testi-grid_name">James</h5>
                                     <p class="testi-grid_desig">Customer</p>
                                 </div>
                             </div>
