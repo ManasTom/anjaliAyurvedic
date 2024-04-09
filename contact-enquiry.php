@@ -1,8 +1,8 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Email configuration
-    $to = "manastom670@gmail.com";
-    $cc = "manastom670@gmail.com";
+    $to = "anjalidevidr@gmail.com";
+    $cc = "anjalidevidr@gmail.com";
     $subject = "Message from " . $_POST["name"];
     $message = "Name: " . $_POST["name"] . "\n";
     $message .= "Email: " . $_POST["email"] . "\n";
