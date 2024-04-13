@@ -1,39 +1,6 @@
 (function ($) {
     "use strict";
-    /*=================================
-      JS Index Here
-    ==================================*/
-    /*
-    01. On Load Function
-    02. Preloader
-    03. Mobile Menu Active
-    04. Sticky fix
-    05. Scroll To Top
-    06. Set Background Image
-    07. Global Slider
-    08. Custom Animaiton For Slider
-    09. Flip Slider
-    10. Ajax Contact Form
-    11. Search Box Popup
-    12. Popup Sidemenu
-    13. Magnific Popup
-    14. Section Position
-    15. Filter
-    16. Counter Up
-    17. AS Tab
-    18. Shape Mockup
-    19. Countdown
-    20. Progress Bar Animation
-    21. Price Slider
-    22. One Page Nav
-    23. Indicator
-    00. Woocommerce Toggle
-    00. Right Click Disable
-  */
-    /*=================================
-      JS Index End
-  ==================================*/
-    /*
+    
 
   /*---------- 01. On Load Function ----------*/
     $(window).on("load", function () {
@@ -1449,29 +1416,6 @@ $(function () {
 
    
 
-    /*----------- 00. Right Click Disable ----------*/ 
-    //   window.addEventListener('contextmenu', function (e) {  
-    //     // do something here...
-    //     e.preventDefault();   
-    //   }, false); 
-
-    /*----------- 00. Inspect Element Disable ----------*/ 
-    //   document.onkeydown = function (e) {   
-    //     if (event.keyCode == 123) {
-    //       return false;
-    //     }
-    //     if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-    //       return false;
-    //     }
-    //     if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-    //       return false;
-    //     }
-    //     if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-    //       return false;
-    //     }
-    //     if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-    //       return false;
-    //     }
-    //   }   
+     
 
 })(jQuery);
