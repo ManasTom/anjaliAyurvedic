@@ -3,7 +3,8 @@
 @use "sass:math";
 
 :root {
-  --theme-color: #C28565;
+  /* --theme-color: #C28565; */
+  --theme-color: #b4917e;
   --theme-color2: #AB6A49;
   --title-color: #0D0D0D;
   --body-color: #6E6E6E;
