@@ -13948,7 +13948,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .contact-info-wrap {
-  background-color: var(--smoke-color);
+  background-color: #8ED06C;
   padding: 30px;
 }
 
@@ -13964,7 +13964,7 @@ span.select2-selection.select2-selection--single:focus {
   bottom: 0;
   width: 66.486px;
   height: 3px;
-  background-color: var(--theme-color);
+  background-color: #000000;
 }
 
 .contact-info .box-title {
@@ -13977,11 +13977,12 @@ span.select2-selection.select2-selection--single:focus {
   min-width: 70px;
   height: 70px;
   line-height: 70px;
-  background-color: var(--theme-color);
+  background-color: #000;
   color: var(--white-color);
   text-align: center;
   font-size: 35px;
   position: relative;
+  border-radius: 50px;
 }
 
 .contact-info_text {
@@ -14015,7 +14016,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .contact-form {
-  background-color: var(--white-color);
+  background-color: #8ED06C;
   box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.06);
   padding: 60px;
   /* Large devices */
@@ -16234,7 +16235,7 @@ span.select2-selection.select2-selection--single:focus {
   width: 50%;
   height: 100%;
   opacity: 0.8;
-  background: var(--theme-color);
+  background: #00000000;
   z-index: 1;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -16248,7 +16249,7 @@ span.select2-selection.select2-selection--single:focus {
   right: 0;
   width: 50%;
   height: 100%;
-  background: var(--theme-color);
+  background: #00000000;
   z-index: 1;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -16310,8 +16311,8 @@ span.select2-selection.select2-selection--single:focus {
   width: var(--icon-size, 46px);
   height: var(--icon-size, 46px);
   line-height: var(--icon-size, 46px);
-  background-color: var(--smoke-color3);
-  color: var(--title-color);
+  background-color: #000;
+  color: #fff;
   font-size: 16px;
   text-align: center;
   margin-right: 5px;
@@ -16441,7 +16442,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .team-info ul li a {
-  color: var(--body-color);
+  color: #000;
 }
 
 .team-info-wrap {
@@ -18088,6 +18089,7 @@ span.select2-selection.select2-selection--single:focus {
     padding-top: 1000px;
   }
 }
+
 @media (max-width: 300px) {
   .counter-area {
     padding-top: 1200px;
@@ -19456,7 +19458,7 @@ span.select2-selection.select2-selection--single:focus {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  border-bottom: 1px solid var(--smoke-color2);
+  border-bottom: 1px solid #000;
   padding-bottom: 15px;
   margin-bottom: 15px;
   font-size: 18px;
@@ -21260,7 +21262,7 @@ span.select2-selection.select2-selection--single:focus {
 /* Service Box ---------------------------------- */
 .service-box {
   position: relative;
-  background-color: var(--smoke-color);
+  background-color: #8ED06C;
   text-align: center;
   padding: 30px;
   -webkit-transition: 0.4s ease-in-out;
@@ -21311,7 +21313,7 @@ span.select2-selection.select2-selection--single:focus {
   height: 104px;
   width: 104px;
   line-height: 95px;
-  border: 5px solid var(--theme-color);
+  border: 5px solid #000000;
   border-radius: 50%;
   z-index: -1;
   -webkit-transition: 0.4s;
@@ -32970,12 +32972,14 @@ span.select2-selection.select2-selection--single:focus {
   font-size: 110%;
   margin: 0;
 }
+
 @media (max-width: 660px) {
   .visionAndMission p {
     padding: 0% 15% 0% 15%;
     font-size: 80%;
   }
 }
+
 @media (max-width: 370px) {
   .visionAndMission p {
     padding: 0% 5% 0% 5%;
