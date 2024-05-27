@@ -3,8 +3,12 @@ RewriteEngine On
 
 # Remove .html extension from URLs
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)$ $1.html [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^.]+)$ $1.html [L]
+
+# Redirect to remove .html extension in the URL
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
+RewriteRule ^ %1 [R=301,L]
 
 # Redirect to remove index.html
 RewriteCond %{THE_REQUEST} /index\.html [NC]
