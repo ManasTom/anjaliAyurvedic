@@ -1,0 +1,45 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Remove .html extension from URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+# Redirect to remove index.html
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
+
+# Redirect to remove trailing slash if not a directory
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [R=301,L]
+
+# Redirect www to non-www (optional, uncomment if needed)
+ RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+ RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# Redirect HTTP to HTTPS (optional, uncomment if needed)
+ RewriteCond %{HTTPS} off
+ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Custom error documents (optional, uncomment and update paths if needed)
+# ErrorDocument 404 /404.html
+# ErrorDocument 403 /403.html
+
+# Set default charset
+AddDefaultCharset UTF-8
+
+# Set default language
+AddDefaultLanguage en-US
+
+# Cache control for static files (optional, adjust duration as needed)
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+    Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
+
+# Security headers (optional, adjust as needed)
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Frame-Options "DENY"
+</IfModule>
