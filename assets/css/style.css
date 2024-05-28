@@ -32990,3 +32990,62 @@ span.select2-selection.select2-selection--single:focus {
 .about-sec {
   margin-bottom: 1%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gallery {
+  position: relative;
+  gap: 10px;
+  padding: 20px;
+}
+
+.gallery_head {
+  position: absolute;
+  top: 8rem;
+  left: 20rem;
+  width: max-content;
+  height: max-content;
+  z-index: 2;
+}
+
+.gallery-item {
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
