@@ -7687,11 +7687,11 @@ ol.wp-block-rss {
   position: absolute;
   top: 0;
   right: 0;
-  width: 15%;
+  width: 25%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.582);
   -webkit-clip-path: polygon(0 0, 100% 1%, 100% 100%, 25% 100%);
-  clip-path: polygon(0 0, 100% 1%, 100% 100%, 25% 100%);
+  clip-path: polygon(0 0, 100% 1%, 100% 100%, 16% 100%);
   z-index: -1;
 }
 
