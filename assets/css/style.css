@@ -7583,7 +7583,7 @@ ol.wp-block-rss {
 
 @media (max-width: 1799px) {
   .header-layout4 .main-menu {
-    padding-left: 40px;
+    padding-left: 20px;
   }
 }
 
@@ -7653,7 +7653,7 @@ ol.wp-block-rss {
   left: 0;
   width: 59%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.582);
+  background-color: rgba(255, 255, 255, 0.795);
   -webkit-clip-path: polygon(0% 0%, 100% 0, 94% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 100% 0, 94% 100%, 0% 100%);
   z-index: -1;
@@ -7690,7 +7690,7 @@ ol.wp-block-rss {
   right: 0;
   width: 25%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.582);
+  background-color: rgba(255, 255, 255, 0.795);
   -webkit-clip-path: polygon(0 0, 100% 1%, 100% 100%, 25% 100%);
   clip-path: polygon(0 0, 100% 1%, 100% 100%, 16% 100%);
   z-index: -1;
@@ -33073,4 +33073,19 @@ span.select2-selection.select2-selection--single:focus {
 
 .common_text_container_box p,li{
   color: #000;
+}
+
+
+
+
+
+
+
+.add_review_button{
+  background-color: #00000000;
+  border: 2px solid var(--theme-color);
+  padding: 0.5%;
+  border-radius: 10px;
+  margin-left: 15px;
+  font-weight: bold;
 }

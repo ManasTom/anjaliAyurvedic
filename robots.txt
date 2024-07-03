@@ -3,5 +3,5 @@ User-agent: *
 Disallow: /
 Disallow: /cgi-bin/
 Disallow: /login/
-Disallow: Disallow: /*.html$
+Disallow: /*.html$
 Sitemap: https://dranjalisayurveda.com/sitemap.xml
