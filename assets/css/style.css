@@ -1274,7 +1274,8 @@ textarea.is-invalid {
   padding-top: 40px;
   display: block;
   text-align: center;
-  background-color: var(--theme-color);
+  background-color: #fff;
+  border-bottom: 2px solid var(--theme-color);
 }
 
 .th-menu-wrapper .mobile-logo svg {
@@ -31703,8 +31704,9 @@ span.select2-selection.select2-selection--single:focus {
 
 @media (max-width: 768px) {
 .header-logo img {
-    width: 30%;
-    float: 50%;
+    width: 150%;
+    float: left;
+    
   }
 }
 
