@@ -1419,3 +1419,23 @@ $(function () {
      
 
 })(jQuery);
+
+
+
+function DisplayReviewPopup() {
+    var reviewPopup = document.querySelector('.Review_popup');
+    var popupButton = document.querySelector('.add_review_button');
+    if (reviewPopup) {
+        reviewPopup.style.display = 'block';
+    }
+    popupButton.style.display = 'none'
+}
+
+function CloseReviewPopup(){
+    var reviewPopup = document.querySelector('.Review_popup');
+    var popupButton = document.querySelector('.add_review_button');
+    if (reviewPopup) {
+        reviewPopup.style.display = 'none';
+    }
+    popupButton.style.display = 'block'
+}

@@ -31703,10 +31703,10 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 @media (max-width: 768px) {
-.header-logo img {
+  .header-logo img {
     width: 150%;
     float: left;
-    
+
   }
 }
 
@@ -33033,7 +33033,7 @@ span.select2-selection.select2-selection--single:focus {
   padding: 20px;
 }
 
-.gallery_head_container{
+.gallery_head_container {
   position: relative;
   height: 100%;
   border: 1px solid red;
@@ -33065,13 +33065,14 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 
-.common_text_container_box{
+.common_text_container_box {
   border: 4px solid var(--theme-color);
   padding: 4%;
   border-radius: 10px;
 }
 
-.common_text_container_box p,li{
+.common_text_container_box p,
+li {
   color: #000;
 }
 
@@ -33081,11 +33082,54 @@ span.select2-selection.select2-selection--single:focus {
 
 
 
-.add_review_button{
+.add_review_button {
   background-color: #00000000;
   border: 2px solid var(--theme-color);
   padding: 0.5%;
   border-radius: 10px;
   margin-left: 15px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.admin_container {
+  border: 2px solid var(--theme-color);
+  margin: 2%;
+  width: auto;
+  height: max-content;
+}
+
+.Review_popup {
+  z-index: 1000;
+  display: none;
+  border: 2px solid var(--theme-color);
+  border-radius: 15px;
+  padding: 1%;
+}
+
+.Review_popup button {
+  z-index: 99999;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 5px;
+  color: #000;
+  background-color: #01ff3c9d;
   font-weight: bold;
 }
