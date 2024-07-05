@@ -7646,6 +7646,11 @@ ol.wp-block-rss {
     display: none;
   }
 }
+@media (max-width: 1299px) {
+.header-button{
+    display: none;
+  }
+}
 
 .header-layout4 .menu-bg {
   position: absolute;
