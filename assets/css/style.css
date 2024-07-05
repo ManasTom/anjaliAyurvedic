@@ -33172,9 +33172,16 @@ li {
   justify-content: space-around;
 }
 
+/* .approve_btn {
+  border: 2px solid var(--theme-color);
+  border-radius: 5px;
+} */
+
 .approve_btn {
   border: 2px solid var(--theme-color);
   border-radius: 5px;
+  background-color: var(--theme-color);
+  color: #fff;
 }
 
 .delete_btn {
@@ -33185,7 +33192,7 @@ li {
 
 
 .reviewToggler {
-  border: 2px solid var(--theme-color);
+  border: 2px solid #fff;
   width: max-content;
   padding: 2px;
   margin: 2px;
@@ -33344,4 +33351,13 @@ li {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.review_quotes {
+  font-family: var(--title-font);
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 5px;
 }
