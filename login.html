@@ -167,14 +167,14 @@ Header Area
     <section class="admin_container">
         <div class="login-page-card">
             <h2>Login</h2>
-            <form id="login-form">
+            <form id="mainForm">
                 <div class="login-page-input-group">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input required="" name="" type="text" id="emailInp">
                 </div>
                 <div class="login-page-input-group">
                     <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
+                    <input required="" name="" type="password" id="passwordInp">
                 </div>
                 <button type="submit" class="login-page-button">Login</button>
                 <a href="#" class="login-page-forgot-password">Forgot Password?</a>
@@ -299,6 +299,33 @@ Header Area
         const database = firebase.database();
     </script>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
         import { getDatabase, get, ref, child } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js";
@@ -330,7 +357,32 @@ Header Area
         }
 
         mainForm.addEventListener('submit', signInUser);
+
+
+
+        
     </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <script>
 
