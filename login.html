@@ -152,8 +152,8 @@ Header Area
                         </div>
                         <div class="col-auto d-none d-xl-block">
                             <div class="header-button">
-                                <a onclick="logoutUser()" href="" class="th-btn">Log Out &nbsp;<i
-                                        class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                                <a href="#contact_form" class="th-btn">Book Appointment<i
+                                        class="fa-regular fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>
                     </div>
@@ -165,30 +165,38 @@ Header Area
 
 
     <section class="admin_container">
-        <div>
-            <button onclick="window.open('index.html#home_reviews_section', '_blank')"
-                class="admin_add_review_button">ADD
-                NEW REVIEW <i class="fa-solid fa-thumbs-up"></i></button>
+        <div class="login-page-card">
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="login-page-input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="login-page-input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="login-page-button">Login</button>
+                <a href="#" class="login-page-forgot-password">Forgot Password?</a>
+            </form>
+        </div>
 
-            <div class="reviewToggler">
-                <button class="reviewTogglerPending" onclick="showPendingReviews()">
-                    Pending
-                </button>
-                <button class="reviewTogglerApproved" onclick="showApprovedReviews()">
-                    Approved
-                </button>
-            </div>
-            <div class="reviews_table_wrapper">
-                <div class="pending_reviews_table_area">
-                    <!-- rewiews Table will appear here -->
-                </div>
-                <div class="approved_reviews_table_area">
-                    <!-- rewiews Table will appear here -->
-                </div>
+        <!-- Modal for Forgot Password -->
+        <div id="login-page-forgot-password-modal" class="login-page-modal">
+            <div class="login-page-modal-content">
+                <span class="login-page-close">&times;</span>
+                <h2>Reset Password</h2>
+                <form id="login-page-reset-password-form">
+                    <div class="login-page-input-group">
+                        <label for="reset-email">Enter your email:</label>
+                        <input type="email" id="login-page-reset-email" name="reset-email" required>
+                    </div>
+                    <button type="submit" class="login-page-button">Send Reset Link</button>
+                </form>
             </div>
         </div>
-    </section>
 
+    </section>
 
 
 
@@ -291,51 +299,80 @@ Header Area
         const database = firebase.database();
     </script>
 
-    <script>
-        function logoutUser() {
-            const confirmation = confirm("Are you sure you want to log out?");
-            if (confirmation) {
-                auth.signOut().then(() => {
-                    // Clear any user session data
-                    // For example, clear any local storage or session storage
-                    localStorage.clear(); // You can use sessionStorage.clear() if you're using sessionStorage
-                    sessionStorage.clear();
-                    // Redirect to home page after logout
-                    window.location.href = 'index.html';
-                }).catch((error) => {
-                    console.error(error.message);
-                });
-            }
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
+        import { getDatabase, get, ref, child } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js";
+        import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js";
 
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase();
+        const auth = getAuth(app);
+        const dbref = ref(db);
+
+        let email = document.getElementById('emailInp');
+        let password = document.getElementById('passwordInp');
+        let mainForm = document.getElementById('mainForm');
+
+        let signInUser = evt => {
+            evt.preventDefault();
+
+            signInWithEmailAndPassword(auth, email.value, password.value)
+                .then((credentials) => {
+                    console.log(credentials);
+
+                    window.location.href = "admin.html";
+                })
+                .catch((error) => {
+                    alert(error.message);
+                    console.log(error.code);
+                    console.log(error.message);
+                })
         }
 
+        mainForm.addEventListener('submit', signInUser);
+    </script>
 
+    <script>
 
-        // In your login.html page (after successful authentication):
-        var auth = firebase.auth();
-        auth.onAuthStateChanged(function (user) {
-            if (!user) {
-                // User is authenticated, allow access to admin.html
-                window.location.href = 'login.html';
+        var modal = document.getElementById("login-page-forgot-password-modal");
+
+        // Get the link that opens the modal
+        var link = document.querySelector(".login-page-forgot-password");
+
+        // Get the <span> element that closes the modal
+        var span = document.querySelector(".login-page-close");
+
+        // When the user clicks on the link, open the modal
+        link.onclick = function (event) {
+            event.preventDefault();
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
             }
-        });
+        }
 
-
-        // Add an event listener to the Log Out button
-        const signoutBtn = document.getElementById("signoutbtn");
-        signoutBtn.addEventListener("click", logoutUser);
-
-        // Check if the user is logged in when the page loads
-        window.addEventListener("load", checkUserCred);
-
-
-
-
-
-
-
-
-
+        // Handle the reset password form submission
+        document.getElementById("login-page-reset-password-form").onsubmit = function (event) {
+            event.preventDefault();
+            var email = document.getElementById("login-page-reset-email").value;
+            firebase.auth().sendPasswordResetEmail(email)
+                .then(() => {
+                    alert("Password reset link sent to " + email);
+                    modal.style.display = "none";
+                })
+                .catch((error) => {
+                    alert(error.message);
+                });
+        }
     </script>
 </body>
 

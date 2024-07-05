@@ -33109,9 +33109,11 @@ li {
 
 .admin_container {
   border: 2px solid var(--theme-color);
-  margin: 2%;
+  margin: 1%;
   width: auto;
   height: max-content;
+  padding: 1%;
+  border-radius: 5px;
 }
 
 .Review_popup {
@@ -33132,4 +33134,214 @@ li {
   color: #000;
   background-color: #01ff3c9d;
   font-weight: bold;
+}
+
+
+.reviews_table_wrapper {
+  width: 100%;
+  height: 400px;
+  /* Adjust height as needed */
+  overflow: auto;
+}
+
+.pending_reviews_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pending_reviews_table th,
+.pending_reviews_table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.pending_reviews_table th {
+  background-color: #f2f2f2;
+  color: #000000;
+  font-weight: bold;
+  text-align: left;
+}
+
+.pending_reviews_table tbody tr {
+  background-color: #f9f9f9;
+}
+
+.actionColumn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.approve_btn {
+  border: 2px solid var(--theme-color);
+  border-radius: 5px;
+}
+
+.delete_btn {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+
+
+.reviewToggler {
+  border: 2px solid var(--theme-color);
+  width: max-content;
+  padding: 2px;
+  margin: 2px;
+  border-radius: 25px;
+}
+
+.reviewToggler button {
+  border: 2px solid var(--theme-color);
+  outline: none;
+  border-radius: 125px;
+  padding: 8px;
+  background-color: var(--theme-color);
+  color: #ffffff;
+  text-shadow: #000 3px 1px 2px;
+  ;
+  font-weight: bold;
+}
+
+/* Default styles */
+.pending_reviews_table_area {
+  display: block;
+  /* Show pending reviews by default */
+}
+
+.approved_reviews_table_area {
+  display: none;
+  /* Hide approved reviews by default */
+}
+
+.reviewTogglerPending {
+  background-color: #4CBB17;
+  /* Pending button active by default */
+}
+
+.reviewTogglerApproved {
+  background-color: #4bbb175d;
+  /* Approved button inactive by default */
+}
+
+.admin_add_review_button {
+  background-color: #00000000;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+  border: 2px solid var(--theme-color);
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.login-page-card {
+  background-color: #ffffff;
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.login-page-card h2 {
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+.login-page-input-group {
+  margin-bottom: 15px;
+}
+
+.login-page-input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-page-input-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login-page-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-page-button:hover {
+  background-color: #45a049;
+}
+
+.login-page-forgot-password {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.login-page-forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Modal styles */
+.login-page-modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.login-page-modal-content {
+  background-color: #fff;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-page-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.login-page-close:hover,
+.login-page-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }

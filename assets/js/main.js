@@ -1,8 +1,8 @@
 (function ($) {
     "use strict";
-    
 
-  /*---------- 01. On Load Function ----------*/
+
+    /*---------- 01. On Load Function ----------*/
     $(window).on("load", function () {
         $(".preloader").fadeOut();
     });
@@ -25,8 +25,8 @@
         });
     }
 
-       /*---------- 03. Mobile Menu ----------*/
-       $.fn.thmobilemenu = function (options) { 
+    /*---------- 03. Mobile Menu ----------*/
+    $.fn.thmobilemenu = function (options) {
         var opt = $.extend(
             {
                 menuToggleBtn: ".th-menu-toggle",
@@ -41,14 +41,14 @@
             },
             options
         );
-    
+
         return this.each(function () {
             var menu = $(this); // Select menu
-    
+
             // Menu Show & Hide
             function menuToggle() {
                 menu.toggleClass(opt.bodyToggleClass);
-    
+
                 // collapse submenu on menu hide or show
                 var subMenu = "." + opt.subMenuClass;
                 $(subMenu).each(function () {
@@ -59,7 +59,7 @@
                     }
                 });
             }
-    
+
             // Class Set Up for every submenu
             menu.find("." + opt.subMenuParent).each(function () {
                 var submenu = $(this).find("ul");
@@ -69,7 +69,7 @@
                 $(this).addClass(opt.thSubMenuParent); // Add th-item-has-children class
                 $(this).children("a").append(opt.appendElement);
             });
-    
+
             // Toggle Submenu
             function toggleDropDown($element) {
                 var submenu = $element.children("ul");
@@ -79,7 +79,7 @@
                     submenu.toggleClass(opt.subMenuToggleClass);
                 }
             }
-    
+
             // Submenu toggle Button
             var itemHasChildren = "." + opt.thSubMenuParent + " > a";
             $(itemHasChildren).each(function () {
@@ -88,28 +88,28 @@
                     toggleDropDown($(this).parent());
                 });
             });
-    
+
             // Menu Show & Hide On Toggle Btn click
             $(opt.menuToggleBtn).each(function () {
                 $(this).on("click", function () {
                     menuToggle();
                 });
             });
-    
+
             // Hide Menu On outside click
             menu.on("click", function (e) {
                 e.stopPropagation();
                 menuToggle();
             });
-    
+
             // Stop Hide full menu on menu click
             menu.find("div").on("click", function (e) {
                 e.stopPropagation();
             });
         });
     };
-    
-    
+
+
     $(".th-menu-wrapper").thmobilemenu();
 
     /*---------- 04. Sticky fix ----------*/
@@ -132,28 +132,28 @@
         }
     })
 
-         /*----------- 04.1.  One Page Nav ----------*/ 
-         function onePageNav(element) {
-            if ($(element).length > 0) {
-                $(element).each(function () {
+    /*----------- 04.1.  One Page Nav ----------*/
+    function onePageNav(element) {
+        if ($(element).length > 0) {
+            $(element).each(function () {
                 var link = $(this).find('a');
                 $(this).find(link).each(function () {
                     $(this).on('click', function () {
-                    var target = $(this.getAttribute('href'));
-                    if (target.length) {
-                        event.preventDefault();
-                        $('html, body').stop().animate({
-                        scrollTop: target.offset().top - 10
-                        }, 1000);
-                    };
-        
-                    }); 
+                        var target = $(this.getAttribute('href'));
+                        if (target.length) {
+                            event.preventDefault();
+                            $('html, body').stop().animate({
+                                scrollTop: target.offset().top - 10
+                            }, 1000);
+                        };
+
+                    });
                 });
-                })
-            }
-        };
-        onePageNav('.onepage-nav');
-        onePageNav('.scroll-down');
+            })
+        }
+    };
+    onePageNav('.onepage-nav');
+    onePageNav('.scroll-down');
 
     /*---------- 05. Scroll To Top ----------*/
     if ($('.scroll-top').length > 0) {
@@ -216,9 +216,9 @@
             d("prev-arrow") +
             '"></i></button>',
             nextButton =
-            '<button type="button" class="slick-next"><i class="' +
-            d("next-arrow") +
-            '"></i></button>';
+                '<button type="button" class="slick-next"><i class="' +
+                d("next-arrow") +
+                '"></i></button>';
 
         // Function For Custom Arrow Btn
         $("[data-slick-next]").each(function () {
@@ -267,75 +267,75 @@
                 nextButton : '<button type="button" class="slick-next"><i class="far fa-arrow-right"></i></button>',
             rtl: $("html").attr("dir") == "rtl" ? true : false,
             responsive: [{
-                    breakpoint: 1600,
-                    settings: {
-                        arrows: d("xl-arrows") ? true : false,
-                        dots: d("xl-dots") ? true : false,
-                        slidesToShow: d("xl-slide-show") ?
-                            d("xl-slide-show") : d("slide-show"),
-                        centerMode: d("xl-center-mode") ? true : false,
-                        centerPadding: "0",
-                    },
+                breakpoint: 1600,
+                settings: {
+                    arrows: d("xl-arrows") ? true : false,
+                    dots: d("xl-dots") ? true : false,
+                    slidesToShow: d("xl-slide-show") ?
+                        d("xl-slide-show") : d("slide-show"),
+                    centerMode: d("xl-center-mode") ? true : false,
+                    centerPadding: "0",
                 },
-                {
-                    breakpoint: 1400,
-                    settings: {
-                        arrows: d("ml-arrows") ? true : false,
-                        dots: d("ml-dots") ? true : false,
-                        slidesToShow: d("ml-slide-show") ?
-                            d("ml-slide-show") : d("slide-show"),
-                        centerMode: d("ml-center-mode") ? true : false,
-                        centerPadding: 0,
-                    },
+            },
+            {
+                breakpoint: 1400,
+                settings: {
+                    arrows: d("ml-arrows") ? true : false,
+                    dots: d("ml-dots") ? true : false,
+                    slidesToShow: d("ml-slide-show") ?
+                        d("ml-slide-show") : d("slide-show"),
+                    centerMode: d("ml-center-mode") ? true : false,
+                    centerPadding: 0,
                 },
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        arrows: d("lg-arrows") ? true : false,
-                        dots: d("lg-dots") ? true : false,
-                        slidesToShow: d("lg-slide-show") ?
-                            d("lg-slide-show") : d("slide-show"),
-                        centerMode: d("lg-center-mode") ?
-                            d("lg-center-mode") : false,
-                        centerPadding: 0,
-                    },
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    arrows: d("lg-arrows") ? true : false,
+                    dots: d("lg-dots") ? true : false,
+                    slidesToShow: d("lg-slide-show") ?
+                        d("lg-slide-show") : d("slide-show"),
+                    centerMode: d("lg-center-mode") ?
+                        d("lg-center-mode") : false,
+                    centerPadding: 0,
                 },
-                {
-                    breakpoint: 992,
-                    settings: {
-                        arrows: d("md-arrows") ? true : false,
-                        dots: d("md-dots") ? true : false,
-                        slidesToShow: d("md-slide-show") ?
-                            d("md-slide-show") : 1,
-                        centerMode: d("md-center-mode") ?
-                            d("md-center-mode") : false,
-                        centerPadding: 0,
-                    },
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    arrows: d("md-arrows") ? true : false,
+                    dots: d("md-dots") ? true : false,
+                    slidesToShow: d("md-slide-show") ?
+                        d("md-slide-show") : 1,
+                    centerMode: d("md-center-mode") ?
+                        d("md-center-mode") : false,
+                    centerPadding: 0,
                 },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        arrows: d("sm-arrows") ? true : false,
-                        dots: d("sm-dots") ? true : false,
-                        slidesToShow: d("sm-slide-show") ?
-                            d("sm-slide-show") : 1,
-                        centerMode: d("sm-center-mode") ?
-                            d("sm-center-mode") : false,
-                        centerPadding: 0,
-                    },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: d("sm-arrows") ? true : false,
+                    dots: d("sm-dots") ? true : false,
+                    slidesToShow: d("sm-slide-show") ?
+                        d("sm-slide-show") : 1,
+                    centerMode: d("sm-center-mode") ?
+                        d("sm-center-mode") : false,
+                    centerPadding: 0,
                 },
-                {
-                    breakpoint: 576,
-                    settings: {
-                        arrows: d("xs-arrows") ? true : false,
-                        dots: d("xs-dots") ? true : false,
-                        slidesToShow: d("xs-slide-show") ?
-                            d("xs-slide-show") : 1,
-                        centerMode: d("xs-center-mode") ?
-                            d("xs-center-mode") : false,
-                        centerPadding: 0,
-                    },
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    arrows: d("xs-arrows") ? true : false,
+                    dots: d("xs-dots") ? true : false,
+                    slidesToShow: d("xs-slide-show") ?
+                        d("xs-slide-show") : 1,
+                    centerMode: d("xs-center-mode") ?
+                        d("xs-center-mode") : false,
+                    centerPadding: 0,
                 },
+            },
                 // You can unslick at a given breakpoint now by adding:
                 // settings: "unslick"
                 // instead of a settings object
@@ -343,39 +343,39 @@
         });
     });
 
-        // hero slider 1
-        var $slider = $('.hero-slider-6');  
-        var $progressBar = $('.progress');
-        var $status1 = $('.pagingInfo1');
-        var $progressBarLabel = $('.slider__label');
-        var $status2 = $('.pagingInfo2');
-    
-        $slider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-            //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
-            if (!slick.$dots) {
-                return;
-            }
-    
-    
-    
-            var i = (currentSlide ? currentSlide : 0) + 0;
-            $status1.text(i + 1);
-            $status2.text(slick.slideCount);
-        });
-    
-        //   Progress Bar
-        $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-            var calc = ((nextSlide) / (slick.slideCount - 1)) * 100;
-    
-            $progressBar
-                .css('background-size', calc + '% 100%')
-                .attr('aria-valuenow', calc);
-    
-    
-            $progressBarLabel.text(calc + '% completed');
-        });
+    // hero slider 1
+    var $slider = $('.hero-slider-6');
+    var $progressBar = $('.progress');
+    var $status1 = $('.pagingInfo1');
+    var $progressBarLabel = $('.slider__label');
+    var $status2 = $('.pagingInfo2');
 
-       
+    $slider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+        //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+        if (!slick.$dots) {
+            return;
+        }
+
+
+
+        var i = (currentSlide ? currentSlide : 0) + 0;
+        $status1.text(i + 1);
+        $status2.text(slick.slideCount);
+    });
+
+    //   Progress Bar
+    $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        var calc = ((nextSlide) / (slick.slideCount - 1)) * 100;
+
+        $progressBar
+            .css('background-size', calc + '% 100%')
+            .attr('aria-valuenow', calc);
+
+
+        $progressBarLabel.text(calc + '% completed');
+    });
+
+
 
     // Testimonail slider ----------------------
 
@@ -507,8 +507,8 @@
         $(slick.$slides[currentSlide]).find('[data-ani]').addClass('th-animated');
     })
 
-      /*----------- 09. Flip Slider ----------*/
-      if ($(".flip-gallery").length > 0) {
+    /*----------- 09. Flip Slider ----------*/
+    if ($(".flip-gallery").length > 0) {
         $(".flip-gallery").flipster({
             style: 'carousel',
             spacing: -0.5,
@@ -518,7 +518,7 @@
             scrollwheel: false,
         });
     }
-    
+
     /*----------- 10. Ajax Contact Form ----------*/
     var form = ".ajax-contact";
     var invalidCls = "is-invalid";
@@ -590,8 +590,8 @@
         if (
             !$($email).val() ||
             !$($email)
-            .val()
-            .match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)
+                .val()
+                .match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)
         ) {
             $($email).addClass(invalidCls);
             valid = false;
@@ -660,29 +660,29 @@
     };
     popupSideMenu('.sidemenu-wrapper', '.sideMenuToggler', '.sideMenuCls', 'show');
 
-     /*---------- 12. Popup Sidemenu ----------*/
- function popupSideMenu($sideMenu2, $sideMunuOpen2, $sideMenuCls2, $toggleCls2) {
-    // Sidebar Popup
-    $($sideMunuOpen2).on('click', function (e) {
-        e.preventDefault();
-        $($sideMenu2).addClass($toggleCls2);
-    });
-    $($sideMenu2).on('click', function (e) {
-        e.stopPropagation();
-        $($sideMenu2).removeClass($toggleCls2)
-    });
-    var sideMenuChild = $sideMenu2 + ' > div';
-    $(sideMenuChild).on('click', function (e) {
-        e.stopPropagation();
-        $($sideMenu2).addClass($toggleCls2)
-    });
-    $($sideMenuCls2).on('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        $($sideMenu2).removeClass($toggleCls2);
-    });
-};
-popupSideMenu('.shopping-cart', '.sideMenuToggler2', '.sideMenuCls', 'show');
+    /*---------- 12. Popup Sidemenu ----------*/
+    function popupSideMenu($sideMenu2, $sideMunuOpen2, $sideMenuCls2, $toggleCls2) {
+        // Sidebar Popup
+        $($sideMunuOpen2).on('click', function (e) {
+            e.preventDefault();
+            $($sideMenu2).addClass($toggleCls2);
+        });
+        $($sideMenu2).on('click', function (e) {
+            e.stopPropagation();
+            $($sideMenu2).removeClass($toggleCls2)
+        });
+        var sideMenuChild = $sideMenu2 + ' > div';
+        $(sideMenuChild).on('click', function (e) {
+            e.stopPropagation();
+            $($sideMenu2).addClass($toggleCls2)
+        });
+        $($sideMenuCls2).on('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $($sideMenu2).removeClass($toggleCls2);
+        });
+    };
+    popupSideMenu('.shopping-cart', '.sideMenuToggler2', '.sideMenuCls', 'show');
 
 
 
@@ -711,68 +711,68 @@ popupSideMenu('.shopping-cart', '.sideMenuToggler2', '.sideMenuCls', 'show');
         $(".slick-slider").slick("refresh");
     });
 
-      /*----------- 09. tilt ----------*/
-      $('.tilt-active').tilt({
+    /*----------- 09. tilt ----------*/
+    $('.tilt-active').tilt({
         maxTilt: 7,
-        perspective: 1000,   
+        perspective: 1000,
     })
 
 
-       /************lettering js***********/
-       function injector(t, splitter, klass, after) {
-		var a = t.text().split(splitter), inject = '';
-		if (a.length) {
-			$(a).each(function(i, item) {
-				inject += '<span class="'+klass+(i+1)+'">'+item+'</span>'+after;
-			});	
-			t.empty().append(inject);
-		}
-	}
-	
-	var methods = {
-		init : function() {
+    /************lettering js***********/
+    function injector(t, splitter, klass, after) {
+        var a = t.text().split(splitter), inject = '';
+        if (a.length) {
+            $(a).each(function (i, item) {
+                inject += '<span class="' + klass + (i + 1) + '">' + item + '</span>' + after;
+            });
+            t.empty().append(inject);
+        }
+    }
 
-			return this.each(function() {
-				injector($(this), '', 'char', '');
-			});
+    var methods = {
+        init: function () {
 
-		},
+            return this.each(function () {
+                injector($(this), '', 'char', '');
+            });
 
-		words : function() {
+        },
 
-			return this.each(function() {
-				injector($(this), ' ', 'word', ' ');
-			});
+        words: function () {
 
-		},
-		
-		lines : function() {
+            return this.each(function () {
+                injector($(this), ' ', 'word', ' ');
+            });
 
-			return this.each(function() {
-				var r = "eefec303079ad17405c889e092e105b0";
-				// Because it's hard to split a <br/> tag consistently across browsers,
-				// (*ahem* IE *ahem*), we replaces all <br/> instances with an md5 hash 
-				// (of the word "split").  If you're trying to use this plugin on that 
-				// md5 hash string, it will fail because you're being ridiculous.
-				injector($(this).children("br").replaceWith(r).end(), r, 'line', '');
-			});
+        },
 
-		}
-	};
+        lines: function () {
 
-    $.fn.lettering = function( method ) {
-		// Method calling logic
-		if ( method && methods[method] ) {
-			return methods[ method ].apply( this, [].slice.call( arguments, 1 ));
-		} else if ( method === 'letters' || ! method ) {
-			return methods.init.apply( this, [].slice.call( arguments, 0 ) ); // always pass an array
-		}
-		$.error( 'Method ' +  method + ' does not exist on jQuery.lettering' );
-		return this;
-	};
+            return this.each(function () {
+                var r = "eefec303079ad17405c889e092e105b0";
+                // Because it's hard to split a <br/> tag consistently across browsers,
+                // (*ahem* IE *ahem*), we replaces all <br/> instances with an md5 hash 
+                // (of the word "split").  If you're trying to use this plugin on that 
+                // md5 hash string, it will fail because you're being ridiculous.
+                injector($(this).children("br").replaceWith(r).end(), r, 'line', '');
+            });
 
-    $(".about-anime").lettering();       
-    /*---------- 14. Section Position ----------*/  
+        }
+    };
+
+    $.fn.lettering = function (method) {
+        // Method calling logic
+        if (method && methods[method]) {
+            return methods[method].apply(this, [].slice.call(arguments, 1));
+        } else if (method === 'letters' || !method) {
+            return methods.init.apply(this, [].slice.call(arguments, 0)); // always pass an array
+        }
+        $.error('Method ' + method + ' does not exist on jQuery.lettering');
+        return this;
+    };
+
+    $(".about-anime").lettering();
+    /*---------- 14. Section Position ----------*/
     // Interger Converter
     function convertInteger(str) {
         return parseInt(str, 10);
@@ -865,7 +865,7 @@ popupSideMenu('.shopping-cart', '.sideMenuToggler2', '.sideMenuCls', 'show');
         }
     });
 
-   
+
 
     if ($(".odometer").length) {
         $(".odometer").appear();
@@ -880,26 +880,26 @@ popupSideMenu('.shopping-cart', '.sideMenuToggler2', '.sideMenuCls', 'show');
             };
         });
     }
-   
-         /*----------- 14. Date Time Picker ----------*/
-  // Only Date Picker
-  $('.date-pick').datetimepicker({ 
-    timepicker: false,
-    datepicker: true,
-    format: 'd-m-y',
-    step: 10
-  });
 
-  // Only Time Picker
-  $('.time-pick').datetimepicker({
-    datepicker:false,
-    format:'H:i',
-    step:30
-  });
+    /*----------- 14. Date Time Picker ----------*/
+    // Only Date Picker
+    $('.date-pick').datetimepicker({
+        timepicker: false,
+        datepicker: true,
+        format: 'd-m-y',
+        step: 10
+    });
+
+    // Only Time Picker
+    $('.time-pick').datetimepicker({
+        datepicker: false,
+        format: 'H:i',
+        step: 30
+    });
 
     /* ==================================================
-			# Wow Init
-		 ===============================================*/
+            # Wow Init
+         ===============================================*/
     var wow = new WOW({
         boxClass: 'wow',
         animateClass: 'animated',
@@ -909,216 +909,216 @@ popupSideMenu('.shopping-cart', '.sideMenuToggler2', '.sideMenuCls', 'show');
     });
     new WOW().init();
 
-        /*---------- 16. AS Tab ----------*/
-        $.fn.asTab = function (options) {
-            var opt = $.extend(
-                {
-                    sliderTab: false,
-                    tabButton: "button",
-                },
-                options
-            );
-    
-            $(this).each(function () {
-                var $menu = $(this);
-                var $button = $menu.find(opt.tabButton);
-    
-                // Append indicator
-                $menu.append('<span class="indicator"></span>');
-                var $line = $menu.find(".indicator");
-    
-                // On Click Button Class Remove and indecator postion set
-                $button.on("click", function (e) {
-                    e.preventDefault();
-                    var cBtn = $(this);
-                    cBtn.addClass("active").siblings().removeClass("active");
-                    if (opt.sliderTab) {
-                        $(slider).slick("slickGoTo", cBtn.data("slide-go-to"));
-                    } else {
-                        linePos();
-                    }
-                });
-    
-                // Work With slider
-                if (opt.sliderTab) {
-                    var slider = $menu.data("asnavfor"); // select slider
-    
-                    // Select All button and set attribute
-                    var i = 0;
-                    $button.each(function () {
-                        var slideBtn = $(this);
-                        slideBtn.attr("data-slide-go-to", i);
-                        i++;
-    
-                        // Active Slide On load > Actived Button
-                        if (slideBtn.hasClass("active")) {
-                            $(slider).slick(
-                                "slickGoTo",
-                                slideBtn.data("slide-go-to")
-                            );
-                        }
-    
-                        // Change Indicator On slide Change
-                        $(slider).on(
-                            "beforeChange",
-                            function (event, slick, currentSlide, nextSlide) {
-                                $menu
-                                    .find(
-                                        opt.tabButton +
-                                            '[data-slide-go-to="' +
-                                            nextSlide +
-                                            '"]'
-                                    )
-                                    .addClass("active")
-                                    .siblings()
-                                    .removeClass("active");
-                                linePos();
-                            }
-                        );
-                    });
-                }
-    
-                // Indicator Position
-                function linePos() {
-                    var $btnActive = $menu.find(opt.tabButton + ".active"),
-                        $height = $btnActive.css("height"),
-                        $width = $btnActive.css("width"),
-                        $top = $btnActive.position().top + "px",
-                        $left = $btnActive.position().left + "px";
-    
-                    $line.get(0).style.setProperty("--height-set", $height);
-                    $line.get(0).style.setProperty("--width-set", $width);
-                    $line.get(0).style.setProperty("--pos-y", $top);
-                    $line.get(0).style.setProperty("--pos-x", $left);
-    
-                    if (
-                        $($button).first().position().left ==
-                        $btnActive.position().left
-                    ) {
-                        $line
-                            .addClass("start")
-                            .removeClass("center")
-                            .removeClass("end");
-                    } else if (
-                        $($button).last().position().left ==
-                        $btnActive.position().left
-                    ) {
-                        $line
-                            .addClass("end")
-                            .removeClass("center")
-                            .removeClass("start");
-                    } else {
-                        $line
-                            .addClass("center")
-                            .removeClass("start")
-                            .removeClass("end");
-                    }
-                }
-                linePos();
-            });
-        };
-
-        
-    
-        // Call On Load
-        if ($('.testi-box-tab').length) { 
-            $('.testi-box-tab').asTab({
-              sliderTab: true,
-              tabButton: '.tab-btn'
-            });
-          }  
-
-          if ($('.testi-block-tab').length) {  
-            $('.testi-block-tab').asTab({ 
-              sliderTab: true,
-              tabButton: '.tab-btn'
-            });
-          }
-
-
-        if ($(".hero-indicator").length) { 
-            $(".hero-indicator").asTab({
-                sliderTab: true,
-                tabButton: ".indicatior-btn", 
-            });
-        }
-
-            if ($(".hero-indicator3").length) {
-            $(".hero-indicator3").asTab({
-                sliderTab: true,
-                tabButton: ".indicatior-btn", 
-            });
-        }
-        if ($(".hero-indicator.style2").length) { 
-            $(".hero-indicator.style2").asTab({
-                sliderTab: true,
-                tabButton: ".indicatior-btn", 
-            });
-        }
-
-     
-        ($.fn.vsTab = function (t) {
-            var a = $.extend({
-                sliderTab: !1,
+    /*---------- 16. AS Tab ----------*/
+    $.fn.asTab = function (options) {
+        var opt = $.extend(
+            {
+                sliderTab: false,
                 tabButton: "button",
-                indicator: !1
-            }, t);
-            $(this).each(function () {
-                var t = $(this),
-                    s = t.find(a.tabButton);
-                if (
-                    (s.on("click", function (t) {
-                            t.preventDefault();
-                            var s = $(this);
-                            s.addClass("active").siblings().removeClass("active"), a.sliderTab && $(o).slick("slickGoTo", s.data("slide-go-to"));
-                        }),
-                        a.sliderTab)
-                ) {
-                    var o = t.data("asnavfor"),
-                        n = 0;
-                    s.each(function () {
-                        var s = $(this);
-                        s.attr("data-slide-go-to", n),
-                            n++,
-                            s.hasClass("active") && $(o).slick("slickGoTo", s.data("slide-go-to")),
-                            $(o).on("beforeChange", function (e, s, o, n) {
-                                t.find(a.tabButton + '[data-slide-go-to="' + n + '"]')
-                                    .addClass("active")
-                                    .siblings()
-                                    .removeClass("active");
-                            });
-                    });
+            },
+            options
+        );
+
+        $(this).each(function () {
+            var $menu = $(this);
+            var $button = $menu.find(opt.tabButton);
+
+            // Append indicator
+            $menu.append('<span class="indicator"></span>');
+            var $line = $menu.find(".indicator");
+
+            // On Click Button Class Remove and indecator postion set
+            $button.on("click", function (e) {
+                e.preventDefault();
+                var cBtn = $(this);
+                cBtn.addClass("active").siblings().removeClass("active");
+                if (opt.sliderTab) {
+                    $(slider).slick("slickGoTo", cBtn.data("slide-go-to"));
+                } else {
+                    linePos();
                 }
             });
-        }),
-        $(".th-custom-dots").length && $(".th-custom-dots").vsTab({  
-                sliderTab: !0,
-                tabButton: ".dot-btn"
-            }),
-    /*----------- 18. Shape Mockup ----------*/
-    $.fn.shapeMockup = function () {
-        var $shape = $(this);
-        $shape.each(function () {
-            var $currentShape = $(this),
-                shapeTop = $currentShape.data("top"),
-                shapeRight = $currentShape.data("right"),
-                shapeBottom = $currentShape.data("bottom"),
-                shapeLeft = $currentShape.data("left");
-            $currentShape
-                .css({
-                    top: shapeTop,
-                    right: shapeRight,
-                    bottom: shapeBottom,
-                    left: shapeLeft,
-                })
-                .removeAttr("data-top")
-                .removeAttr("data-right")
-                .removeAttr("data-bottom")
-                .removeAttr("data-left")
-                .parent()
-                .addClass("shape-mockup-wrap");
+
+            // Work With slider
+            if (opt.sliderTab) {
+                var slider = $menu.data("asnavfor"); // select slider
+
+                // Select All button and set attribute
+                var i = 0;
+                $button.each(function () {
+                    var slideBtn = $(this);
+                    slideBtn.attr("data-slide-go-to", i);
+                    i++;
+
+                    // Active Slide On load > Actived Button
+                    if (slideBtn.hasClass("active")) {
+                        $(slider).slick(
+                            "slickGoTo",
+                            slideBtn.data("slide-go-to")
+                        );
+                    }
+
+                    // Change Indicator On slide Change
+                    $(slider).on(
+                        "beforeChange",
+                        function (event, slick, currentSlide, nextSlide) {
+                            $menu
+                                .find(
+                                    opt.tabButton +
+                                    '[data-slide-go-to="' +
+                                    nextSlide +
+                                    '"]'
+                                )
+                                .addClass("active")
+                                .siblings()
+                                .removeClass("active");
+                            linePos();
+                        }
+                    );
+                });
+            }
+
+            // Indicator Position
+            function linePos() {
+                var $btnActive = $menu.find(opt.tabButton + ".active"),
+                    $height = $btnActive.css("height"),
+                    $width = $btnActive.css("width"),
+                    $top = $btnActive.position().top + "px",
+                    $left = $btnActive.position().left + "px";
+
+                $line.get(0).style.setProperty("--height-set", $height);
+                $line.get(0).style.setProperty("--width-set", $width);
+                $line.get(0).style.setProperty("--pos-y", $top);
+                $line.get(0).style.setProperty("--pos-x", $left);
+
+                if (
+                    $($button).first().position().left ==
+                    $btnActive.position().left
+                ) {
+                    $line
+                        .addClass("start")
+                        .removeClass("center")
+                        .removeClass("end");
+                } else if (
+                    $($button).last().position().left ==
+                    $btnActive.position().left
+                ) {
+                    $line
+                        .addClass("end")
+                        .removeClass("center")
+                        .removeClass("start");
+                } else {
+                    $line
+                        .addClass("center")
+                        .removeClass("start")
+                        .removeClass("end");
+                }
+            }
+            linePos();
         });
     };
+
+
+
+    // Call On Load
+    if ($('.testi-box-tab').length) {
+        $('.testi-box-tab').asTab({
+            sliderTab: true,
+            tabButton: '.tab-btn'
+        });
+    }
+
+    if ($('.testi-block-tab').length) {
+        $('.testi-block-tab').asTab({
+            sliderTab: true,
+            tabButton: '.tab-btn'
+        });
+    }
+
+
+    if ($(".hero-indicator").length) {
+        $(".hero-indicator").asTab({
+            sliderTab: true,
+            tabButton: ".indicatior-btn",
+        });
+    }
+
+    if ($(".hero-indicator3").length) {
+        $(".hero-indicator3").asTab({
+            sliderTab: true,
+            tabButton: ".indicatior-btn",
+        });
+    }
+    if ($(".hero-indicator.style2").length) {
+        $(".hero-indicator.style2").asTab({
+            sliderTab: true,
+            tabButton: ".indicatior-btn",
+        });
+    }
+
+
+    ($.fn.vsTab = function (t) {
+        var a = $.extend({
+            sliderTab: !1,
+            tabButton: "button",
+            indicator: !1
+        }, t);
+        $(this).each(function () {
+            var t = $(this),
+                s = t.find(a.tabButton);
+            if (
+                (s.on("click", function (t) {
+                    t.preventDefault();
+                    var s = $(this);
+                    s.addClass("active").siblings().removeClass("active"), a.sliderTab && $(o).slick("slickGoTo", s.data("slide-go-to"));
+                }),
+                    a.sliderTab)
+            ) {
+                var o = t.data("asnavfor"),
+                    n = 0;
+                s.each(function () {
+                    var s = $(this);
+                    s.attr("data-slide-go-to", n),
+                        n++,
+                        s.hasClass("active") && $(o).slick("slickGoTo", s.data("slide-go-to")),
+                        $(o).on("beforeChange", function (e, s, o, n) {
+                            t.find(a.tabButton + '[data-slide-go-to="' + n + '"]')
+                                .addClass("active")
+                                .siblings()
+                                .removeClass("active");
+                        });
+                });
+            }
+        });
+    }),
+        $(".th-custom-dots").length && $(".th-custom-dots").vsTab({
+            sliderTab: !0,
+            tabButton: ".dot-btn"
+        }),
+        /*----------- 18. Shape Mockup ----------*/
+        $.fn.shapeMockup = function () {
+            var $shape = $(this);
+            $shape.each(function () {
+                var $currentShape = $(this),
+                    shapeTop = $currentShape.data("top"),
+                    shapeRight = $currentShape.data("right"),
+                    shapeBottom = $currentShape.data("bottom"),
+                    shapeLeft = $currentShape.data("left");
+                $currentShape
+                    .css({
+                        top: shapeTop,
+                        right: shapeRight,
+                        bottom: shapeBottom,
+                        left: shapeLeft,
+                    })
+                    .removeAttr("data-top")
+                    .removeAttr("data-right")
+                    .removeAttr("data-bottom")
+                    .removeAttr("data-left")
+                    .parent()
+                    .addClass("shape-mockup-wrap");
+            });
+        };
 
     if ($(".shape-mockup")) {
         $(".shape-mockup").shapeMockup();
@@ -1188,10 +1188,10 @@ popupSideMenu('.shopping-cart', '.sideMenuToggler2', '.sideMenuCls', 'show');
         dots: false,
         vertical: true,
         verticalSwiping: true,
-            
-        }); 
 
-        
+    });
+
+
     /*----------- 21. Price Slider ----------*/
     $(".price_slider").slider({
         range: true,
@@ -1209,17 +1209,17 @@ popupSideMenu('.shopping-cart', '.sideMenuToggler2', '.sideMenuCls', 'show');
 
 
 
-   /*----------- 21. image Slider ----------*/ 
-    $("#slider").on("input change", (e)=>{
+    /*----------- 21. image Slider ----------*/
+    $("#slider").on("input change", (e) => {
         const sliderPos = e.target.value;
         // Update the width of the foreground image
-        $('.foreground-img').css('width', `${sliderPos}%`)    
+        $('.foreground-img').css('width', `${sliderPos}%`)
         // Update the position of the slider button
-        $('.slider-button').css('left', `calc(${sliderPos}% - 18px)`) 
-      });
+        $('.slider-button').css('left', `calc(${sliderPos}% - 18px)`)
+    });
 
     /* ----------------------------  */
-   
+
     $('#productSlide').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -1227,19 +1227,19 @@ popupSideMenu('.shopping-cart', '.sideMenuToggler2', '.sideMenuCls', 'show');
         dots: false,
         vertical: true,
         verticalSwiping: true,
-            
-        }); 
-        
-        $('#productSlide2').slick({  
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: false,
-            vertical: true,
-            verticalSwiping: true,
-                
-            }); 
-       
+
+    });
+
+    $('#productSlide2').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        vertical: true,
+        verticalSwiping: true,
+
+    });
+
 
 
 
@@ -1252,7 +1252,7 @@ popupSideMenu('.shopping-cart', '.sideMenuToggler2', '.sideMenuCls', 'show');
 
             $(this).find('.progress-number-mark').animate({
                 left: $(this).attr('data-percentage')
-            }, { 
+            }, {
                 duration: 2000,
                 step: function (now, fx) {
                     var data = Math.round(now);
@@ -1318,16 +1318,16 @@ popupSideMenu('.shopping-cart', '.sideMenuToggler2', '.sideMenuCls', 'show');
     };
 
     // Call On Load
-    if ($(".indicator-active").length) { 
+    if ($(".indicator-active").length) {
         $(".indicator-active").indicator();
     }
 
 
     /* ==================================================
 #  Load More 
-===============================================*/  
+===============================================*/
 
-$(function () {   
+    $(function () {
         $(".project-sec").slice(0, 4).show();
         $("#loadMore").on("click", function (e) {
             e.preventDefault();
@@ -1414,9 +1414,9 @@ $(function () {
         });
     });
 
-   
 
-     
+
+
 
 })(jQuery);
 
@@ -1431,7 +1431,7 @@ function DisplayReviewPopup() {
     popupButton.style.display = 'none'
 }
 
-function CloseReviewPopup(){
+function CloseReviewPopup() {
     var reviewPopup = document.querySelector('.Review_popup');
     var popupButton = document.querySelector('.add_review_button');
     if (reviewPopup) {
@@ -1439,3 +1439,242 @@ function CloseReviewPopup(){
     }
     popupButton.style.display = 'block'
 }
+
+
+
+
+
+
+
+
+
+
+
+// ********************************************************************************************
+// Function to create the pending reviews table
+// ********************************************************************************************
+document.addEventListener("DOMContentLoaded", function () {
+    // Function to create the pending reviews table
+    function createPendingReviewsTable(snapshot) {
+        var tableDiv = document.querySelector(".pending_reviews_table_area");
+        tableDiv.innerHTML = "";
+
+        var table = document.createElement("table");
+        table.classList.add("pending_reviews_table");
+
+        var thead = document.createElement("thead");
+        var headerRow = document.createElement("tr");
+        headerRow.innerHTML = "<th>Name</th><th>Email</th><th>Message</th><th>Action</th>";
+        thead.appendChild(headerRow);
+        table.appendChild(thead);
+
+        var tbody = document.createElement("tbody");
+
+        snapshot.forEach(function (childSnapshot) {
+            var reviewData = childSnapshot.val();
+            var reviewKey = childSnapshot.key; // Get the key of the current pending review
+            var row = document.createElement("tr");
+            row.innerHTML = "<td>" + reviewData.name + "</td>" +
+                "<td>" + reviewData.email + "</td>" +
+                "<td>" + reviewData.message + "</td>" +
+                "<td class='actionColumn'><button class='approve_btn'><i class='fa-solid fa-square-check'>&nbsp;</i>Approve</button>" +
+                "<button class='delete_btn'><i class='fa-solid fa-trash-can'></i>&nbsp; Delete</button></td>";
+
+            // Add event listener to the approve button
+            var approveBtn = row.querySelector(".approve_btn");
+            approveBtn.addEventListener("click", function () {
+                approveReview(reviewKey, reviewData);
+            });
+
+            // Add event listener to the delete button
+            var deleteBtn = row.querySelector(".delete_btn");
+            deleteBtn.addEventListener("click", function () {
+                deleteReview(reviewKey);
+            });
+
+            tbody.appendChild(row);
+        });
+
+        table.appendChild(tbody);
+        tableDiv.appendChild(table);
+    }
+
+    // Function to refresh pending reviews table data
+    function refreshPendingReviewsTable() {
+        var pendingReviewsRef = firebase.database().ref("PendingReviews");
+        pendingReviewsRef.once("value", function (snapshot) {
+            createPendingReviewsTable(snapshot);
+        });
+    }
+
+    // Function to approve a review
+    function approveReview(reviewKey, reviewData) {
+        // Get a reference to the Firebase database
+        var database = firebase.database();
+
+        // Get a reference to the "ApprovedReviews" collection
+        var approvedReviewsRef = database.ref("approvedReviews");
+
+        // Set the review data with the "name" key's value as the key for the object
+        var updatedReviewData = {};
+        updatedReviewData[reviewData.name] = reviewData;
+
+        // Add the updated review data to the "ApprovedReviews" collection
+        approvedReviewsRef.update(updatedReviewData)
+            .then(function () {
+                // If adding to "ApprovedReviews" succeeds, remove the review from "PendingReviews"
+                var pendingReviewsRef = database.ref("PendingReviews/" + reviewKey);
+                pendingReviewsRef.remove()
+                    .then(function () {
+                        // If removal from "PendingReviews" succeeds, refresh the pending reviews table
+                        refreshPendingReviewsTable();
+                    })
+                    .catch(function (error) {
+                        console.error("Error removing review from PendingReviews:", error);
+                    });
+            })
+            .catch(function (error) {
+                console.error("Error adding review to ApprovedReviews:", error);
+            });
+    }
+
+    // Function to delete a review
+    function deleteReview(reviewKey) {
+        // Get a reference to the Firebase database
+        var database = firebase.database();
+
+        // Get a reference to the "PendingReviews" collection
+        var pendingReviewsRef = database.ref("PendingReviews/" + reviewKey);
+
+        // Remove the review from the "PendingReviews" collection
+        pendingReviewsRef.remove()
+            .then(function () {
+                // If removal succeeds, refresh the pending reviews table
+                refreshPendingReviewsTable();
+            })
+            .catch(function (error) {
+                console.error("Error removing review from PendingReviews:", error);
+            });
+    }
+
+    // Call the function to display pending reviews when the page is loaded
+    refreshPendingReviewsTable();
+});
+
+
+
+
+// Call the function to display pending reviews when the page is loaded
+document.addEventListener("DOMContentLoaded", function () {
+    refreshPendingReviewsTable();
+});
+
+
+
+
+
+
+
+
+//************************************************* */
+// Function to create the approved reviews table
+//************************************************* */
+
+// Function to create the approved reviews table
+function createApprovedReviewsTable(snapshot) {
+    var tableDiv = document.querySelector(".approved_reviews_table_area");
+    tableDiv.innerHTML = "";
+
+    var table = document.createElement("table");
+    table.classList.add("approved_reviews_table");
+
+    var thead = document.createElement("thead");
+    var headerRow = document.createElement("tr");
+    headerRow.innerHTML = "<th>Name</th><th>Email</th><th>Message</th><th>Action</th>";
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
+
+    var tbody = document.createElement("tbody");
+
+    snapshot.forEach(function (childSnapshot) {
+        var reviewData = childSnapshot.val();
+        var reviewKey = childSnapshot.key; // Get the key of the current approved review
+        var row = document.createElement("tr");
+        row.innerHTML = "<td>" + reviewData.name + "</td>" +
+            "<td>" + reviewData.email + "</td>" +
+            "<td>" + reviewData.message + "</td>" +
+            "<td class='actionColumn'><button class='delete_btn'><i class='fa-solid fa-trash-can'></i>&nbsp; Delete</button></td>";
+
+        // Add event listener to the delete button
+        var deleteBtn = row.querySelector(".delete_btn");
+        deleteBtn.addEventListener("click", function () {
+            deleteReview(reviewKey);
+        });
+
+        tbody.appendChild(row);
+    });
+
+    table.appendChild(tbody);
+    tableDiv.appendChild(table);
+}
+
+// Function to refresh approved reviews table data
+function refreshApprovedReviewsTable() {
+    var approvedReviewsRef = firebase.database().ref("approvedReviews");
+    approvedReviewsRef.once("value", function (snapshot) {
+        createApprovedReviewsTable(snapshot);
+    });
+}
+
+// Function to delete a review
+function deleteReview(reviewKey) {
+    // Get a reference to the Firebase database
+    var database = firebase.database();
+
+    // Get a reference to the "ApprovedReviews" collection
+    var approvedReviewsRef = database.ref("approvedReviews/" + reviewKey);
+
+    // Remove the review from the "ApprovedReviews" collection
+    approvedReviewsRef.remove()
+        .then(function () {
+            // If removal succeeds, refresh the approved reviews table
+            refreshApprovedReviewsTable();
+        })
+        .catch(function (error) {
+            console.error("Error removing review from ApprovedReviews:", error);
+        });
+}
+
+// Call the function to display approved reviews when the page is loaded
+document.addEventListener("DOMContentLoaded", function () {
+    refreshApprovedReviewsTable();
+});
+
+
+// ********************************************************************************************
+// testimonials toggle switch
+// ********************************************************************************************
+document.querySelector('.reviewTogglerPending').style.backgroundColor = '#4CBB17';
+document.querySelector('.reviewTogglerApproved').style.backgroundColor = '#4bbb175d';
+document.querySelector('.approved_reviews_table_area').style.display = 'none';
+
+
+function showPendingReviews() {
+    document.querySelector('.pending_reviews_table_area').style.display = 'block';
+    document.querySelector('.approved_reviews_table_area').style.display = 'none';
+
+    document.querySelector('.reviewTogglerPending').style.backgroundColor = '#4CBB17';
+    document.querySelector('.reviewTogglerApproved').style.backgroundColor = '#4bbb175d';
+}
+
+function showApprovedReviews() {
+    document.querySelector('.pending_reviews_table_area').style.display = 'none';
+    document.querySelector('.approved_reviews_table_area').style.display = 'block';
+
+    document.querySelector('.reviewTogglerPending').style.backgroundColor = '#4bbb175d';
+    document.querySelector('.reviewTogglerApproved').style.backgroundColor = '#4CBB17';
+}
+
+
+
+
