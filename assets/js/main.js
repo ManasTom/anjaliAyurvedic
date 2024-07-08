@@ -1753,9 +1753,9 @@ window.onload = function () {
     var inactivityTimeout;
 
     // Log out the user when closing the tab or browser
-    window.addEventListener("beforeunload", function () {
-        logoutUser();
-    });
+    // window.addEventListener("beforeunload", function () {
+    //     logoutUser();
+    // });
 
 
     window.addEventListener('unload', function () {
@@ -1763,6 +1763,7 @@ window.onload = function () {
     });
 
 };
+
 
 
 
