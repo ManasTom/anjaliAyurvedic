@@ -18079,7 +18079,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .counter-area {
-  background-image: url(../img/Rectangle\ 77.png);
+  background-image: url(../img/Rectangle\ 77.webp);
   padding-top: 700px;
   background-size: cover;
   /* Ensures the image covers the entire div */
@@ -21313,6 +21313,28 @@ span.select2-selection.select2-selection--single:focus {
   transition: 0.4s ease-in-out;
   z-index: 1;
   margin-top: 30px;
+  height: 650px;
+}
+
+@media (max-width: 1300px) {
+  .service-box {
+    height: 700px;
+  }
+}
+@media (max-width: 1200px) {
+  .service-box {
+    height: 850px;
+  }
+}
+@media (max-width: 1000px) {
+  .service-box {
+    height: 720px;
+  }
+}
+@media (max-width: 768px) {
+  .service-box {
+    height: max-content;
+  }
 }
 
 .service-box .box-title {
@@ -21379,6 +21401,12 @@ span.select2-selection.select2-selection--single:focus {
 .service-box:hover .global-icon img {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
+}
+
+.service_box_container {
+  height: max-content;
+  background-color: #8ED06C;
+  position: relative;
 }
 
 .service-img img {
@@ -32951,7 +32979,7 @@ span.select2-selection.select2-selection--single:focus {
 .hero_bg_wrapper_2 {
   width: 100%;
   height: auto;
-  background-image: url(../img/hero_2.png);
+  background-image: url(../img/hero_2.webp);
   background-repeat: no-repeat;
   z-index: -99999;
 }
@@ -32991,7 +33019,7 @@ span.select2-selection.select2-selection--single:focus {
 
 
 .serv_card_bg {
-  background-image: url(../img/divservice-card.png);
+  background-image: url(../img/divservice-card.webp);
   background-size: cover;
   /* Ensures the image covers the entire div */
   background-position: center;
