@@ -57,7 +57,7 @@
     <body>
         <div class="container">
             <div class="header">
-                <img src="https://dranjalisayurveda.com/assets/img/Group%2025.png" alt="Ayurveda Center Logo">
+                <img src="https://dranjalisayurveda.com/assets/img/Group%2025.webp" alt="Ayurveda Center Logo">
             </div>
             <div class="content">
                 <h2>New Review Submission</h2>

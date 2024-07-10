@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Review Submission</title>
+</head>
+
+<body
+    style="background-color: rgb(172, 253, 183); margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <div style="width: 100%; background-color: #fff;">
+        <img onclick="window.open('https://dranjalisayurveda.com')" style="width: 10%;"
+            src="https://dranjalisayurveda.com/assets/img/Group%2025.webp" alt="">
+    </div>
+    <section
+        style="width: 96%; height: max-content; margin-top: 2%; border-radius: 10px; background-color: antiquewhite; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <h1>You have a new review submission</h1>
+        <div
+            style="width: 99%; background-color: rgba(255, 255, 255, 0.658); border: 2px solid green; border-radius: 15px;">
+            <p id="review_content" style="padding: 2%;">
+                Generate Lorem Ipsum placeholder text for use in your graphic, print and web layouts, and discover
+                plugins for your favorite writing, design and blogging tools. Explore the origins, history and meaning
+                of the famous passage, and learn how Lorem Ipsum went from scrambled
+            </p>
+            <p id="reviewer_name" style="padding: 2%;">
+                Dummy Name
+            </p>
+            <p id="reviewer_mail" style="padding: 2%;">
+                example@example.com
+            </p>
+        </div>
+        <div
+            style="width: 80%; display: flex; align-items: center; justify-content: space-around; margin-top: 1%; margin-bottom: 1%;">
+            <button
+                style="cursor: pointer; background-color: #00ff15a4; padding: 1.5%; border: none; border-radius: 10px; color: #000; font-weight: bold;"
+                onclick="approveReview()">
+                Approve
+            </button>
+        </div>
+    </section>
+
+    <script>
+        function approveReview() {
+            var reviewContent = document.getElementById('review_content').innerText;
+            var reviewerName = document.getElementById('reviewer_name').innerText;
+            var reviewerMail = document.getElementById('reviewer_mail').innerText;
+
+            var newReviewRef = firebase.database().ref('Reviews').push();
+            newReviewRef.set({
+                content: reviewContent,
+                name: reviewerName,
+                email: reviewerMail,
+                timestamp: Date.now()
+            }).then(function () {
+                alert('Review approved and added to the database!');
+            }).catch(function (error) {
+                console.error('Error adding review: ', error);
+            });
+        }
+    </script>
+
+
+    <!-- Import the Firebase core (always required) -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <!-- Import only the Firebase database module -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+    <script>
+        //fireConfig 
+        var firebaseConfig = {
+            apiKey: "AIzaSyBlgiM89yQ3BFA1YYgZijHo4YH2QipjOQ0",
+            authDomain: "anjalis-7e2d3.firebaseapp.com",
+            databaseURL: "https://anjalis-7e2d3-default-rtdb.firebaseio.com/",
+            projectId: "anjalis-7e2d3",
+            storageBucket: "anjalis-7e2d3.appspot.com",
+            messagingSenderId: "983176713191",
+            appId: "1:983176713191:web:2a71795aeb0420c2672342"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const storage = firebase.storage();
+        const database = firebase.database();
+    </script>
+</body>
+
+</html>

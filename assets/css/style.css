@@ -7578,7 +7578,7 @@ ol.wp-block-rss {
 }
 
 .header-layout4 .main-menu {
-  padding-left: 93px;
+  padding-left: 0px !important;
 }
 
 @media (max-width: 1799px) {
@@ -21321,16 +21321,19 @@ span.select2-selection.select2-selection--single:focus {
     height: 700px;
   }
 }
+
 @media (max-width: 1200px) {
   .service-box {
     height: 850px;
   }
 }
+
 @media (max-width: 1000px) {
   .service-box {
     height: 720px;
   }
 }
+
 @media (max-width: 768px) {
   .service-box {
     height: max-content;
@@ -32972,7 +32975,13 @@ span.select2-selection.select2-selection--single:focus {
   width: 100%;
   height: auto;
   background-image: url(../img/hero_1.webp);
+  background-size: cover;
+  /* Ensures the image covers the entire div */
+  background-position: center;
+  /* Centers the image */
   background-repeat: no-repeat;
+  /* Prevents the image from repeating */
+  overflow: hidden;
   z-index: -99999;
 }
 
@@ -32980,15 +32989,27 @@ span.select2-selection.select2-selection--single:focus {
   width: 100%;
   height: auto;
   background-image: url(../img/hero_2.webp);
+  background-size: cover;
+  /* Ensures the image covers the entire div */
+  background-position: center;
+  /* Centers the image */
   background-repeat: no-repeat;
+  /* Prevents the image from repeating */
+  overflow: hidden;
   z-index: -99999;
 }
 
 .hero_bg_wrapper_3 {
   width: 100%;
-  height: 100%;
+  height: auto;
   background-image: url(../img/hero_3.webp);
+  background-size: cover;
+  /* Ensures the image covers the entire div */
+  background-position: center;
+  /* Centers the image */
   background-repeat: no-repeat;
+  /* Prevents the image from repeating */
+  overflow: hidden;
   z-index: -99999;
 }
 
@@ -32996,8 +33017,25 @@ span.select2-selection.select2-selection--single:focus {
   width: 100%;
   height: auto;
   background-image: url(../img/hero_4.webp);
-  background-repeat: no-repeat;
   z-index: -99999;
+
+  background-size: cover;
+  /* Ensures the image covers the entire div */
+  background-position: center;
+  /* Centers the image */
+  background-repeat: no-repeat;
+  /* Prevents the image from repeating */
+  overflow: hidden;
+}
+
+.rwpr3{
+  padding-top: 0px;
+}
+
+@media (max-width: 1200px) {
+  .rwpr3{
+    padding-top: 150px !important;
+  }
 }
 
 
