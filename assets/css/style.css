@@ -9393,6 +9393,7 @@ ul.comment-list:has(> .th-comment-item ~ .th-comment-item):first-child>.th-post-
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   overflow: hidden;
+  height: max-content !important;
 }
 
 .th-hero-wrapper .slick-arrow {
@@ -10340,8 +10341,8 @@ ul.comment-list:has(> .th-comment-item ~ .th-comment-item):first-child>.th-post-
 }
 
 .hero-style4 .hero-title {
-  font-size: 74px;
-  line-height: 84px;
+  font-size: 64px;
+  line-height: 100%;
   /* Medium Large devices */
   /* Small devices */
   /* Extra small devices */
@@ -10350,8 +10351,8 @@ ul.comment-list:has(> .th-comment-item ~ .th-comment-item):first-child>.th-post-
 
 @media (max-width: 1299px) {
   .hero-style4 .hero-title {
-    font-size: 64px;
-    line-height: 74px;
+    font-size: 54px;
+    line-height: 100%;
   }
 }
 
@@ -18080,7 +18081,7 @@ span.select2-selection.select2-selection--single:focus {
 
 .counter-area {
   background-image: url(../img/Rectangle\ 77.webp);
-  padding-top: 700px;
+  padding-top: 600px;
   background-size: cover;
   /* Ensures the image covers the entire div */
   background-position: center;
@@ -32969,11 +32970,15 @@ span.select2-selection.select2-selection--single:focus {
   background-color: var(--theme-color);
 }
 
+.th-hero-slide{
+  height: 100vh;
+}
+
 
 
 .hero_bg_wrapper_1 {
   width: 100%;
-  height: auto;
+  height: 100% !important;
   background-image: url(../img/hero_1.webp);
   background-size: cover;
   /* Ensures the image covers the entire div */
@@ -32982,12 +32987,13 @@ span.select2-selection.select2-selection--single:focus {
   background-repeat: no-repeat;
   /* Prevents the image from repeating */
   overflow: hidden;
+  position: relative;
   z-index: -99999;
 }
 
 .hero_bg_wrapper_2 {
   width: 100%;
-  height: auto;
+  height: 100% !important;
   background-image: url(../img/hero_2.webp);
   background-size: cover;
   /* Ensures the image covers the entire div */
@@ -33001,7 +33007,7 @@ span.select2-selection.select2-selection--single:focus {
 
 .hero_bg_wrapper_3 {
   width: 100%;
-  height: auto;
+  height: 100% !important;
   background-image: url(../img/hero_3.webp);
   background-size: cover;
   /* Ensures the image covers the entire div */
@@ -33015,7 +33021,7 @@ span.select2-selection.select2-selection--single:focus {
 
 .hero_bg_wrapper_4 {
   width: 100%;
-  height: auto;
+  height: 100% !important;
   background-image: url(../img/hero_4.webp);
   z-index: -99999;
 
@@ -33078,13 +33084,13 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .visionAndMission h2 {
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   padding: 5%;
 }
 
 .visionAndMission p {
-  color: #fff;
+  color: #ffffff;
   text-align: justify;
   padding: 0% 15% 0% 15%;
   font-size: 110%;
