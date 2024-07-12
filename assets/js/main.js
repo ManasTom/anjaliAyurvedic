@@ -350,7 +350,7 @@
     var $progressBarLabel = $('.slider__label');
     var $status2 = $('.pagingInfo2');
 
-    $slider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+    $slider.on('init  afterChange', function (event, slick, currentSlide, nextSlide) {
         //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
         if (!slick.$dots) {
             return;

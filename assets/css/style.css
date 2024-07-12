@@ -16660,6 +16660,15 @@ span.select2-selection.select2-selection--single:focus {
   }
 }
 
+@media (max-width: 768px) {
+  .testi-grid.style2 {
+    padding: 5px;
+  }
+  .testi-grid.style2 .testi-grid_text {
+    font-size: 80% !important;
+  }
+}
+
 .testi-grid.style2 .star-icon {
   margin-bottom: 10px;
 }
@@ -18089,13 +18098,13 @@ span.select2-selection.select2-selection--single:focus {
 
 @media (max-width: 1150px) {
   .counter-area {
-    padding-top: 1000px;
+    padding-top: 600px;
   }
 }
 
 @media (max-width: 300px) {
   .counter-area {
-    padding-top: 1200px;
+    padding-top: 600px;
   }
 }
 
@@ -21094,6 +21103,12 @@ span.select2-selection.select2-selection--single:focus {
 @media (max-width: 991px) {
   .service-card {
     padding: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .service-card-content {
+    height: 850px;
   }
 }
 
@@ -33095,14 +33110,14 @@ span.select2-selection.select2-selection--single:focus {
 @media (max-width: 660px) {
   .visionAndMission p {
     padding: 0% 15% 0% 15%;
-    font-size: 80%;
+    font-size: 100%;
   }
 }
 
 @media (max-width: 370px) {
   .visionAndMission p {
     padding: 0% 5% 0% 5%;
-    font-size: 80%;
+    font-size: 100%;
   }
 }
 
@@ -33470,4 +33485,13 @@ li {
   font-weight: 700;
   line-height: 30px;
   margin-bottom: 5px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+@media (max-width: 768px) {
+  .review_quotes {
+    font-family: var(--title-font);
+    font-size: 13px;
+  }
 }

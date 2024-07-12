@@ -278,14 +278,14 @@ About Area
                             <p style="margin-bottom: 5px; color: #000;" class="mb-30">
                                 Uncover the convergence of age old authentic Ayurveda wisdom and modern lifestyle
                                 medicine at DR ANJALIS AYURVEDA CENTER AL KARAMA .DUBAI.</p>
-                                <p style="margin-bottom: 5px; color: #000;" class="mb-30">
+                            <p style="margin-bottom: 5px; color: #000;" class="mb-30">
                                 At DR ANJALIS AYURVEDA CENTER we provide a unique integration of Ayurveda and modern
                                 lifestyle medicine concepts. We assure unique solutions for various lifestyle diseases
                                 with or without medications to prevent reverse optimize the diseases. Our priority is
                                 empathetic care to cater your holistic health care needs by patiently listening to your
                                 concerns and offering highly personalized solutions for betterment of health and
                                 wellness.</p>
-                                <p style="margin-bottom: 5px; color: #000;" class="mb-30">
+                            <p style="margin-bottom: 5px; color: #000;" class="mb-30">
                                 Ayurveda is a science always emphasize on understanding and addressing the root causes
                                 of your pains while promoting holistic health healing .In orthopedic rehabilitation we
                                 employee precision medicine techniques tailored to individual disease conditions with a
@@ -558,10 +558,12 @@ Team Area
                 src="assets/img/floating_mint_leaves.webp" alt="">
         </div>
     </section>
+
+
     <!--============================== 
 Testimonial Area  
 ==============================-->
-    <div class="overflow-hidden bg-smoke space">
+    <section class="testi-area2 bg-top-center overflow-hidden space" data-bg-src="assets/img/testimonials_bg.webp">
         <div class="container">
             <div class="row">
                 <div class="title-area text-center mb-30">
@@ -570,8 +572,8 @@ Testimonial Area
                     <h2 class="sec-title">Our Customer Feedback</h2>
                 </div>
             </div>
-            <div class="row slider-shadow th-carousel" data-slide-show="2" data-lg-slide-show="2" data-sm-slide-show="1"
-                data-xs-slide-show="1">
+            <div id="home_reviews_section" class="row slider-shadow th-carousel" data-slide-show="2"
+                data-lg-slide-show="2" data-sm-slide-show="1" data-xs-slide-show="1">
                 <div class="col-md-6 col-lg-4">
                     <div class="testi-grid style2">
                         <div class="testi-grid_content">
@@ -678,9 +680,34 @@ Testimonial Area
                     </div>
                 </div>
 
+
             </div>
         </div>
+
+    </section>
+    <div class="add_review_container Review_popup">
+        <a style="float: right; margin-right: 2%;" onclick="CloseReviewPopup()"><i class="fa-solid fa-x"></i></a>
+        <form action="">
+            <input type="text" placeholder="Full Name" id="fullName" name="fullName"><br>
+            <input type="email" placeholder="Email ID" id="emailid" name="email"><br>
+            <textarea placeholder="Your Message" id="messagetext" name="message" rows="5"
+                maxlength="500"></textarea><br>
+            <button id="submitReview" type="submit"> Submit</button>
+        </form>
     </div>
+    <div
+        style="width: 100%; height: max-content; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <p class="review_quotes">"Share Your Experience! 🌿 Your feedback helps us grow and serve you better. <br> Leave
+            a review or testimonial
+            about your journey with Dr. Anjali's Ayurvedic Center." <br><br></p>
+        <button onclick="DisplayReviewPopup()" class="add_review_button">Add a Review &nbsp; <i
+                class="fa-solid fa-thumbs-up"></i></button>
+    </div>
+
+    <div class="shape-mockup movingX d-none d-xl-block" data-top="0%" data-left="0%"><img
+            src="assets/img/shape/flower_1_13.webp" alt="">
+    </div>
+
 
 
 
@@ -849,6 +876,8 @@ Testimonial Area
             padding-bottom: 3%;
         }
 
+
+
         .marquee {
             display: flex;
             width: 400%;
@@ -905,10 +934,35 @@ Testimonial Area
             }
         }
 
+        @media (max-width: 768px) {
+            .marquee {
+                display: flex;
+                width: 700%;
+            }
+        }
+
         /* * {
         border: 1px solid red;
     } */
     </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
