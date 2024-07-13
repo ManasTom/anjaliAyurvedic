@@ -588,7 +588,6 @@ Testimonial Area
                             <div class="testi-grid_profile">
                                 <div class="media-body">
                                     <h5 class="testi-grid_name nme"></h5>
-                                    <p class="testi-grid_desig">Customer</p>
                                 </div>
                             </div>
                         </div>
@@ -609,7 +608,6 @@ Testimonial Area
                             <div class="testi-grid_profile">
                                 <div class="media-body">
                                     <h5 class="testi-grid_name nme"></h5>
-                                    <p class="testi-grid_desig">Customer</p>
                                 </div>
                             </div>
                         </div>
@@ -630,7 +628,6 @@ Testimonial Area
                             <div class="testi-grid_profile">
                                 <div class="media-body">
                                     <h5 class="testi-grid_name nme"></h5>
-                                    <p class="testi-grid_desig">Customer</p>
                                 </div>
                             </div>
                         </div>
@@ -651,34 +648,33 @@ Testimonial Area
                             <div class="testi-grid_profile">
                                 <div class="media-body">
                                     <h5 class="testi-grid_name nme"></h5>
-                                    <p class="testi-grid_desig">Customer</p>
                                 </div>
                             </div>
                         </div>
                         <div class="testi-shape2"><img src="assets/img/basil.webp" alt=""></div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="testi-grid style2">
-                        <div class="testi-grid_content">
-                            <div class="star-icon">
-                                <a href="#"><i class="fa-solid fa-star"></i></a>
-                                <a href="#"><i class="fa-solid fa-star"></i></a>
-                                <a href="#"><i class="fa-solid fa-star"></i></a>
-                                <a href="#"><i class="fa-solid fa-star"></i></a>
-                                <a href="#"><i class="fa-solid fa-star"></i></a>
-                            </div>
-                            <p class="testi-grid_text msg"></p>
-                            <div class="testi-grid_profile">
-                                <div class="media-body">
-                                    <h5 class="testi-grid_name nme"></h5>
-                                    <p class="testi-grid_desig">Customer</p>
-                                </div>
+                <!-- <div class="col-md-6 col-lg-4">
+                <div class="testi-grid style2">
+                    <div class="testi-grid_content">
+                        <div class="star-icon">
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                        </div>
+                        <p class="testi-grid_text msg"></p>
+                        <div class="testi-grid_profile">
+                            <div class="media-body">
+                                <h5 class="testi-grid_name nme"></h5>
+                                <p class="testi-grid_desig">Customer</p>
                             </div>
                         </div>
-                        <div class="testi-shape2"><img src="assets/img/basil.webp" alt=""></div>
                     </div>
+                    <div class="testi-shape2"><img src="assets/img/basil.webp" alt=""></div>
                 </div>
+            </div> -->
 
 
             </div>
@@ -687,7 +683,7 @@ Testimonial Area
     </section>
     <div class="add_review_container Review_popup">
         <a style="float: right; margin-right: 2%;" onclick="CloseReviewPopup()"><i class="fa-solid fa-x"></i></a>
-        <form action="">
+        <form>
             <input type="text" placeholder="Full Name" id="fullName" name="fullName"><br>
             <input type="email" placeholder="Email ID" id="emailid" name="email"><br>
             <textarea placeholder="Your Message" id="messagetext" name="message" rows="5"
@@ -1077,7 +1073,7 @@ Testimonial Area
                 <div class="row align-items-center">
                     <div class="col-lg-7">
                         <p class="copyright-text text-white">© 2024 Dr. Anjali's Ayurvedic Center. All Rights Reserved.
-                            <a href="privacy-policy.html">Privacy Policy</a> |<a href="privacy-policy.html">Terms of
+                            <a href="privacy-policy.html">Privacy Policy</a> |<a href="terms-and-conditions.html">Terms of
                                 Service</a> | <a href="sitemap.html">Sitemap</a>|<a href="admin.html">Admin</a>
                         </p>
                     </div>
@@ -1246,44 +1242,44 @@ Testimonial Area
         const database = firebase.database();
     </script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Function to fetch and display the latest 5 approved reviews
-            function displayLatestApprovedReviews() {
-                var approvedReviewsRef = firebase.database().ref("approvedReviews");
-                approvedReviewsRef.once("value", function (snapshot) {
-                    var reviewsArray = [];
-                    snapshot.forEach(function (childSnapshot) {
-                        reviewsArray.push(childSnapshot.val());
-                    });
-
-                    // Reverse to get the latest reviews first
-                    reviewsArray.reverse();
-                    console.log(reviewsArray); // Log the reviews array to check the fetched data
-                    console.log(reviewsArray.length);
-
-                    var messageElements = document.querySelectorAll(".msg");
-                    var nameElements = document.querySelectorAll(".nme");
-
-                    for (var i = 0; i < 9; i++) {
-                        console.log(i);
-                        if (i < reviewsArray.length) {
-                            messageElements[i].innerText = reviewsArray[i].message;
-                            nameElements[i].innerText = reviewsArray[i].name;
-                        } else {
-                            messageElements[i].innerText = "";
-                            nameElements[i].innerText = "";
-                        }
-                    }
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Function to fetch and display the latest 5 approved reviews
+        function displayLatestApprovedReviews() {
+            var approvedReviewsRef = firebase.database().ref("approvedReviews");
+            approvedReviewsRef.once("value", function (snapshot) {
+                var reviewsArray = [];
+                snapshot.forEach(function (childSnapshot) {
+                    reviewsArray.push(childSnapshot.val());
                 });
-            }
 
-            // Call the function to display the latest approved reviews when the page is loaded
-            displayLatestApprovedReviews();
-        });
+                // Reverse to get the latest reviews first
+                reviewsArray.reverse();
+                console.log(reviewsArray); // Log the reviews array to check the fetched data
+                console.log(reviewsArray.length);
+
+                var messageElements = document.querySelectorAll(".msg");
+                var nameElements = document.querySelectorAll(".nme");
+
+                for (var i = 0; i < 9; i++) {
+                    console.log(i);
+                    if (i < reviewsArray.length) {
+                        messageElements[i].innerText = reviewsArray[i].message;
+                        nameElements[i].innerText = reviewsArray[i].name;
+                    } else {
+                        messageElements[i].innerText = "I was suffering from severe neck pain and found no relief after visiting a hospital. Desperate for a solution, I decided to visit an Ayurvedic clinic where I met Dr. Anjali Her professionalism and warm greeting made me feel like family. Her expertise was evident throughout the treatment. After applying her prescribed medicine and receiving a massage, I felt significant ";
+                        nameElements[i].innerText = "Shamshad Shaikh";
+                    }
+                }
+            });
+        }
+
+        // Call the function to display the latest approved reviews when the page is loaded
+        displayLatestApprovedReviews();
+    });
 
 
-    </script>
+</script>
 
 
 
