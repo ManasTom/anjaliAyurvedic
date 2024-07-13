@@ -37,10 +37,10 @@
 }
 
 /*------------------- 1.5. Typography -------------------*/
-html,
+/* html,
 body {
   scroll-behavior: auto !important;
-}
+} */
 
 body {
   font-family: var(--body-font);
@@ -16306,7 +16306,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .about-card_text {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .about-card .th-social a {
@@ -16801,7 +16801,7 @@ span.select2-selection.select2-selection--single:focus {
 .testi-grid .testi-shape2 {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -8%;
   /* Extra small devices */
 }
 
@@ -21215,7 +21215,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .service-card_text {
-  border-bottom: 1px dashed #E8CDBF;
+  /* border-bottom: 1px dashed #E8CDBF; */
   padding-bottom: 2px;
   margin-bottom: 10px;
   -webkit-transition: all 0.4s ease-in-out;
@@ -21324,18 +21324,18 @@ span.select2-selection.select2-selection--single:focus {
   transition: 0.4s ease-in-out;
   z-index: 1;
   margin-top: 30px;
-  height: 650px;
+  height: 700px;
 }
 
 @media (max-width: 1300px) {
   .service-box {
-    height: 700px;
+    height: 750px;
   }
 }
 
 @media (max-width: 1200px) {
   .service-box {
-    height: 850px;
+    height: 900px;
   }
 }
 
@@ -33161,7 +33161,6 @@ span.select2-selection.select2-selection--single:focus {
 .gallery_head_container {
   position: relative;
   height: 100%;
-  border: 1px solid red;
 }
 
 .gallery_head {
@@ -33493,5 +33492,43 @@ li {
   .review_quotes {
     font-family: var(--title-font);
     font-size: 13px;
+  }
+}
+
+
+
+
+
+
+.service-card-content .more-text {
+  display: none;
+}
+
+.service-card-content .short {
+  max-height: 200px; /* Adjust based on how much content you want to show */
+  overflow: hidden;
+  position: relative;
+}
+
+.read-more-btn {
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #007bff;
+  background: none;
+  border: none;
+  font-size: 14px;
+}
+
+
+.home_service_card_bottom_img{
+  position: absolute;
+  bottom: -10%;
+}
+
+@media (max-width: 400px) {
+  .home_service_card_bottom_img{
+    height: 80% !important;
+    width: 150% !important;
   }
 }
