@@ -1188,8 +1188,10 @@
         dots: false,
         vertical: true,
         verticalSwiping: true,
-
+        autoplay: true,
+        autoplaySpeed: 1500, // Adjust the speed as needed (in milliseconds)
     });
+    
 
 
     /*----------- 21. Price Slider ----------*/
