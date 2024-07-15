@@ -18102,9 +18102,21 @@ span.select2-selection.select2-selection--single:focus {
   }
 }
 
+@media (max-width: 1150px) {
+  .counter-area {
+    padding-top: 700px;
+  }
+}
+
 @media (max-width: 300px) {
   .counter-area {
-    padding-top: 600px;
+    padding-top: 800px;
+  }
+}
+
+@media (max-width: 270px) {
+  .counter-area {
+    padding-top: 850px;
   }
 }
 
@@ -33245,6 +33257,7 @@ li {
   border: 2px solid var(--theme-color);
   border-radius: 15px;
   padding: 1%;
+  margin: 1%;
 }
 
 .Review_popup button {
