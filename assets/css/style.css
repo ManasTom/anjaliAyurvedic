@@ -33112,7 +33112,7 @@ span.select2-selection.select2-selection--single:focus {
 
 .visionAndMission p {
   color: #ffffff;
-  text-align: justify;
+  text-align: left;
   padding: 0% 15% 0% 15%;
   font-size: 110%;
   margin: 0;
@@ -33133,7 +33133,12 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .about-sec {
-  margin-bottom: 1%;
+  margin-bottom: 5%;
+}
+@media (max-width: 768px) {
+  .about-sec {
+    margin-bottom: 8%;
+  }
 }
 
 

@@ -3276,21 +3276,16 @@ Blog Area
 
                     // Reverse to get the latest reviews first
                     reviewsArray.reverse();
-                    console.log(reviewsArray); // Log the reviews array to check the fetched data
-                    console.log(reviewsArray.length);
+
 
                     var messageElements = document.querySelectorAll(".msg");
                     var nameElements = document.querySelectorAll(".nme");
 
                     for (var i = 0; i < 9; i++) {
-                        console.log(i);
                         if (i < reviewsArray.length) {
                             messageElements[i].innerText = reviewsArray[i].message;
                             nameElements[i].innerText = reviewsArray[i].name;
-                        } else {
-                            messageElements[i].innerText = "I was suffering from severe neck pain and found no relief after visiting a hospital. Desperate for a solution, I decided to visit an Ayurvedic clinic where I met Dr. Anjali Her professionalism and warm greeting made me feel like family. Her expertise was evident throughout the treatment. After applying her prescribed medicine and receiving a massage, I felt significant ";
-                            nameElements[i].innerText = "Shamshad Shaikh";
-                        }
+                        } 
                     }
                 });
             }
