@@ -70,7 +70,7 @@
     <meta property="og:title" content="Terms and Conditions | Dr. Anjali's Ayurvedic Center in Dubai" />
     <meta property="og:description"
         content="Review the terms and conditions of Dr. Anjali's Ayurvedic Center in Dubai. Understand the guidelines and policies that govern the use of our services and website." />
-    <meta property="og:image  content="https://dranjalisayurveda.com/assets/img/Group%2025.webp" />
+    <meta property="og:image  content=" https://dranjalisayurveda.com/assets/img/Group%2025.webp" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -109,6 +109,24 @@
         gtag('js', new Date());
 
         gtag('config', 'GT-5DGCGGZK');
+    </script>
+
+
+    <!-- Event snippet for Page view conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-16644081946/mmo7CP7eicMZEJqSwoA-',
+                'event_callback': callback
+            });
+            return false;
+        }
     </script>
 
 </head>
