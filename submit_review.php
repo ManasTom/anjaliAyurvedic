@@ -1,6 +1,6 @@
 <?php
     // Email configuration
-    $to = "manastom670@gmail.com";
+    $to = "info@dranjalisayurveda.com";
     $subject = "New review submission";
 
     $message = '

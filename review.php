@@ -73,11 +73,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </html>';
 
     // Send the email
-    $to = 'manastom670@gmail.com';
+    $to = 'info@dranjalisayurveda.com';
     $subject = 'New Review Submission';
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-    $headers .= 'From: <webmaster@yourdomain.com>' . "\r\n"; // Replace with your sender email
+    $headers .= 'From: <admin@dranjalisayurveda.com>' . "\r\n"; // Replace with your sender email
 
     if (mail($to, $subject, $reviewPageContent, $headers)) {
         echo 'Review submitted and email sent!';
