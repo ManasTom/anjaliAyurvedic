@@ -1,49 +1,52 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get form data
-    $name = $_POST['YourName'];
-    $phone = $_POST['YourPhone'];
-    $treatment = $_POST['treatment'];
-    $email = $_POST['YourEmail'];
-    $appointmentDate = $_POST['AppointmentDate'];
+    // Sanitize input data
+    $name = filter_input(INPUT_POST, 'YourName', FILTER_SANITIZE_STRING);
+    $phone = filter_input(INPUT_POST, 'YourPhone', FILTER_SANITIZE_STRING);
+    $treatment = filter_input(INPUT_POST, 'treatment', FILTER_SANITIZE_STRING);
+    $email = filter_input(INPUT_POST, 'YourEmail', FILTER_SANITIZE_EMAIL);
+    $date = filter_input(INPUT_POST, 'AppointmentDate', FILTER_SANITIZE_STRING);
 
-    // Recipient email addresses
-    $to = "manasom670@gmail.com";
-    $cc = "mariasabu0206@gmail.com";
-    
-    // Email subject
-    $subject = "New Appointment Request";
+    // Validate input data
+    $errors = [];
+    if (empty($name)) {
+        $errors[] = "Name is required.";
+    }
+    if (empty($phone)) {
+        $errors[] = "Phone number is required.";
+    }
+    if (empty($treatment)) {
+        $errors[] = "Treatment selection is required.";
+    }
+    if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = "Valid email is required.";
+    }
+    if (empty($date)) {
+        $errors[] = "Appointment date is required.";
+    }
 
-    // Email body
-    $message = "
-    <html>
-    <head>
-    <title>New Appointment Request</title>
-    </head>
-    <body>
-    <p>New appointment request details:</p>
-    <table>
-    <tr><th>Name</th><td>$name</td></tr>
-    <tr><th>Phone</th><td>$phone</td></tr>
-    <tr><th>Treatment</th><td>$treatment</td></tr>
-    <tr><th>Email</th><td>$email</td></tr>
-    <tr><th>Appointment Date</th><td>$appointmentDate</td></tr>
-    </table>
-    </body>
-    </html>
-    ";
+    if (empty($errors)) {
+        // Process the form data (e.g., save to database, send email, etc.)
 
-    // Headers
-    $headers = "MIME-Version: 1.0" . "\r\n";
-    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-    $headers .= "From: <$email>" . "\r\n";
-    $headers .= "Cc: $cc" . "\r\n";
+        // Example: Send an email (update with your email details)
+        $to = "info@dranjalisayurveda.com";
+        $cc = "anjalidevidr@gmail.com,dranjalisayurveda@gmail.com";
+        $subject = "New Appointment Request from Ad page - Form 1";
+        $message = "Name: $name\nPhone: $phone\nTreatment: $treatment\nEmail: $email\nAppointment Date: $date";
+        $headers = "From: noreply@dranjalisayurveda.com" . "\r\n".
+                   "CC: $cc";
 
-    // Send email
-    if (mail($to, $subject, $message, $headers)) {
-        echo "Appointment request sent successfully.";
+        if (mail($to, $subject, $message, $headers)) {
+            // Redirect to thank you page
+            header("Location: ad-thankyou.html");
+            exit();
+        } else {
+            echo "Failed to send appointment request.";
+        }
     } else {
-        echo "Failed to send appointment request.";
+        foreach ($errors as $error) {
+            echo "<p style='color: red;'>$error</p>";
+        }
     }
 }
 ?>

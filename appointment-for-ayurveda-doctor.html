@@ -282,13 +282,13 @@ Breadcumb
             <form method="post" action="ad_form1.php" style="display: flex; align-items: center; justify-content: center;">
                 <div class="ad_form_container row">
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
-                        <input type="text" placeholder="Your Name" name="YourName" id="YourName">
+                        <input required type="text" placeholder="Your Name" name="YourName" id="YourName">
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
-                        <input type="text" placeholder="Your Phone" name="YourPhone" id="YourPhone">
+                        <input required type="text" placeholder="Your Phone" name="YourPhone" id="YourPhone">
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
-                        <select name="treatment" id="treatment">
+                        <select required name="treatment" id="treatment">
                             <option value="" disabled selected hidden>Select Treatment</option>
                             <option value="Customized Ayurveda Medicine">Customized Ayurveda Medicine</option>
                             <option value="Panchakarma Therapy">Panchakarma Therapy</option>
@@ -311,11 +311,11 @@ Breadcumb
                         </select>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
-                        <input type="email" placeholder="Your Email" name="YourEmail" id="YourEmail">
+                        <input required type="email" placeholder="Your Email" name="YourEmail" id="YourEmail">
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
                         <h6 style="font-weight: 400;">Select Date</h6>
-                        <input type="date" placeholder="" name="AppointmentDate" id="AppointmentDate">
+                        <input required type="date" placeholder="" name="AppointmentDate" id="AppointmentDate">
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
                         <!-- captcha here -->
@@ -454,7 +454,7 @@ Faq Area
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">
-                    <form action="index-enquiry.php" method="POST" class="quote-form ajax-contact"
+                    <form action="ad_form2.php" method="POST" class="quote-form "
                         style="background-color: #fff !important;">
                         <div class="title-area mb-40">
                             <span class="sub-title" style="color: #000;">Contact Us<img
@@ -493,7 +493,7 @@ Faq Area
                                 <i class="fal fa-comment"></i>
                             </div>
                             <div class="form-btn col-12">
-                                <button class="th-btn style4">Send Messages<i
+                                <button type="submit" class="th-btn style4">Send Messages<i
                                         class="fa-solid fa-arrow-right ms-2"></i></button>
                             </div>
                         </div>
