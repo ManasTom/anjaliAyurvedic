@@ -33,15 +33,19 @@
     <!-- Magnific Popup -->
     <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
     <!-- Slick Slider -->
-    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
     <!-- odometer -->
     <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
     <!-- flipster -->
-    <link rel="stylesheet" href="assets/css/jquery.flipster.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/jquery.flipster.min.css"> -->
     <!-- datetimepicker -->
     <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+
 
 
 
@@ -109,6 +113,25 @@
         gtag('js', new Date());
 
         gtag('config', 'GT-5DGCGGZK');
+    </script>
+
+
+
+    <!-- Event snippet for Page view conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-16644081946/mmo7CP7eicMZEJqSwoA-',
+                'event_callback': callback
+            });
+            return false;
+        }
     </script>
 
 </head>
@@ -238,16 +261,17 @@
                         <div class="row align-items-end">
                             <div class="col-lg-8">
                                 <div class="hero-style4">
-                                    <h1 class="hero-title rwpr3" data-ani="slideindown" data-ani-delay="0.3s">
-                                        Experience the spectrum of
-                                        ayurveda
-                                    </h1>
+                                    <h2 class="hero-title rwpr3" data-ani="slideindown" data-ani-delay="0.3s">
+                                        <!-- Experience the spectrum of
+                                        ayurveda -->
+                                        Confluence of Ancient Ayurveda, Modern Lifestyle Medicine, and Mindful Healing
+
+                                    </h2>
                                     <span class="hero-sub-img" data-ani="slideindown" data-ani-delay="0.2s"> <img
                                             src="assets/img/title_shape_1.svg" alt=""> </span>
-                                    <span class="sub-title" data-ani="slideindown" data-ani-delay="0.1s">From soothing
-                                        massages to potent herbal remedies,
-                                        Dive into the world of holistic healing
-                                        and inner harmony.</span>
+                                    <span class="sub-title" data-ani="slideindown" data-ani-delay="0.1s">Unlock the
+                                        Secrets of True Wellness with Authentic Ayurvedic Treatments, Personalized Just
+                                        for You at Our Ayurvedic Center.</span>
                                     <div class="btn-group  justify-content-center justify-content-lg-start"
                                         data-ani="slideinup" data-ani-delay="0.7s"><a href="#home_faq"
                                             class="th-btn">Appointment
@@ -275,14 +299,14 @@
                             <div class="col-lg-8">
                                 <div class="hero-style4">
                                     <h1 class="hero-title rwpr3" data-ani="slideindown" data-ani-delay="0.3s">
-                                        Restore Balance and Vitality Naturally
+                                        <!-- Restore Balance and Vitality Naturally -->
+                                        Harmonizing Ancient Ayurvedic Healing Techniques for Holistic Healthcare
                                     </h1>
                                     <span class="hero-sub-img" data-ani="slideindown" data-ani-delay="0.2s"> <img
                                             src="assets/img/title_shape_1.svg" alt=""> </span>
-                                    <span class="sub-title" data-ani="slideindown" data-ani-delay="0.1s">From soothing
-                                        massages to potent herbal remedies,
-                                        Dive into the world of holistic healing
-                                        and inner harmony.</span>
+                                    <span class="sub-title" data-ani="slideindown" data-ani-delay="0.1s">Embrace the
+                                        Harmony and Balance of Life with Authentic Ayurvedic Care at Our Clinic,
+                                        Tailored to Your Needs.</span>
                                     <div class="btn-group  justify-content-center justify-content-lg-start"
                                         data-ani="slideinup" data-ani-delay="0.7s"><a href="#home_faq"
                                             class="th-btn">Appointment
@@ -310,14 +334,14 @@
                             <div class="col-lg-8">
                                 <div class="hero-style4">
                                     <h1 class="hero-title rwpr3" data-ani="slideindown" data-ani-delay="0.3s">
-                                        &nbsp; <br>Healing Through Ancient Wisdom
+                                        <!-- &nbsp; <br>Healing Through Ancient Wisdom -->
+                                        Unveiling the path of mindful healing...
+
                                     </h1>
                                     <span class="hero-sub-img" data-ani="slideindown" data-ani-delay="0.2s"> <img
                                             src="assets/img/title_shape_1.svg" alt=""> </span>
-                                    <span class="sub-title" data-ani="slideindown" data-ani-delay="0.1s">From soothing
-                                        massages to potent herbal remedies,
-                                        Dive into the world of holistic healing
-                                        and inner harmony.</span>
+                                    <span class="sub-title" data-ani="slideindown" data-ani-delay="0.1s">Commit to
+                                        Authentic Ayurvedic Healing for a Balanced Life</span>
                                     <div class="btn-group  justify-content-center justify-content-lg-start"
                                         data-ani="slideinup" data-ani-delay="0.7s"><a href="#home_faq"
                                             class="th-btn">Appointment
@@ -345,14 +369,14 @@
                             <div class="col-lg-8">
                                 <div class="hero-style4">
                                     <h1 class="hero-title rwpr3" data-ani="slideindown" data-ani-delay="0.3s">
-                                        Discover the Power of Ayurvedic Healing.
+                                        <!-- Discover the Power of Ayurvedic Healing. -->
+                                        Discover Ancient Ayurvedic Secrets Blended with Modern Lifestyle Medicine
                                     </h1>
                                     <span class="hero-sub-img" data-ani="slideindown" data-ani-delay="0.2s"> <img
                                             src="assets/img/title_shape_1.svg" alt=""> </span>
-                                    <span class="sub-title" data-ani="slideindown" data-ani-delay="0.1s">From soothing
-                                        massages to potent herbal remedies,
-                                        Dive into the world of holistic healing
-                                        and inner harmony.</span>
+                                    <span class="sub-title" data-ani="slideindown" data-ani-delay="0.1s">Achieve
+                                        Balanced Vitality and Wellness Through Our Expertly Crafted Ayurvedic
+                                        Treatments.</span>
                                     <div class="btn-group  justify-content-center justify-content-lg-start"
                                         data-ani="slideinup" data-ani-delay="0.7s"><a href="#home_faq"
                                             class="th-btn">Appointment
@@ -378,14 +402,14 @@
                 src="assets/img/ayurveda5-2.webp" alt=""></div>
         <div class="shape-mockup d-none d-xxl-block spin" style="width: 15%;" data-top="30%" data-right="3%"><img
                 src="assets/img/ayurveda9 (1).webp" alt=""></div>
-        <div class="shape-mockup d-none d-xxl-block spin" style="width: 10%;" data-top="20%" data-left="8%"><img
+        <div class="shape-mockup d-none d-xxl-block spin" style="width: 10%;" data-top="20%" data-left="3%"><img
                 src="assets/img/ayurveda9 (1).webp" alt=""></div>
         <div class="shape-mockup d-none d-xxl-block movingX" style="width: 20%;" data-bottom="0%" data-left="30%"><img
                 src="assets/img/ayurveda5-1.webp" alt=""></div>
         <div class="shape-mockup d-none d-xxl-block jump" data-top="30%" data-left="0%"><img
                 src="assets/img/shape/leaves_2_3.webp" alt=""></div>
-        <div class="shape-mockup" data-bottom="0%" data-left="0%"><img src="assets/img/shape/leaves_2_4.webp" alt="">
-        </div>
+        <!-- <div class="shape-mockup" data-bottom="0%" data-left="0%"><img src="assets/img/shape/leaves_2_4.webp" alt="">
+        </div> -->
     </section>
     <!--======== / Hero Section ========-->
 
@@ -416,16 +440,25 @@ About Area
                             <span class="sub-title"><span style="color: black;">About Us</span><img
                                     src="assets/img/title_right.svg" alt=""></span>
                             <h2 class="sec-title mb-20">Discover The Ultimate Ayurvedic Experience</h2>
-                            <p class="mb-40">A natural touch of ayurvedic treatment center in Dubai. Ayurveda medical
-                                practitioner with the license of Dubai health authority has been dedicated to holistic
-                                ayurvedic wellness treatment center in Dubai since 2010. Hailing from a traditional
-                                ayurvedic family in Kerala, she possesses a profound understanding of well-being.</p>
+                            <p style="margin-bottom: 10px" class="mb-40">
+                                Uncover the convergence of age-old authentic Ayurveda wisdom and modern lifestyle
+                                medicine at Dr. Anjali's Ayurvedic Center, Al Karama, Dubai.
+                            </p>
+                            <p style="margin-bottom: 10px" class="mb-40">At Dr. Anjali's Ayurvedic Clinic in Dubai, we
+                                provide a unique integration of Ayurveda and modern lifestyle medicine concepts. We
+                                assure unique solutions for various lifestyle diseases with or without medications to
+                                prevent, reverse, and optimize health conditions. Our priority is empathetic care to
+                                cater to your holistic healthcare needs by patiently listening to your concerns and
+                                offering highly personalized solutions for the betterment of health and wellness. Visit
+                                our Ayurvedic Clinic in Dubai for comprehensive and compassionate care.
+                            </p>
 
                             <p class="mb-40">
-                                With a Bachelor s degree in ayurveda medicine and surgery from Kannur university,
-                                Kerala, and certification as a smrithi meditation practitioner from Kase Kottakal, Dr.
-                                Anjali is recognized for her ayurvedic expertise rooted in a psychosomatic approach
-                                through innovative smriti meditation and counselling.</p>
+                                Ayurveda is a science always emphasize on understanding and addressing the root causes
+                                of your pains while promoting holistic health healing. In orthopedic rehabilitation we
+                                employee precision medicine techniques tailored to individual disease conditions with a
+                                personalized touch combining therapies Ayurveda medicines, and rehabilitation exercises
+                                to restore and maintain the loco motor functions.</p>
                         </div>
                         <div class="journey-wrap">
                             <div class="journey-image">
@@ -459,19 +492,17 @@ Counter Area
         <!-- <img src="assets/img/about_hero_bg.webp" alt=""> -->
         <div class="visionAndMission">
             <h2>Vision And Mission</h2>
-            <p>Daac aims for a unique integration of Ayurveda and modern lifestyle medicine concepts. We assure you
-                unique solutions for various lifestyle diseases, with or without medications, to prevent, reverse, and
-                optimize the diseases. We prioritize empathetic care for your holistic health care needs by patiently
-                listening to your concerns and offering highly personalized solutions for the betterment of health and
-                wellness.</p>
-            <p>Ayurveda is a science that always focuses on understanding and addressing the root causes of your pain
-                while promoting holistic health and healing. In orthopaedic and neurological rehabilitation, we employ
-                precision medicine techniques tailored to individual disease conditions with a personalized touch,
-                combining Ayurveda oil therapies, medicines, and rehabilitation exercises to restore and maintain
-                locomotor functions.</p>
-            <p>We acknowledge the profound interplay between physical, mental, spiritual, and wellbeing, which enhances
-                the essence of holistic healing in every aspect. Mental cleansing is often essential. We offer a
-                transformative and revitalizing journey for the mind through Smrithi meditation practices.</p>
+            <p>At DAAC, aim for a unique integration of Ayurveda and modern lifestyle medicine concepts.
+                We assure you unique solutions for your various lifestyle diseases, with or without
+                medications, optimizing health and preventing disease progression.
+                <br>
+                <br>
+                Our priority is empathetic
+                care, addressing your holistic health needs through personalized solutions that prioritize your
+                well-being. Ayurveda emphasizes understanding and treating the root causes of aliments
+                while promoting holistic health healing. We offer a wide range of speciality treatments
+                tailored to address your specific health concerns.
+            </p>
         </div>
         <div class="container th-container">
             <div class="counter-sec style4 space-top">
@@ -530,7 +561,691 @@ Service Area
                     <img src="assets/img/title_shape_1.svg" alt="">
                 </div>
             </div>
-            <div class="row slider-shadow th-carousel" id="serviceSlide1" data-slide-show="3" data-lg-slide-show="2"
+
+            <!-- ************************************TEMPORARY SETUP BELOW************************************ -->
+            <div class="outer-div">
+                <div class="scrollable-div">
+
+
+
+
+                    <div class="item service-card hs1 serv_card_bg">
+                        <div class="service-card_overlay "></div>
+
+                        <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
+                        <div class="service-card-content">
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="">Abyangam </a></h3>
+                            <p class="service-card_text">Unwind, rejuvenate, and revitalize your entire being with
+                                Abhyangam, a traditional Ayurvedic full-body massage offered at Dr. Anjali's Ayurvedic
+                                Center. This ancient practice, dating back millennia, offering profound benefits such as
+                            </p>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Relieves stress and anxiety</li>
+                                <li>Reduces fatigue in the body and mind</li>
+                                <li>Boosts your mood</li>
+                                <li>Reduces muscle tension and pain</li>
+                                <li>Relieves tension headaches and neck pain</li>
+                                <li>Improves circulation of prana and strength</li>
+                                <li>Encourages lymphatic drainage</li>
+                                <li>Loosens toxins</li>
+                                <li>Contributes to improved immunity</li>
+                                <li>Prevents premature aging</li>
+                            </ul>
+                            <a href="#home_faq" class="th-btn style2">Book Now<i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
+                        </div>
+                    </div>
+
+                    <div class="item service-card hs1 serv_card_bg">
+                        <div class="service-card_overlay "></div>
+
+                        <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
+                        <div class="service-card-content">
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="">Jambeera Pinda Sweda</a></h3>
+                            <p class="service-card_text">Jambeera Pinda Sweda, also known as Naranga (Lemon) Kizhi in
+                                Malayalam, is a specialized treatment performed by Kerala Vaidyas (Doctors) for treating
+                                conditions like cervical spondylosis and frozen joints. It involves a hot bolus
+                                fomentation (Pinda Sweda) using a mixture of Jambeera (Lemon) and herbal powders. This
+                                warm bolus, heated with or without medicated oils depending on the patient’s needs, is
+                                applied to muscles and joints too:</p>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Relieve pain and inflammation</li>
+                                <li>Alleviate tension</li>
+                                <li>Improve flexibility</li>
+                                <li>Rejuvenate and strengthen joints and soft tissues</li>
+                            </ul>
+                            <a href="#home_faq" class="th-btn style2">Book Now<i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
+                        </div>
+
+                    </div>
+
+
+                    <div class="item service-card hs1 serv_card_bg">
+                        <div class="service-card_overlay" data-bg-src="assets/img/shape/service_shape2.webp"></div>
+
+                        <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
+                        <div class="service-card-content">
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="">Dhanyamla Dhara</a></h3>
+                            <p class="service-card_text">Dhanyamla Dhara is a unique Ayurvedic therapy where warm herbal
+                                liquid is poured from a hung vessel over affected body parts. The therapy involves a
+                                preparation of cereals (Dhanya) and vinegar (Amla) obtained from citrus fruits,
+                                including horse gram, sliced fruits, Navara rice, and millets. These are immersed in
+                                water, boiled to extract therapeutic properties, forming a vinegar-like solution. The
+                                treatment typically lasts for about 45 to 60 minutes. Benefits:</p>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Soothe the nervous system</li>
+                                <li>Relieves physical tension</li>
+                                <li>Reduces inflammation</li>
+                                <li>Improves blood circulation</li>
+                                <li>Revitalizes the body</li>
+                                <li>Reduces pain (e.g., rheumatoid arthritis)</li>
+                                <li>Balancing Pitta and Vata Doshas</li>
+                            </ul>
+                            <a href="#home_faq" class="th-btn style2">Book Now<i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="item service-card hs1 serv_card_bg">
+                        <div class="service-card_overlay" data-bg-src="assets/img/shape/service_shape2.webp"></div>
+
+                        <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
+                        <div class="service-card-content">
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="">Udwarthanam </a></h3>
+                            <p class="service-card_text">Udwarthanam is an Ayurvedic body-toning program involving the
+                                application of a combination of prescribed herbal powders and medicated oils on the
+                                entire body. This is done with deep, pressurized massages in an upward direction helps:
+                            </p>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Reduce fat and strengthen the body</li>
+                                <li>Detoxify lymphatic channels</li>
+                                <li>Promote active blood flow</li>
+                                <li>Stimulate and recondition the body</li>
+                                <li>Particularly beneficial for kapha imbalance, cellulite reduction and detoxification
+                                </li>
+                            </ul>
+                            <a href="#home_faq" class="th-btn style2">Book Now<i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
+                        </div>
+                    </div>
+
+
+
+                    <div class="item service-card hs1 serv_card_bg">
+                        <div class="service-card_overlay" data-bg-src="assets/img/shape/service_shape2.webp"></div>
+
+                        <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
+                        <div class="service-card-content">
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="">Pizhichil </a></h3>
+                            <p class="service-card_text">Pizhichil is a luxurious Ayurvedic therapy where warm,
+                                medicated oil is continuously poured and massaged over the body. This treatment:</p>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Provides deep relaxation</li>
+                                <li>Nourishes the tissues</li>
+                                <li>Relieves muscle tension</li>
+                                <li>Rejuvenates the skin</li>
+                                <li>Balancing vata dosha</li>
+                                <li>Enhances vitality and overall well-being</li>
+                            </ul>
+                            <a href="#home_faq" class="th-btn style2">Book Now<i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="item service-card hs1 serv_card_bg">
+                        <div class="service-card_overlay" data-bg-src="assets/img/shape/service_shape2.webp"></div>
+
+                        <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
+                        <div class="service-card-content">
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="">Aavikizhy </a></h3>
+                            <p class="service-card_text">Aavikizhy involves the rhythmic application of warm herbal
+                                poultices to the body. This therapy:</p>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Induces sweating</li>
+                                <li>Promotes detoxification</li>
+                                <li>Relieves muscle pain</li>
+                                <li>Enhances relaxation</li>
+                                <li>Balancing doshas</li>
+                                <li>Improving circulation</li>
+                                <li>Revitalizes body and mind</li>
+                            </ul>
+                            <a href="#home_faq" class="th-btn style2">Book Now<i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
+                        </div>
+                    </div>
+
+
+
+                    <div class="item service-card hs1 serv_card_bg">
+                        <div class="service-card_overlay" data-bg-src="assets/img/shape/service_shape2.webp"></div>
+
+                        <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
+                        <div class="service-card-content">
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="">Navarakizhi</a></h3>
+                            <p class="service-card_text">Navarakizhi is a unique and deeply beneficial treatment using
+                                medicated herbal rice to nourish and strengthen the body. Specially cooked Navara rice
+                                blended with milk and herbs then slowly cook. The resulting fragrant mixture is
+                                contained in small linen bags or potlis. Navarakizhi is a two-step process. First,
+                                specially selected oils are applied all over the body. After this, the rice bags are
+                                massaged into the body, with extra focusing on nerve points (Marma).</p>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Benefits includes rejuvenation, nourishment and strengthening against stresses and
+                                    strains</li>
+                                <li>Effective against rheumatism, joint and muscle pains, back pains (e.g., sciatica,
+                                    slipped discs), high blood pressure and high cholesterol levels</li>
+                                <li>Strengthens the nervous system, nourishes the tissues and enhances skin appearance
+                                </li>
+                                <li>Mainly used for neurological disorders, paralysis, chronic rheumatism, arthritis,
+                                    malnutrition of limbs, and recovery from fractures or stroke</li>
+                            </ul>
+                            <a href="#home_faq" class="th-btn style2">Book Now<i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="item service-card hs1 serv_card_bg">
+                        <div class="service-card_overlay" data-bg-src="assets/img/shape/service_shape2.webp"></div>
+
+                        <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
+                        <div class="service-card-content">
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="">Shirodhara - Oil Pouring On
+                                    Forehead</a></h3>
+                            <p class="service-card_text">Shirodhara is renowned in Ayurveda for its profound relaxation
+                                and calming effects on the mind. Warm herb-infused sesame oil is gently poured in a
+                                continuous stream over the forehead, specifically targeting the third eye area/forehead.
+                                This treatment is known for its beneficial effects such as:</p>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Deep relaxation and stress relief</li>
+                                <li>Improved sleep quality</li>
+                                <li>Therapeutic effects on anxiety and stress</li>
+                                <li>Rebalancing the pituitary and pineal glands</li>
+                                <li>Ideal for balancing Vata dosha</li>
+                            </ul>
+                            <a href="#home_faq" class="th-btn style2">Book Now<i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="item service-card hs1 serv_card_bg">
+                        <div class="service-card_overlay "></div>
+
+                        <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
+                        <div class="service-card-content">
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="#">Thakra Dhara</a></h3>
+                            <p class="service-card_text">Thakra Dhara is a therapeutic treatment that involves the
+                                application of a continuous stream of buttermilk (takra) on the forehead. This process
+                                is a form of Shirodhara, which is a traditional Ayurvedic therapy designed to calm and
+                                rejuvenate the mind and body.</p>
+                            <h4 class="service-card_text">Benefits:</h4>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Helps reduce stress, anxiety, and mental fatigue.</li>
+                                <li>Aids in improving concentration and mental clarity</li>
+                                <li>Can help in treating insomnia and other sleep disorders.</li>
+                                <li>Improves skin texture and may provide relief from certain skin conditions.</li>
+                            </ul>
+                            <a href="#home_faq" class="th-btn style2">Book Now<i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="item service-card hs1 serv_card_bg">
+                        <div class="service-card_overlay "></div>
+
+                        <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
+                        <div class="service-card-content">
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="#">Kati Vasti, Greeva Vasti & Uro
+                                    Vasti</a></h3>
+                            <p class="service-card_text">Kati Vasti, Greeva Vasti, and Uro Vasti are specialized
+                                therapeutic treatments used to address different types of musculoskeletal and systemic
+                                issues.</p>
+                            <h4 class="service-card_text">Kati Vasti</h4>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Effective for treating lower back pain, lumbar spondylosis, and sciatica.</li>
+                                <li>Enhances local blood circulation and reduces muscle stiffness.</li>
+                                <li>Provides deep nourishment to the affected tissues and muscles.</li>
+                            </ul>
+                            <h4 class="service-card_text">Greeva Vasti</h4>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Effective for relieving neck pain, cervical spondylosis, and stiffness.</li>
+                                <li>Alleviates tension and improves flexibility in the neck muscles.</li>
+                                <li>Helps in maintaining the health and function of cervical vertebrae.</li>
+                            </ul>
+                            <h4 class="service-card_text">Uro Vasti</h4>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Helps in treating respiratory issues like asthma, bronchitis, and cough.</li>
+                                <li>Provides relief from chest pain and muscular tension in the chest area.</li>
+                                <li>Supports heart health by improving circulation and reducing stress in the chest
+                                    region.</li>
+                            </ul>
+                            <a href="#home_faq" class="th-btn style2">Book Now<i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="item service-card hs1 serv_card_bg">
+                        <div class="service-card_overlay "></div>
+
+                        <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
+                        <div class="service-card-content">
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="#">Shirovasti</a></h3>
+                            <p class="service-card_text">Shirovasti involves creating a reservoir on the head and
+                                filling it with warm, medicated oil or ghee.</p>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Supports the treatment of neurological conditions such as migraines, insomnia, and
+                                    epilepsy.</li>
+                                <li>Enhances mental clarity, concentration, and cognitive functions.</li>
+                                <li>Provides relaxation and relief from stress, anxiety, and mental fatigue.</li>
+                                <li>Improves hair texture and health by nourishing the scalp.</li>
+                                <li>Helps in balancing Vata and Pitta doshas in the body, which are often implicated in
+                                    neurological and mental disorders.</li>
+                            </ul>
+                            <a href="#home_faq" class="th-btn style2">Book Now<i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="item service-card hs1 serv_card_bg">
+                        <div class="service-card_overlay "></div>
+
+                        <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
+                        <div class="service-card-content">
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="#">Thala Pothichil</a></h3>
+                            <p class="service-card_text">Thala Pothichil is an Ayurvedic therapy designed to provide
+                                deep nourishment and therapeutic benefits to the head and neck area. It involves
+                                applying a specially prepared medicinal paste on the scalp and covering it for a certain
+                                period.</p>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Provides deep nourishment to the scalp and hair follicles.</li>
+                                <li>Helps improve mental clarity, concentration, and overall cognitive function.</li>
+                                <li>Eases stress and tension in the head and neck area.</li>
+                                <li>May improve the texture and health of hair, addressing issues like dandruff or
+                                    dryness.</li>
+                                <li>Beneficial for certain neurological conditions and enhancing brain function.</li>
+                            </ul>
+                            <a href="#home_faq" class="th-btn style2">Book Now<i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="item service-card hs1 serv_card_bg">
+                        <div class="service-card_overlay"></div>
+
+                        <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
+                        <div class="service-card-content">
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="#">Ksheera Dhooma</a></h3>
+                            <p class="service-card_text">"Ksheera" means milk, and "Dhooma" refers to smoke. In this
+                                therapy, medicated milk is used to generate steam or smoke, which is then directed
+                                toward specific parts of the body.</p>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Helps in the detoxification of the body by promoting the expulsion of toxins through
+                                    the skin and respiratory system.</li>
+                                <li>Provides relief from pain and stiffness in muscles and joints.</li>
+                                <li>Enhances blood circulation in the treated areas.</li>
+                                <li>Nourishes and revitalizes the skin, improving its texture and appearance.</li>
+                                <li>Helps in alleviating respiratory issues by clearing congestion and soothing the
+                                    respiratory tract.</li>
+                            </ul>
+                            <a href="#home_faq" class="th-btn style2">Book Now<i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="item service-card hs1 serv_card_bg">
+                        <div class="service-card_overlay"></div>
+
+                        <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
+                        <div class="service-card-content">
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="#">Pichu</a></h3>
+                            <p class="service-card_text">Pichu is an Ayurvedic therapy involving the application of a
+                                medicated oil-soaked cloth or pad to a specific area of the body. This treatment is
+                                designed to provide localized benefits, such as pain relief, nourishment, and healing.
+                            </p>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Provides targeted relief from pain, inflammation, and discomfort in specific areas
+                                    of the body.</li>
+                                <li>Enhances blood flow and circulation to the treated area.</li>
+                                <li>Deeply nourishes and rejuvenates the tissues and muscles.</li>
+                                <li>Helps reduce stiffness and improve flexibility in the treated area.</li>
+                                <li>Assists in the healing process for various conditions affecting the skin, muscles,
+                                    and joints.</li>
+                            </ul>
+                            <a href="#home_faq" class="th-btn style2">Book Now<i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="item service-card hs1 serv_card_bg">
+                        <div class="service-card_overlay"></div>
+
+                        <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
+                        <div class="service-card-content">
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="#">Tharpanam</a></h3>
+                            <p class="service-card_text">Tharpanam is often performed as part of a broader Ayurvedic
+                                regimen, including therapies like Netra Tarpana, Shirodhara, and Abhyanga. It is
+                                important to have this treatment administered by a trained Ayurvedic practitioner to
+                                ensure it is tailored to individual health needs and conditions.</p>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Provides deep nourishment to the eyes and improves their overall health.</li>
+                                <li>Helps relieve eye strain and fatigue, especially beneficial for those who spend long
+                                    hours in front of screens.</li>
+                                <li>Aids in improving vision and treating certain eye conditions.</li>
+                                <li>Useful for conditions such as conjunctivitis, dry eyes, and other inflammatory eye
+                                    conditions.</li>
+                                <li>Improves the health and appearance of the skin around the eyes.</li>
+                            </ul>
+                            <a href="#home_faq" class="th-btn style2">Book Now<i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="item service-card hs1 serv_card_bg">
+                        <div class="service-card_overlay"></div>
+
+                        <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
+                        <div class="service-card-content">
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="#">Aschyotana & Anjana</a></h3>
+                            <p class="service-card_text">Aschyotana and Anjana are specialized eye treatments that focus
+                                on improving eye health, treating eye conditions, and enhancing vision. Both therapies
+                                involve the application of medicinal substances to the eyes but differ in their
+                                techniques and purposes.</p>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Aschyotana: An Ayurvedic technique for administering medicated eye drops. Derived
+                                    from "Aschyota," meaning "to pour," it involves placing therapeutic drops directly
+                                    into the eyes to treat various conditions.</li>
+                                <li>Anjana: An Ayurvedic treatment where medicinal substances are applied to the
+                                    conjunctiva (the membrane of the eye) to treat eye conditions. Derived from
+                                    "Anjana," meaning "to apply," it focuses on improving eye health and alleviating
+                                    discomfort.</li>
+                            </ul>
+                            <a href="#home_faq" class="th-btn style2">Book Now<i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="item service-card hs1 serv_card_bg">
+                        <div class="service-card_overlay"></div>
+
+                        <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
+                        <div class="service-card-content">
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="#">Ubtan</a></h3>
+                            <p class="service-card_text">"Ubtan" is a herbal paste applied to the skin to cleanse,
+                                exfoliate, and rejuvenate. It typically includes a blend of natural ingredients like
+                                herbs, grains, and oils.</p>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Removes impurities, toxins, and dead skin cells.</li>
+                                <li>Gently exfoliates to improve skin texture and remove dead cells.</li>
+                                <li>Provides essential nutrients and enhances skin health.</li>
+                                <li>Promotes a radiant and even skin tone.</li>
+                                <li>Has soothing effects that can relieve irritation and improve skin comfort.</li>
+                            </ul>
+                            <a href="#home_faq" class="th-btn style2">Book Now<i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="item service-card hs1 serv_card_bg">
+                        <div class="service-card_overlay"></div>
+
+                        <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
+                        <div class="service-card-content">
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="#">Marma Therapy</a></h3>
+                            <p class="service-card_text">Marma Therapy is an Ayurvedic treatment focusing on vital
+                                energy points in the body known as Marma points. These points are believed to be the
+                                intersections of physical and energetic channels. The therapy involves the stimulation
+                                and balancing of Marma points—sensitive areas where energy, nerves, and tissues converge
+                                to enhance health and well-being.</p>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Regulates and harmonizes the body's vital energy (Prana).</li>
+                                <li>Alleviates pain and discomfort by releasing blocked energy.</li>
+                                <li>Enhances blood flow and tissue health.</li>
+                                <li>Accelerates the body's natural healing processes.</li>
+                                <li>Helps in reducing stress and promoting relaxation.</li>
+                            </ul>
+                            <a href="#home_faq" class="th-btn style2">Book Now<i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="item service-card hs1 serv_card_bg">
+                        <div class="service-card_overlay"></div>
+
+                        <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
+                        <div class="service-card-content">
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="#">Ayurvedic Consultation</a></h3>
+                            <p class="service-card_text">Ayurvedic consultation includes a comprehensive evaluation of a
+                                person's physical, mental, and emotional health to determine their dosha balance and
+                                identify any imbalances.</p>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Provides a customized treatment plan based on individual needs.</li>
+                                <li>Evaluates physical, mental, and emotional health for a comprehensive approach.</li>
+                                <li>Aims to restore balance to the body's doshas (energies) and improve overall
+                                    well-being.</li>
+                                <li>Identifies and addresses potential health issues before they become serious.</li>
+                                <li>Offers recommendations on diet, lifestyle, and herbal remedies for better health
+                                    management.</li>
+                            </ul>
+                            <a href="#home_faq" class="th-btn style2">Book Now<i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Add more items as needed -->
+
+
+
+
+                </div>
+            </div>
+            <style>
+                .outer-div {
+                    width: 99vw;
+                    overflow: hidden;
+                }
+
+                .scrollable-div {
+                    display: flex;
+                    overflow-x: auto;
+                    cursor: grab;
+                }
+
+                .scrollable-div:active {
+                    cursor: grabbing;
+                }
+
+                .item {
+                    flex: 0 0 auto;
+                    /* Prevent items from shrinking or growing */
+                    width: 33.33333vw !important;
+                    /* Adjust width as needed */
+                    margin-right: 10px;
+                    /* Adjust spacing between items as needed */
+                    background-color: #f0f0f0;
+                    /* Example background color */
+                    padding: 20px;
+                    box-sizing: border-box;
+                }
+
+                @media (max-width: 1024px) {
+                    .item {
+                        width: 66.666vw !important;
+
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    .item {
+                        width: 90vw !important;
+
+                    }
+                }
+
+                .item1 {
+                    flex: 0 0 auto;
+                    /* Prevent items from shrinking or growing */
+                    width: 66.666666vw !important;
+                    /* Adjust width as needed */
+                    margin-right: 10px;
+                    /* Adjust spacing between items as needed */
+                    background-color: #f0f0f0;
+                    /* Example background color */
+                    padding: 20px;
+                    box-sizing: border-box;
+                }
+
+
+                @media (max-width: 768px) {
+                    .item1 {
+                        width: 90vw !important;
+
+                    }
+                }
+
+
+
+                .scrollable-div::-webkit-scrollbar {
+                    height: 8px;
+                }
+
+                .scrollable-div::-webkit-scrollbar-thumb {
+                    background: #cacacab0;
+                    border-radius: 4px;
+                }
+
+                .scrollable-div::-webkit-scrollbar-thumb:hover {
+                    background: var(--theme-color);
+                }
+            </style>
+            <script>
+                const scrollableDiv = document.querySelector('.scrollable-div');
+                let isDown = false;
+                let startX;
+                let scrollLeft;
+
+                scrollableDiv.addEventListener('mousedown', (e) => {
+                    isDown = true;
+                    scrollableDiv.classList.add('active');
+                    startX = e.pageX - scrollableDiv.offsetLeft;
+                    scrollLeft = scrollableDiv.scrollLeft;
+                });
+
+                scrollableDiv.addEventListener('mouseleave', () => {
+                    isDown = false;
+                    scrollableDiv.classList.remove('active');
+                });
+
+                scrollableDiv.addEventListener('mouseup', () => {
+                    isDown = false;
+                    scrollableDiv.classList.remove('active');
+                });
+
+                scrollableDiv.addEventListener('mousemove', (e) => {
+                    if (!isDown) return;
+                    e.preventDefault();
+                    const x = e.pageX - scrollableDiv.offsetLeft;
+                    const walk = (x - startX) * 2; // The multiplier increases the drag speed
+                    scrollableDiv.scrollLeft = scrollLeft - walk;
+                });
+            </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class="row slider-shadow th-carousel" id="serviceSlide1" data-slide-show="3" data-lg-slide-show="2"
                 data-md-slide-show="2" data-sm-slide-show="1" data-arrows="true" style="width: 100vw !important;">
 
                 <div class="col-md-6 col-lg-6 col-xl-4 ">
@@ -558,6 +1273,7 @@ Service Area
                             </ul>
                             <a href="#home_faq" class="th-btn style2">Book Now<i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -584,6 +1300,7 @@ Service Area
                             </ul>
                             <a href="#home_faq" class="th-btn style2">Book Now<i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
                         </div>
 
                     </div>
@@ -615,6 +1332,7 @@ Service Area
                             </ul>
                             <a href="#home_faq" class="th-btn style2">Book Now<i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
                         </div>
 
                     </div>
@@ -643,6 +1361,7 @@ Service Area
                             </ul>
                             <a href="#home_faq" class="th-btn style2">Book Now<i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -668,6 +1387,7 @@ Service Area
                             </ul>
                             <a href="#home_faq" class="th-btn style2">Book Now<i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
                         </div>
 
                     </div>
@@ -695,6 +1415,7 @@ Service Area
                             </ul>
                             <a href="#home_faq" class="th-btn style2">Book Now<i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -726,6 +1447,7 @@ Service Area
                             </ul>
                             <a href="#home_faq" class="th-btn style2">Book Now<i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
                         </div>
 
                     </div>
@@ -755,6 +1477,7 @@ Service Area
                             </ul>
                             <a href="#home_faq" class="th-btn style2">Book Now<i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
                         </div>
 
                     </div>
@@ -765,120 +1488,125 @@ Service Area
 
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="service-card hs1 serv_card_bg">
-                        <div class="service-card_overlay" data-bg-src="assets/img/shape/service_shape2.webp"></div>
+                        <div class="service-card_overlay "></div>
 
                         <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
                         <div class="service-card-content">
-                            <h3 style="margin-top: 5%;" class="box-title"><a href="">Nasya - Errhine Therapy</a></h3>
-                            <p class="service-card_text">Nasya involves the administration of medicated ghee or oil
-                                through the nostrils after a facial/head massage and steam. The nose is considered the
-                                door to the brain and has a calming effect on the nervous system. This therapy:</p>
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="#">Thakra Dhara</a></h3>
+                            <p class="service-card_text">Thakra Dhara is a therapeutic treatment that involves the
+                                application of a continuous stream of buttermilk (takra) on the forehead. This process
+                                is a form of Shirodhara, which is a traditional Ayurvedic therapy designed to calm and
+                                rejuvenate the mind and body.</p>
+                            <h4 class="service-card_text">Benefits:</h4>
                             <ul class="service-card_text_ul service-card_text">
-                                <li>Cleanses toxins and clears Kapha (accumulations) in the head and neck</li>
-                                <li>Calms the nervous system through the nose-brain connection</li>
-                                <li>Effective treatment for ENT issues like headaches, migraines, sinusitis, hay fever,
-                                    congestion and blockages</li>
+                                <li>Helps reduce stress, anxiety, and mental fatigue.</li>
+                                <li>Aids in improving concentration and mental clarity</li>
+                                <li>Can help in treating insomnia and other sleep disorders.</li>
+                                <li>Improves skin texture and may provide relief from certain skin conditions.</li>
                             </ul>
                             <a href="#home_faq" class="th-btn style2">Book Now<i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
                         </div>
-
-
                     </div>
                 </div>
+
 
 
 
 
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="service-card hs1 serv_card_bg">
-                        <div class="service-card_overlay" data-bg-src="assets/img/shape/service_shape2.webp"></div>
+                        <div class="service-card_overlay "></div>
 
                         <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
                         <div class="service-card-content">
-                            <h3 style="margin-top: 5%;" class="box-title"><a href="">Netra Tarpana-Eye Treatment</a>
-                            </h3>
-                            <p class="service-card_text">Netra Tarpana is a specialized Ayurvedic treatment for the
-                                eyes, involving the placement of dough rings filled with fragrant oils around the eyes,
-                                followed by the gentle pouring of sterilized cow's ghee into the eyes. This therapy
-                                takes around 30 minutes in total. Benefits include:</p>
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="#">Kati Vasti, Greeva Vasti & Uro
+                                    Vasti</a></h3>
+                            <p class="service-card_text">Kati Vasti, Greeva Vasti, and Uro Vasti are specialized
+                                therapeutic treatments used to address different types of musculoskeletal and systemic
+                                issues.</p>
+                            <h4 class="service-card_text">Kati Vasti</h4>
                             <ul class="service-card_text_ul service-card_text">
-                                <li>Relief from tired, aching, and sore eyes</li>
-                                <li>Improves eyesight and relieves eye strain</li>
-                                <li>Strengthens eye muscles and nerves</li>
-                                <li>Balances Vata and Pitta doshas</li>
-                                <li>Removes dark circles under the eyes</li>
-                                <li>Revitalizes and rejuvenates tired, dry, rough, and injured eyes</li>
-                                <li>Prevents formation of cataract</li>
-                                <li><strong>Highly recommended</strong> for people who spend a lot of time on computers,
-                                    people suffering from blurred vision, eye infections, or generally tired and aching
-                                    eyes.</li>
+                                <li>Effective for treating lower back pain, lumbar spondylosis, and sciatica.</li>
+                                <li>Enhances local blood circulation and reduces muscle stiffness.</li>
+                                <li>Provides deep nourishment to the affected tissues and muscles.</li>
                             </ul>
-                            <h4 class="service-card_text">Indication</h4>
+                            <h4 class="service-card_text">Greeva Vasti</h4>
                             <ul class="service-card_text_ul service-card_text">
-                                <li>Burning in the eyes</li>
-                                <li>Dry eye syndrome</li>
-                                <li>Chronic conjunctivitis</li>
-                                <li>Pain in the eyes</li>
-                                <li>Watering and cloudiness of the eyes</li>
-                                <li>Night blindness</li>
+                                <li>Effective for relieving neck pain, cervical spondylosis, and stiffness.</li>
+                                <li>Alleviates tension and improves flexibility in the neck muscles.</li>
+                                <li>Helps in maintaining the health and function of cervical vertebrae.</li>
+                            </ul>
+                            <h4 class="service-card_text">Uro Vasti</h4>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Helps in treating respiratory issues like asthma, bronchitis, and cough.</li>
+                                <li>Provides relief from chest pain and muscular tension in the chest area.</li>
+                                <li>Supports heart health by improving circulation and reducing stress in the chest
+                                    region.</li>
                             </ul>
                             <a href="#home_faq" class="th-btn style2">Book Now<i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
                         </div>
                     </div>
                 </div>
+
 
 
 
 
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="service-card hs1 serv_card_bg">
-                        <div class="service-card_overlay" data-bg-src="assets/img/shape/service_shape2.webp"></div>
+                        <div class="service-card_overlay "></div>
 
                         <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
                         <div class="service-card-content">
-                            <h3 style="margin-top: 5%;" class="box-title"><a href="">Dr. Anjali's Ayurvedic Center's
-                                    Signature Hair Care Range</a></h3>
-                            <p class="service-card_text">The DAAC Signature Hair Care Range offers Ayurvedic treatments
-                                infused with natural ingredients to nourish, strengthen, and rejuvenate hair. This range
-                                addressing concerns such as:</p>
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="#">Shirovasti</a></h3>
+                            <p class="service-card_text">Shirovasti involves creating a reservoir on the head and
+                                filling it with warm, medicated oil or ghee.</p>
                             <ul class="service-card_text_ul service-card_text">
-                                <li>Hair fall and dandruff</li>
-                                <li>Scalp psoriasis</li>
-                                <li>Alopecia areata</li>
-                                <li>Hair thinning</li>
-                                <li>DAAC Signature <strong>Anti-Frizz Hair Care Treatments</strong> - It provides
-                                    holistic care for healthy hair growth and scalp vitality, combining traditional
-                                    wisdom with modern science for beautiful, lustrous hair.</li>
+                                <li>Supports the treatment of neurological conditions such as migraines, insomnia, and
+                                    epilepsy.</li>
+                                <li>Enhances mental clarity, concentration, and cognitive functions.</li>
+                                <li>Provides relaxation and relief from stress, anxiety, and mental fatigue.</li>
+                                <li>Improves hair texture and health by nourishing the scalp.</li>
+                                <li>Helps in balancing Vata and Pitta doshas in the body, which are often implicated in
+                                    neurological and mental disorders.</li>
                             </ul>
                             <a href="#home_faq" class="th-btn style2">Book Now<i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
                         </div>
                     </div>
                 </div>
+
 
 
 
 
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="service-card hs1 serv_card_bg">
-                        <div class="service-card_overlay" data-bg-src="assets/img/shape/service_shape2.webp"></div>
+                        <div class="service-card_overlay "></div>
 
                         <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
                         <div class="service-card-content">
-                            <h3 style="margin-top: 5%;" class="box-title"><a href="">DAAC Signature Skin Care</a></h3>
-                            <p class="service-card_text">Aavikkizhy is an Ayurvedic treatment involving the rhythmic
-                                application of warm herbal poultices to the body.</p>
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="#">Thala Pothichil</a></h3>
+                            <p class="service-card_text">Thala Pothichil is an Ayurvedic therapy designed to provide
+                                deep nourishment and therapeutic benefits to the head and neck area. It involves
+                                applying a specially prepared medicinal paste on the scalp and covering it for a certain
+                                period.</p>
                             <ul class="service-card_text_ul service-card_text">
-                                <li>Inducing sweating and detoxification</li>
-                                <li>Relieving muscle pain and promoting relaxation</li>
-                                <li>Balancing the doshas</li>
-                                <li>Improving circulation</li>
-                                <li>Revitalizing body and mind</li>
+                                <li>Provides deep nourishment to the scalp and hair follicles.</li>
+                                <li>Helps improve mental clarity, concentration, and overall cognitive function.</li>
+                                <li>Eases stress and tension in the head and neck area.</li>
+                                <li>May improve the texture and health of hair, addressing issues like dandruff or
+                                    dryness.</li>
+                                <li>Beneficial for certain neurological conditions and enhancing brain function.</li>
                             </ul>
                             <a href="#home_faq" class="th-btn style2">Book Now<i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -886,29 +1614,29 @@ Service Area
 
 
 
-                <div class="col-md-6 col-lg-6 col-xl-4">
+
+                <div class="col-md-6 col-lg-4 col-xl-4">
                     <div class="service-card hs1 serv_card_bg">
-                        <div class="service-card_overlay" data-bg-src="assets/img/shape/service_shape2.webp"></div>
+                        <div class="service-card_overlay"></div>
 
                         <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
                         <div class="service-card-content">
-                            <h3 style="margin-top: 5%;" class="box-title"><a href="">Orthopedic Rehabilitation
-                                    Therapies</a></h3>
-                            <p class="service-card_text">The Ortho Care Program provides comprehensive treatments for
-                                various orthopedic conditions including arthritis, sciatica pain, inter-vertebral disc
-                                prolapse, joint and muscle ailments, rheumatoid arthritis, osteoarthritis, psoriatic
-                                arthritis, gout, spondylosis, and IVDP. This program includes synchronized Ayurvedic
-                                body treatments with the administration of herbal medicines, therapeutic yoga sessions,
-                                a curated Ayurvedic diet plan, and wellness and lifestyle reforming activities.</p>
-                            <h4 class="service-card_text">Benefits of the Program:</h4>
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="#">Ksheera Dhooma</a></h3>
+                            <p class="service-card_text">"Ksheera" means milk, and "Dhooma" refers to smoke. In this
+                                therapy, medicated milk is used to generate steam or smoke, which is then directed
+                                toward specific parts of the body.</p>
                             <ul class="service-card_text_ul service-card_text">
-                                <li>Improved physical endurance</li>
-                                <li>Restoration of musculo-skeletal system</li>
-                                <li>Enhanced flexibility</li>
-                                <li>Overall improvement in health and stability</li>
+                                <li>Helps in the detoxification of the body by promoting the expulsion of toxins through
+                                    the skin and respiratory system.</li>
+                                <li>Provides relief from pain and stiffness in muscles and joints.</li>
+                                <li>Enhances blood circulation in the treated areas.</li>
+                                <li>Nourishes and revitalizes the skin, improving its texture and appearance.</li>
+                                <li>Helps in alleviating respiratory issues by clearing congestion and soothing the
+                                    respiratory tract.</li>
                             </ul>
                             <a href="#home_faq" class="th-btn style2">Book Now<i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -916,30 +1644,30 @@ Service Area
 
 
 
-                <div class="col-md-6 col-lg-6 col-xl-4">
+
+                <div class="col-md-6 col-lg-4 col-xl-4">
                     <div class="service-card hs1 serv_card_bg">
-                        <div class="service-card_overlay" data-bg-src="assets/img/shape/service_shape2.webp"></div>
+                        <div class="service-card_overlay"></div>
 
                         <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
                         <div class="service-card-content">
-                            <h3 style="margin-top: 5%;" class="box-title"><a href="">Neuro Rehabilitation Therapies</a>
-                            </h3>
-                            <p class="service-card_text">Discover Neuro Rehabilitation at Dr. Anjali's Ayurvedic Center,
-                                where traditional Ayurvedic therapies integrate with modern rehabilitation practices to
-                                promote natural healing and improve neurological function and quality of life.
-                                Conditions treated:</p>
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="#">Pichu</a></h3>
+                            <p class="service-card_text">Pichu is an Ayurvedic therapy involving the application of a
+                                medicated oil-soaked cloth or pad to a specific area of the body. This treatment is
+                                designed to provide localized benefits, such as pain relief, nourishment, and healing.
+                            </p>
                             <ul class="service-card_text_ul service-card_text">
-                                <li>Stroke</li>
-                                <li>Traumatic Brain Injury (TBI)</li>
-                                <li>Spinal Cord Injury</li>
-                                <li>Multiple Sclerosis (MS)</li>
-                                <li>Parkinson's Disease</li>
-                                <li>Peripheral Neuropathy</li>
-                                <li>Guillain-Barré Syndrome</li>
-                                <li>Cerebral Palsy</li>
+                                <li>Provides targeted relief from pain, inflammation, and discomfort in specific areas
+                                    of the body.</li>
+                                <li>Enhances blood flow and circulation to the treated area.</li>
+                                <li>Deeply nourishes and rejuvenates the tissues and muscles.</li>
+                                <li>Helps reduce stiffness and improve flexibility in the treated area.</li>
+                                <li>Assists in the healing process for various conditions affecting the skin, muscles,
+                                    and joints.</li>
                             </ul>
                             <a href="#home_faq" class="th-btn style2">Book Now<i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -948,27 +1676,30 @@ Service Area
 
 
 
-                <div style="min-height: 100% !important;" class="col-md-6 col-lg-6 col-xl-4">
+
+                <div class="col-md-6 col-lg-4 col-xl-4">
                     <div class="service-card hs1 serv_card_bg">
-                        <div class="service-card_overlay" data-bg-src="assets/img/shape/service_shape2.webp"></div>
+                        <div class="service-card_overlay"></div>
 
                         <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
                         <div class="service-card-content">
-                            <h3 style="margin-top: 5%;" class="box-title"><a href="">Ayurvedic Benefits for
-                                    Neurorehabilitation</a></h3>
-                            <p class="service-card_text">Experience the unique benefits of Ayurvedic treatments:</p>
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="#">Tharpanam</a></h3>
+                            <p class="service-card_text">Tharpanam is often performed as part of a broader Ayurvedic
+                                regimen, including therapies like Netra Tarpana, Shirodhara, and Abhyanga. It is
+                                important to have this treatment administered by a trained Ayurvedic practitioner to
+                                ensure it is tailored to individual health needs and conditions.</p>
                             <ul class="service-card_text_ul service-card_text">
-                                <li><strong>Balancing Vata Dosha:</strong> Ayurvedic therapies help restore neurological
-                                    balance and function.</li>
-                                <li><strong>Herbal Medicines:</strong> Natural herbs and formulations support nerve
-                                    regeneration and brain health.</li>
-                                <li><strong>Panchakarma Detox:</strong> Purification therapies remove toxins, aiding
-                                    recovery and rejuvenation.</li>
-                                <li><strong>Customized Diet and Lifestyle:</strong> Personalized plans optimize
-                                    neurological health and recovery.</li>
+                                <li>Provides deep nourishment to the eyes and improves their overall health.</li>
+                                <li>Helps relieve eye strain and fatigue, especially beneficial for those who spend long
+                                    hours in front of screens.</li>
+                                <li>Aids in improving vision and treating certain eye conditions.</li>
+                                <li>Useful for conditions such as conjunctivitis, dry eyes, and other inflammatory eye
+                                    conditions.</li>
+                                <li>Improves the health and appearance of the skin around the eyes.</li>
                             </ul>
                             <a href="#home_faq" class="th-btn style2">Book Now<i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -976,25 +1707,30 @@ Service Area
 
 
 
-                <div class="col-md-6 col-lg-6 col-xl-4">
+
+                <div class="col-md-6 col-lg-4 col-xl-4">
                     <div class="service-card hs1 serv_card_bg">
-                        <div class="service-card_overlay" data-bg-src="assets/img/shape/service_shape2.webp"></div>
+                        <div class="service-card_overlay"></div>
+
                         <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
                         <div class="service-card-content">
-                            <h3 style="margin-top: 5%;" class="box-title"><a href="">Stroke Rehabilitation with Ayurveda
-                                    at DR. Anjali's Ayurvedic centre</a></h3>
-                            <h4 class="service-card_text">Rediscover Health With Ayurvedic Care:</h4>
-                            <p class="service-card_text">Stroke Rehabilitation At Dr. Anjali's Ayurvedic Center Embraces
-                                Ayurvedic Principles To Support Recovery And Prevent Recurrence. Our Holistic Approach
-                                Is Designed To Empower Stroke Survivors With Through Natural Healing Methods.</h4>
-                            <h4 class="service-card_text">Conditions Treated:</h4>
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="#">Aschyotana & Anjana</a></h3>
+                            <p class="service-card_text">Aschyotana and Anjana are specialized eye treatments that focus
+                                on improving eye health, treating eye conditions, and enhancing vision. Both therapies
+                                involve the application of medicinal substances to the eyes but differ in their
+                                techniques and purposes.</p>
                             <ul class="service-card_text_ul service-card_text">
-                                <li>Ischemic Stroke</li>
-                                <li>Hemorrhagic Stroke</li>
-                                <li>Transient Ischemic Attack (TIA)</li>
+                                <li>Aschyotana: An Ayurvedic technique for administering medicated eye drops. Derived
+                                    from "Aschyota," meaning "to pour," it involves placing therapeutic drops directly
+                                    into the eyes to treat various conditions.</li>
+                                <li>Anjana: An Ayurvedic treatment where medicinal substances are applied to the
+                                    conjunctiva (the membrane of the eye) to treat eye conditions. Derived from
+                                    "Anjana," meaning "to apply," it focuses on improving eye health and alleviating
+                                    discomfort.</li>
                             </ul>
                             <a href="#home_faq" class="th-btn style2">Book Now<i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -1002,27 +1738,27 @@ Service Area
 
 
 
-                <div class="col-md-6 col-lg-6 col-xl-4">
+
+                <div class="col-md-6 col-lg-4 col-xl-4">
                     <div class="service-card hs1 serv_card_bg">
-                        <div class="service-card_overlay" data-bg-src="assets/img/shape/service_shape2.webp"></div>
+                        <div class="service-card_overlay"></div>
 
                         <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
                         <div class="service-card-content">
-                            <h3 style="margin-top: 5%;" class="box-title"><a href="">Ayurvedic Benefits for
-                                    Neurorehabilitation</a></h3>
-                            <p class="service-card_text">Explore the advantages of Ayurvedic stroke rehabilitation:</p>
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="#">Ubtan</a></h3>
+                            <p class="service-card_text">"Ubtan" is a herbal paste applied to the skin to cleanse,
+                                exfoliate, and rejuvenate. It typically includes a blend of natural ingredients like
+                                herbs, grains, and oils.</p>
                             <ul class="service-card_text_ul service-card_text">
-                                <li><strong>Nourishing Nervous System:</strong> Herbs and therapies strengthen nerves
-                                    and promote neural repair.</li>
-                                <li><strong>Mind-Body Balance:</strong> Yoga and meditation enhance mental resilience
-                                    and emotional well-being.</li>
-                                <li><strong>Tailored Rehabilitation Plans:</strong> Individualized programs address
-                                    specific post-stroke challenges and goals.</li>
-                                <li><strong>Lifestyle Guidance:</strong> Ayurvedic principles guide lifestyle
-                                    modifications for sustainable health.</li>
+                                <li>Removes impurities, toxins, and dead skin cells.</li>
+                                <li>Gently exfoliates to improve skin texture and remove dead cells.</li>
+                                <li>Provides essential nutrients and enhances skin health.</li>
+                                <li>Promotes a radiant and even skin tone.</li>
+                                <li>Has soothing effects that can relieve irritation and improve skin comfort.</li>
                             </ul>
                             <a href="#home_faq" class="th-btn style2">Book Now<i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -1030,27 +1766,29 @@ Service Area
 
 
 
-                <div  class="col-md-6 col-lg-6 col-xl-4">
+
+                <div class="col-md-6 col-lg-4 col-xl-4">
                     <div class="service-card hs1 serv_card_bg">
-                        <div class="service-card_overlay" data-bg-src="assets/img/shape/service_shape2.webp"></div>
+                        <div class="service-card_overlay"></div>
+
                         <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
                         <div class="service-card-content">
-                            <h3 style="margin-top: 5%;" class="box-title"><a href="">Ortho Rehabilitation Enhanced by
-                                    Ayurveda at DR. Anjali's Ayurvedic Center</a></h3>
-                            <h4 class="service-card_text">Restore Mobility With Ayurvedic Expertise:</h4>
-                            <p class="service-card_text">Dr. Anjali's Ayurvedic Center In Dubai Seamlessly Integrates
-                                Ayurvedic Wisdom With Advanced Orthopedic Care For Ortho Rehabilitation. Our Holistic
-                                Approach Facilitates Healing And Optimize Musculoskeletal Health Through Natural
-                                Therapies Tailored To Meet Your Orthopedic Needs.</h4>
-                            <h4 class="service-card_text">Conditions Treated:</h4>
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="#">Marma Therapy</a></h3>
+                            <p class="service-card_text">Marma Therapy is an Ayurvedic treatment focusing on vital
+                                energy points in the body known as Marma points. These points are believed to be the
+                                intersections of physical and energetic channels. The therapy involves the stimulation
+                                and balancing of Marma points—sensitive areas where energy, nerves, and tissues converge
+                                to enhance health and well-being.</p>
                             <ul class="service-card_text_ul service-card_text">
-                                <li>Osteoarthritis</li>
-                                <li>Rheumatoid Arthritis</li>
-                                <li>Sports Injuries (E.G., ACL Tears, Tennis Elbow)</li>
-                                <li>Post-Surgical Rehabilitation (E.G., Joint Replacements)</li>
+                                <li>Regulates and harmonizes the body's vital energy (Prana).</li>
+                                <li>Alleviates pain and discomfort by releasing blocked energy.</li>
+                                <li>Enhances blood flow and tissue health.</li>
+                                <li>Accelerates the body's natural healing processes.</li>
+                                <li>Helps in reducing stress and promoting relaxation.</li>
                             </ul>
                             <a href="#home_faq" class="th-btn style2">Book Now<i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -1060,12 +1798,45 @@ Service Area
 
 
 
-            </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="service-card hs1 serv_card_bg">
+                        <div class="service-card_overlay"></div>
+
+                        <div class="service-card_icon"><img src="assets/img/basil.webp" alt=""></div>
+                        <div class="service-card-content">
+                            <h3 style="margin-top: 5%;" class="box-title"><a href="#">Ayurvedic Consultation</a></h3>
+                            <p class="service-card_text">Ayurvedic consultation includes a comprehensive evaluation of a
+                                person's physical, mental, and emotional health to determine their dosha balance and
+                                identify any imbalances.</p>
+                            <ul class="service-card_text_ul service-card_text">
+                                <li>Provides a customized treatment plan based on individual needs.</li>
+                                <li>Evaluates physical, mental, and emotional health for a comprehensive approach.</li>
+                                <li>Aims to restore balance to the body's doshas (energies) and improve overall
+                                    well-being.</li>
+                                <li>Identifies and addresses potential health issues before they become serious.</li>
+                                <li>Offers recommendations on diet, lifestyle, and herbal remedies for better health
+                                    management.</li>
+                            </ul>
+                            <a href="#home_faq" class="th-btn style2">Book Now<i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <img class="home_service_card_bottom_img" src="assets/img/ayurveda5-1.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+            </div> -->
 
         </div>
-        <div class="shape-mockup shape-wrapp jump d-none d-xxl-block" data-bottom="5%" data-left="0%"><img
+        <!-- <div class="shape-mockup shape-wrapp jump d-none d-xxl-block" data-bottom="5%" data-left="0%"><img
                 src="assets/img/shape/leaves_6.webp" alt="">
-        </div>
+        </div> -->
     </section>
 
 
@@ -1085,12 +1856,12 @@ Choose Area
                     <div class="choose-content">
                         <h3 class="sec-title mb-15">Get Ayurvedic Treatments Here Now</h3>
                         <p>Experience the healing power of Ayurveda firsthand with our comprehensive range of treatments
-                            available right here, right now! Our expert practitioners are ready to guide you on your
-                            wellness journey, offering personalized care and ancient remedies to address your specific
-                            health concerns. Whether you seek relaxation, rejuvenation, or relief from ailments, our
-                            Ayurvedic treatments are tailored to meet your needs and promote holistic well-being. Step
-                            into our clinic today and discover the transformative benefits of traditional healing
-                            modalities.</p>
+                            available right here at our Ayurvedic Clinic in Dubai, right now! Our expert practitioners
+                            are ready to guide you on your wellness journey, offering personalized care and ancient
+                            remedies to address your specific health concerns. Whether you seek relaxation,
+                            rejuvenation, or relief from ailments, our Ayurvedic treatments are tailored to meet your
+                            needs and promote holistic well-being. Step into our Ayurvedic Clinic in Dubai today and
+                            discover the transformative benefits of traditional healing modalities.</p>
                         <a style="z-index: 2;" href="#home_faq" class="th-btn mt-10">Book Now<i
                                 class="fa-regular fa-arrow-right ms-2"></i></a>
                     </div>
@@ -1123,7 +1894,7 @@ Choose Area
                             <div class="price-slide">
                                 <div class="price-item">
                                     <div class="price-item-content">
-                                        <h3 class="box-title">Panchakarma</h3>
+                                        <h3 class="box-title">Panchakarma Therapy</h3>
                                     </div>
 
                                 </div>
@@ -1143,7 +1914,7 @@ Choose Area
                             <div class="price-slide">
                                 <div class="price-item">
                                     <div class="price-item-content">
-                                        <h3 class="box-title">Ortho Rehabilitation</h3>
+                                        <h3 class="box-title">Neuro Rehabilitation Therapies</h3>
                                     </div>
 
                                 </div>
@@ -1153,7 +1924,7 @@ Choose Area
                             <div class="price-slide">
                                 <div class="price-item">
                                     <div class="price-item-content">
-                                        <h3 class="box-title">Neuro Rehabilitation</h3>
+                                        <h3 class="box-title">Smrithi Meditation</h3>
                                     </div>
 
                                 </div>
@@ -1173,26 +1944,6 @@ Choose Area
                             <div class="price-slide">
                                 <div class="price-item">
                                     <div class="price-item-content">
-                                        <h3 class="box-title">Menopause /Andropause Treatment</h3>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="price-slide">
-                                <div class="price-item">
-                                    <div class="price-item-content">
-                                        <h3 class="box-title">Herbal Detox Plans</h3>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="price-slide">
-                                <div class="price-item">
-                                    <div class="price-item-content">
                                         <h3 class="box-title">Aesthetic Ayurveda</h3>
                                     </div>
 
@@ -1203,7 +1954,27 @@ Choose Area
                             <div class="price-slide">
                                 <div class="price-item">
                                     <div class="price-item-content">
-                                        <h3 class="box-title">Preconception Detox</h3>
+                                        <h3 class="box-title">Skin Disease Management</h3>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="price-slide">
+                                <div class="price-item">
+                                    <div class="price-item-content">
+                                        <h3 class="box-title">Menopause & Andropause Management</h3>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="price-slide">
+                                <div class="price-item">
+                                    <div class="price-item-content">
+                                        <h3 class="box-title">Rejuvenation Therapies</h3>
                                     </div>
 
                                 </div>
@@ -1233,7 +2004,7 @@ Choose Area
                             <div class="price-slide">
                                 <div class="price-item">
                                     <div class="price-item-content">
-                                        <h3 class="box-title">Smrithi Meditation</h3>
+                                        <h3 class="box-title">Preconception Detox</h3>
                                     </div>
 
                                 </div>
@@ -1243,7 +2014,7 @@ Choose Area
                             <div class="price-slide">
                                 <div class="price-item">
                                     <div class="price-item-content">
-                                        <h3 class="box-title">Antiaging Therapy</h3>
+                                        <h3 class="box-title">Rasayana Chikitsa</h3>
                                     </div>
 
                                 </div>
@@ -1253,7 +2024,8 @@ Choose Area
                             <div class="price-slide">
                                 <div class="price-item">
                                     <div class="price-item-content">
-                                        <h3 class="box-title">DAAC Signature Skin care</h3>
+                                        <h3 class="box-title">Dr. Anjali's Ayurvedic Center's Signature Hair Care Range
+                                        </h3>
                                     </div>
 
                                 </div>
@@ -1263,7 +2035,7 @@ Choose Area
                             <div class="price-slide">
                                 <div class="price-item">
                                     <div class="price-item-content">
-                                        <h3 class="box-title">DAAC Signature Hair care</h3>
+                                        <h3 class="box-title">DAAC Signature Skin Care</h3>
                                     </div>
 
                                 </div>
@@ -1360,6 +2132,40 @@ Gallery Area
                     <img src="assets/img/gal_img_004.webp" alt="Gallery Image 3">
                 </div>
             </div>
+            <div style="padding-top: 5px;" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div style="width: 100% !important;" class="gallery-item">
+                    <img src="assets/img/gal_img_006.webp" alt="Gallery Image 3">
+                </div>
+            </div>
+            <div style="padding-top: 5px;" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div style="padding: 0;" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="gallery-item">
+                            <img src="assets/img/gal_img_007.webp" alt="Gallery Image 2">
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-top: 5px;" class="row">
+                    <div style="padding-right: 5px !important; padding-left: 0 !important;"
+                        class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div style="margin-right: 0px;" class="gallery-item">
+                            <img src="assets/img/gal_img_008.webp" alt="Gallery Image 4">
+                        </div>
+                    </div>
+                    <div style="padding: 0;" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="gallery-item">
+                            <img src="assets/img/gal_img_009.webp" alt="Gallery Image 5">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div style="padding: 0; margin-top: 5px;" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="gallery-item">
+                            <img src="assets/img/gal_img_010.webp" alt="Gallery Image 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -1373,34 +2179,34 @@ Team Area
                 <img src="assets/img/title_shape_1.svg" alt="">
                 <h2 class="sec-title">Our Experienced Ayurveda Doctors</h2>
             </div>
-            <div class="row slider-shadow th-carousel" id="teamSlide2" data-slide-show="4" data-lg-slide-show="3"
-                data-md-slide-show="2" data-sm-slide-show="2" data-xs-slide-show="1" data-arrows="true">
+            <!-- <div class="row slider-shadow th-carousel" id="teamSlide2" data-slide-show="4" data-lg-slide-show="3"
+                data-md-slide-show="2" data-sm-slide-show="2" data-xs-slide-show="1" data-arrows="true"> -->
 
 
-                <div class="col-sm-6 col-lg-4 col-xxl-3"></div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3"></div>
 
-                <!-- Single Item -->
-                <div onclick="window.location.href = 'doctors.html#doctors_anjali_devi'"
-                    class="col-sm-6 col-lg-4 col-xxl-3">
-                    <div class="th-team team-box style2">
-                        <div class="team-img">
-                            <img src="assets/img/anjali_devi_004.webp" alt="">
-                        </div>
-                        <div class="team-box_content">
-                            <h3 style="font-size: 140%;" class="box-title"><a href="">Dr. Anjali Devi</a></h3>
-                            <span class="team-desig">BAMS ,CSM</span>
-                            <!-- <div class="social-links">
-                        <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                        <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                        <a target="_blank" href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.skype.com/"><i class="fa-brands fa-skype"></i></a>
-                    </div> -->
-                        </div>
+            <!-- Single Item -->
+            <div onclick="window.location.href = 'doctors.html#doctors_anjali_devi'"
+                class="col-sm-6 col-lg-4 col-xxl-3">
+                <div class="th-team team-box style2">
+                    <div class="team-img">
+                        <img src="assets/img/anjali_devi_004.webp" alt="">
+                    </div>
+                    <div class="team-box_content">
+                        <h3 style="font-size: 140%;" class="box-title"><a href="">Dr. Anjali Devi</a></h3>
+                        <span class="team-desig">BAMS ,CSM</span>
+                        <!-- <div class="social-links">
+                    <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a target="_blank" href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.skype.com/"><i class="fa-brands fa-skype"></i></a>
+                </div> -->
                     </div>
                 </div>
+            </div>
 
-                <!-- Single Item -->
-                <!-- <div onclick="window.location.href = 'doctors.html#doctors_shylaja_pillai'"
+            <!-- Single Item -->
+            <!-- <div onclick="window.location.href = 'doctors.html#doctors_shylaja_pillai'"
                     class="col-sm-6 col-lg-4 col-xxl-3">
                     <div class="th-team team-box style2">
                         <div class="team-img">
@@ -1409,45 +2215,45 @@ Team Area
                         <div class="team-box_content">
                             <h3 style="font-size: 140%;" class="box-title"><a href="">Shylaja Pillai</a></h3>
                             <span class="team-desig">BAMS ,CSM</span>
-                            
+
                         </div>
                     </div>
                 </div> -->
 
-                <div class="col-sm-6 col-lg-4 col-xxl-3"></div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3"></div>
 
 
-                <!-- Single Item -->
-                <!-- <div class="col-sm-6 col-lg-4 col-xxl-3">
-            <div class="th-team team-box style2">
-                <div class="team-img">
-                    <img src="assets/img/doctor_Michel Jonson.webp" alt="">
-                </div>
-                <div class="team-box_content">
-                    <h3 style="font-size: 140%;" class="box-title"><a href="">Michel Jonson</a></h3>
-                    <span class="team-desig">BAMS</span>
-                    
-                </div>
-            </div>
-        </div> -->
+            <!-- Single Item -->
+            <!-- <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="th-team team-box style2">
+                        <div class="team-img">
+                            <img src="assets/img/doctor_Michel Jonson.webp" alt="">
+                        </div>
+                        <div class="team-box_content">
+                            <h3 style="font-size: 140%;" class="box-title"><a href="">Michel Jonson</a></h3>
+                            <span class="team-desig">BAMS</span>
 
-                <!-- Single Item -->
-                <!-- <div class="col-sm-6 col-lg-4 col-xxl-3">
-            <div class="th-team team-box style2">
-                <div class="team-img">
-                    <img src="assets/img/doctor_Jessica Lauren.webp" alt="">
-                </div>
-                <div class="team-box_content">
-                    <h3 style="font-size: 140%;" class="box-title"><a href="">Jessica Lauren</a></h3>
-                    <span class="team-desig">BAMS</span>
-                    
-                </div>
-            </div>
-        </div> -->
+                        </div>
+                    </div>
+                </div> -->
+
+            <!-- Single Item -->
+            <!-- <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="th-team team-box style2">
+                        <div class="team-img">
+                            <img src="assets/img/doctor_Jessica Lauren.webp" alt="">
+                        </div>
+                        <div class="team-box_content">
+                            <h3 style="font-size: 140%;" class="box-title"><a href="">Jessica Lauren</a></h3>
+                            <span class="team-desig">BAMS</span>
+                
+                        </div>
+                    </div>
+                </div> -->
 
 
 
-            </div>
+        </div>
         </div>
         <div class="shape-mockup jump d-none d-lg-block" data-top="0%" data-left="0%"><img
                 src="assets/img/shape/flower_1_10.webp" alt="">
@@ -1456,6 +2262,9 @@ Team Area
                 src="assets/img/floating_mint_leaves.webp" alt="">
         </div>
     </section>
+
+
+
 
     <!--==============================
 Faq Area
@@ -1524,17 +2333,18 @@ Faq Area
                             <div class="accordion-card active">
                                 <div class="accordion-header" id="collapse-item-1">
                                     <button class="accordion-button " type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">How
-                                        many sessions are typically required for Ayurvedic treatments?</button>
+                                        data-bs-target="#collapse-1" aria-expanded="true"
+                                        aria-controls="collapse-1">What services are offered at Dr. Anjali's Ayurvedic
+                                        Clinic in Dubai?</button>
                                 </div>
                                 <div id="collapse-1" class="accordion-collapse collapse show"
                                     aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-                                        <p class="faq-text">The number of sessions required varies depending on
-                                            individual needs, the severity of the condition being treated, and the
-                                            specific treatment modality. Some people may experience improvement after a
-                                            few sessions, while others may require ongoing treatment for chronic or
-                                            complex health issues.</p>
+                                        <p class="faq-text">We offer a range of Ayurvedic treatments, Ayurvedic
+                                            Consultation, including Abyangam, Jambeera Pinda Swedom,Danyamla
+                                            Dhara,Udhwarthanam, Pizhichil, Aavikizhy, Njavara Kizhy, Shirodhara,Thakra
+                                            Dhara,and more. Each treatment is personalized to meet your unique health
+                                            needs.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1544,17 +2354,15 @@ Faq Area
                                 <div class="accordion-header" id="collapse-item-2">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapse-2" aria-expanded="false"
-                                        aria-controls="collapse-2">Can I combine Ayurvedic treatments with conventional
-                                        medicine</button>
+                                        aria-controls="collapse-2">How can I book an appointment?</button>
                                 </div>
                                 <div id="collapse-2" class="accordion-collapse collapse "
                                     aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-                                        <p class="faq-text">The number of sessions required varies depending on
-                                            individual needs, the severity of the condition being treated, and the
-                                            specific treatment modality. Some people may experience improvement after a
-                                            few sessions, while others may require ongoing treatment for chronic or
-                                            complex health issues.</p>
+                                        <p class="faq-text">You can book an appointment at this Ayurvedic Clinic in
+                                            Dubai by calling our
+                                            clinic, visiting our website, or using our online booking system. We strive
+                                            to accommodate your preferred time and treatment needs.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1564,17 +2372,16 @@ Faq Area
                                 <div class="accordion-header" id="collapse-item-3">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapse-3" aria-expanded="false"
-                                        aria-controls="collapse-3">Does Anjali's Ayurveda Clinic offer online
-                                        consultations</button>
+                                        aria-controls="collapse-3">What should I expect during my first
+                                        consultation?</button>
                                 </div>
                                 <div id="collapse-3" class="accordion-collapse collapse "
                                     aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-                                        <p class="faq-text">The number of sessions required varies depending on
-                                            individual needs, the severity of the condition being treated, and the
-                                            specific treatment modality. Some people may experience improvement after a
-                                            few sessions, while others may require ongoing treatment for chronic or
-                                            complex health issues.</p>
+                                        <p class="faq-text">During your first consultation, Dr. Anjali will conduct a
+                                            thorough health assessment, discuss your medical history, and recommend
+                                            personalized Ayurvedic treatments based on your specific health concerns.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -1583,17 +2390,70 @@ Faq Area
                             <div class="accordion-card ">
                                 <div class="accordion-header" id="collapse-item-4">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">Is
-                                        Anjali's Ayurveda Clinic suitable for all ages?</button>
+                                        data-bs-target="#collapse-4" aria-expanded="false"
+                                        aria-controls="collapse-4">What specialized treatments do you offer at your
+                                        clinic?</button>
                                 </div>
                                 <div id="collapse-4" class="accordion-collapse collapse "
                                     aria-labelledby="collapse-item-4" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-                                        <p class="faq-text">The number of sessions required varies depending on
-                                            individual needs, the severity of the condition being treated, and the
-                                            specific treatment modality. Some people may experience improvement after a
-                                            few sessions, while others may require ongoing treatment for chronic or
-                                            complex health issues.</p>
+                                        <p class="faq-text">We offer Customized ayurveda medicine, Panchakarma, Euro
+                                            rehabilitation, Ortho rehabilitation, Postnatal care, Aesthetic Ayurveda,
+                                            Skin Disease Management, Menopause, andropause Management, lifestyle
+                                            medicine, Herbal detox plans, rejuvenation therapies, stress management,
+                                            preconception detox, smrithi meditation etc.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion-card ">
+                                <div class="accordion-header" id="collapse-item-5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse-5" aria-expanded="false"
+                                        aria-controls="collapse-5">How long do the treatments take?</button>
+                                </div>
+                                <div id="collapse-5" class="accordion-collapse collapse "
+                                    aria-labelledby="collapse-item-5" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p class="faq-text">The duration of treatments can vary depending on the type
+                                            and purpose. A typical session can last anywhere from 30 minutes to 2 hours.
+                                            Our practitioners will provide details during your consultation.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion-card ">
+                                <div class="accordion-header" id="collapse-item-6">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse-6" aria-expanded="false"
+                                        aria-controls="collapse-6">What forms of payment do you accept?</button>
+                                </div>
+                                <div id="collapse-6" class="accordion-collapse collapse "
+                                    aria-labelledby="collapse-item-6" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p class="faq-text">We accept cash, credit/debit cards, and online payments.
+                                            Some treatments may also be covered by health insurance, depending on your
+                                            provider and plan.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion-card ">
+                                <div class="accordion-header" id="collapse-item-7">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse-7" aria-expanded="false"
+                                        aria-controls="collapse-7">Can I take Ayurvedic herbs along with my regular
+                                        medication?</button>
+                                </div>
+                                <div id="collapse-7" class="accordion-collapse collapse "
+                                    aria-labelledby="collapse-item-7" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p class="faq-text">It is important to consult with our practitioners and your
+                                            healthcare provider before combining Ayurvedic herbs with regular medication
+                                            to avoid any potential interactions.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1622,7 +2482,116 @@ Testimonial Area
                     <h2 class="sec-title">Our Customer Feedback</h2>
                 </div>
             </div>
-            <div id="home_reviews_section" class="row slider-shadow th-carousel" data-slide-show="2"
+
+
+
+
+            <div style="width: 99vw !important;" class="outer-div">
+                <div class="scrollable-div">
+
+                    <div class="item1 testi-grid style2">
+                        <div class="testi-grid_content">
+                            <div class="star-icon">
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                            </div>
+                            <p class="testi-grid_text msg"></p>
+                            <div class="testi-grid_profile">
+                                <div class="media-body">
+                                    <h5 class="testi-grid_name nme"></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi-shape2"><img src="assets/img/basil.webp" alt=""></div>
+                    </div>
+                    <div class="item1 testi-grid style2">
+                        <div class="testi-grid_content">
+                            <div class="star-icon">
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                            </div>
+                            <p class="testi-grid_text msg"></p>
+                            <div class="testi-grid_profile">
+                                <div class="media-body">
+                                    <h5 class="testi-grid_name nme"></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi-shape2"><img src="assets/img/basil.webp" alt=""></div>
+                    </div>
+                    <div class="item1 testi-grid style2">
+                        <div class="testi-grid_content">
+                            <div class="star-icon">
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                            </div>
+                            <p class="testi-grid_text msg"></p>
+                            <div class="testi-grid_profile">
+                                <div class="media-body">
+                                    <h5 class="testi-grid_name nme"></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi-shape2"><img src="assets/img/basil.webp" alt=""></div>
+                    </div>
+                    <div class="item1 testi-grid style2">
+                        <div class="testi-grid_content">
+                            <div class="star-icon">
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                            </div>
+                            <p class="testi-grid_text msg"></p>
+                            <div class="testi-grid_profile">
+                                <div class="media-body">
+                                    <h5 class="testi-grid_name nme"></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi-shape2"><img src="assets/img/basil.webp" alt=""></div>
+                    </div>
+                    <div class="item1 testi-grid style2">
+                        <div class="testi-grid_content">
+                            <div class="star-icon">
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                            </div>
+                            <p class="testi-grid_text msg"></p>
+                            <div class="testi-grid_profile">
+                                <div class="media-body">
+                                    <h5 class="testi-grid_name nme"></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi-shape2"><img src="assets/img/basil.webp" alt=""></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <!-- <div id="home_reviews_section" class="row slider-shadow th-carousel" data-slide-show="2"
                 data-lg-slide-show="2" data-sm-slide-show="1" data-xs-slide-show="1">
                 <div class="col-md-6 col-lg-4">
                     <div class="testi-grid style2">
@@ -1638,7 +2607,6 @@ Testimonial Area
                             <div class="testi-grid_profile">
                                 <div class="media-body">
                                     <h5 class="testi-grid_name nme"></h5>
-                                    <p class="testi-grid_desig">Customer</p>
                                 </div>
                             </div>
                         </div>
@@ -1659,7 +2627,6 @@ Testimonial Area
                             <div class="testi-grid_profile">
                                 <div class="media-body">
                                     <h5 class="testi-grid_name nme"></h5>
-                                    <p class="testi-grid_desig">Customer</p>
                                 </div>
                             </div>
                         </div>
@@ -1680,7 +2647,6 @@ Testimonial Area
                             <div class="testi-grid_profile">
                                 <div class="media-body">
                                     <h5 class="testi-grid_name nme"></h5>
-                                    <p class="testi-grid_desig">Customer</p>
                                 </div>
                             </div>
                         </div>
@@ -1701,62 +2667,229 @@ Testimonial Area
                             <div class="testi-grid_profile">
                                 <div class="media-body">
                                     <h5 class="testi-grid_name nme"></h5>
-                                    <p class="testi-grid_desig">Customer</p>
                                 </div>
                             </div>
                         </div>
                         <div class="testi-shape2"><img src="assets/img/basil.webp" alt=""></div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="testi-grid style2">
-                        <div class="testi-grid_content">
-                            <div class="star-icon">
-                                <a href="#"><i class="fa-solid fa-star"></i></a>
-                                <a href="#"><i class="fa-solid fa-star"></i></a>
-                                <a href="#"><i class="fa-solid fa-star"></i></a>
-                                <a href="#"><i class="fa-solid fa-star"></i></a>
-                                <a href="#"><i class="fa-solid fa-star"></i></a>
-                            </div>
-                            <p class="testi-grid_text msg"></p>
-                            <div class="testi-grid_profile">
-                                <div class="media-body">
-                                    <h5 class="testi-grid_name nme"></h5>
-                                    <p class="testi-grid_desig">Customer</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testi-shape2"><img src="assets/img/basil.webp" alt=""></div>
-                    </div>
-                </div>
+                
 
 
-            </div>
+            </div> -->
+        </div>
+        <div class="add_review_container Review_popup">
+            <a style="float: right; margin-right: 2%;" onclick="CloseReviewPopup()"><i class="fa-solid fa-x"></i></a>
+            <form>
+                <input type="text" placeholder="Full Name" id="fullName" name="fullName"><br>
+                <input type="email" placeholder="Email ID" id="emailid" name="emailid"><br>
+                <textarea placeholder="Your Message" id="messagetext" name="messagetext" rows="5"
+                    maxlength="500"></textarea><br>
+                <button id="submitReview" type="submit"> Submit</button>
+            </form>
+        </div>
+        <div
+            style="width: 100%; height: max-content; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <p class="review_quotes">"Share Your Experience! 🌿 Your feedback helps us grow and serve you better. Leave
+                a review or testimonial about your journey with Dr. Anjali's Ayurvedic Clinic in Dubai." <br><br></p>
+            <button onclick="DisplayReviewPopup()" class="add_review_button">Add a Review &nbsp; <i
+                    class="fa-solid fa-thumbs-up"></i></button>
         </div>
 
+        <div class="shape-mockup movingX d-none d-xl-block" data-top="0%" data-left="0%"><img
+                src="assets/img/shape/flower_1_13.webp" alt="">
+        </div>
     </section>
-    <div class="add_review_container Review_popup">
-        <a style="float: right; margin-right: 2%;" onclick="CloseReviewPopup()"><i class="fa-solid fa-x"></i></a>
-        <form action="">
-            <input type="text" placeholder="Full Name" id="fullName" name="fullName"><br>
-            <input type="email" placeholder="Email ID" id="emailid" name="email"><br>
-            <textarea placeholder="Your Message" id="messagetext" name="message" rows="5"
-                maxlength="500"></textarea><br>
-            <button id="submitReview" type="submit"> Submit</button>
-        </form>
-    </div>
-    <div
-        style="width: 100%; height: max-content; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-        <p class="review_quotes">"Share Your Experience! 🌿 Your feedback helps us grow and serve you better. <br> Leave
-            a review or testimonial
-            about your journey with Dr. Anjali's Ayurvedic Center." <br><br></p>
-        <button onclick="DisplayReviewPopup()" class="add_review_button">Add a Review &nbsp; <i
-                class="fa-solid fa-thumbs-up"></i></button>
-    </div>
 
-    <div class="shape-mockup movingX d-none d-xl-block" data-top="0%" data-left="0%"><img
-            src="assets/img/shape/flower_1_13.webp" alt="">
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2 style="text-align: center; width: 100%; padding: 2%;">We accept all major insurances</h2>
+    <section class="home_review_cmpy">
+        <div class="marquee">
+            <div class="marquee-content">
+                <!-- Original content -->
+                <div class="home_review_cmpy_sec">
+                    <img src="assets/img/1.webp" alt="Image 1" class="image1">
+                    <div class="home_review_overlay">
+                        <img src="assets/img/1.webp" alt="Image 2" class="image2">
+                    </div>
+                </div>
+                <div class="home_review_cmpy_sec">
+                    <img src="assets/img/2.webp" alt="Image 1" class="image1">
+                    <div class="home_review_overlay">
+                        <img src="assets/img/2.webp" alt="Image 2" class="image2">
+                    </div>
+                </div>
+                <div class="home_review_cmpy_sec">
+                    <img src="assets/img/3.webp" alt="Image 1" class="image1">
+                    <div class="home_review_overlay">
+                        <img src="assets/img/3.webp" alt="Image 2" class="image2">
+                    </div>
+                </div>
+                <div class="home_review_cmpy_sec">
+                    <img src="assets/img/4.webp" alt="Image 1" class="image1">
+                    <div class="home_review_overlay">
+                        <img src="assets/img/4.webp" alt="Image 2" class="image2">
+                    </div>
+                </div>
+                <div class="home_review_cmpy_sec">
+                    <img src="assets/img/5.webp" alt="Image 1" class="image1">
+                    <div class="home_review_overlay">
+                        <img src="assets/img/5.webp" alt="Image 2" class="image2">
+                    </div>
+                </div>
+                <div class="home_review_cmpy_sec">
+                    <img src="assets/img/6.webp" alt="Image 1" class="image1">
+                    <div class="home_review_overlay">
+                        <img src="assets/img/6.webp" alt="Image 2" class="image2">
+                    </div>
+                </div>
+                <div class="home_review_cmpy_sec">
+                    <img src="assets/img/7.webp" alt="Image 1" class="image1">
+                    <div class="home_review_overlay">
+                        <img src="assets/img/7.webp" alt="Image 2" class="image2">
+                    </div>
+                </div>
+            </div>
+            <!-- Duplicate content for seamless loop -->
+            <div class="marquee-content">
+                <div class="home_review_cmpy_sec">
+                    <img src="assets/img/8.webp" alt="Image 1" class="image1">
+                    <div class="home_review_overlay">
+                        <img src="assets/img/8.webp" alt="Image 2" class="image2">
+                    </div>
+                </div>
+                <div class="home_review_cmpy_sec">
+                    <img src="assets/img/9.webp" alt="Image 1" class="image1">
+                    <div class="home_review_overlay">
+                        <img src="assets/img/9.webp" alt="Image 2" class="image2">
+                    </div>
+                </div>
+                <div class="home_review_cmpy_sec">
+                    <img src="assets/img/10.webp" alt="Image 1" class="image1">
+                    <div class="home_review_overlay">
+                        <img src="assets/img/10.webp" alt="Image 2" class="image2">
+                    </div>
+                </div>
+                <div class="home_review_cmpy_sec">
+                    <img src="assets/img/11.webp" alt="Image 1" class="image1">
+                    <div class="home_review_overlay">
+                        <img src="assets/img/11.webp" alt="Image 2" class="image2">
+                    </div>
+                </div>
+                <div class="home_review_cmpy_sec">
+                    <img src="assets/img/12.webp" alt="Image 1" class="image1">
+                    <div class="home_review_overlay">
+                        <img src="assets/img/12.webp" alt="Image 2" class="image2">
+                    </div>
+                </div>
+                <div class="home_review_cmpy_sec">
+                    <img src="assets/img/13.webp" alt="Image 1" class="image1">
+                    <div class="home_review_overlay">
+                        <img src="assets/img/13.webp" alt="Image 2" class="image2">
+                    </div>
+                </div>
+                <div class="home_review_cmpy_sec">
+                    <img src="assets/img/14.webp" alt="Image 1" class="image1">
+                    <div class="home_review_overlay">
+                        <img src="assets/img/14.webp" alt="Image 2" class="image2">
+                    </div>
+                </div>
+            </div>
+            <div class="marquee-content">
+                <div class="home_review_cmpy_sec">
+                    <img src="assets/img/8.webp" alt="Image 1" class="image1">
+                    <div class="home_review_overlay">
+                        <img src="assets/img/15.webp" alt="Image 2" class="image2">
+                    </div>
+                </div>
+                <div class="home_review_cmpy_sec">
+                    <img src="assets/img/9.webp" alt="Image 1" class="image1">
+                    <div class="home_review_overlay">
+                        <img src="assets/img/16.webp" alt="Image 2" class="image2">
+                    </div>
+                </div>
+                <div class="home_review_cmpy_sec">
+                    <img src="assets/img/10.webp" alt="Image 1" class="image1">
+                    <div class="home_review_overlay">
+                        <img src="assets/img/17.webp" alt="Image 2" class="image2">
+                    </div>
+                </div>
+                <div class="home_review_cmpy_sec">
+                    <img src="assets/img/11.webp" alt="Image 1" class="image1">
+                    <div class="home_review_overlay">
+                        <img src="assets/img/1.webp" alt="Image 2" class="image2">
+                    </div>
+                </div>
+                <div class="home_review_cmpy_sec">
+                    <img src="assets/img/12.webp" alt="Image 1" class="image1">
+                    <div class="home_review_overlay">
+                        <img src="assets/img/2.webp" alt="Image 2" class="image2">
+                    </div>
+                </div>
+                <div class="home_review_cmpy_sec">
+                    <img src="assets/img/13.webp" alt="Image 1" class="image1">
+                    <div class="home_review_overlay">
+                        <img src="assets/img/3.webp" alt="Image 2" class="image2">
+                    </div>
+                </div>
+                <div class="home_review_cmpy_sec">
+                    <img src="assets/img/14.webp" alt="Image 1" class="image1">
+                    <div class="home_review_overlay">
+                        <img src="assets/img/4.webp" alt="Image 2" class="image2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!--==============================
 Blog Area  
@@ -1914,13 +3047,14 @@ Blog Area
         <div class="copyright-wrap">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-7">
                         <p class="copyright-text text-white">© 2024 Dr. Anjali's Ayurvedic Center. All Rights Reserved.
-                            <a href="privacy-policy.html">Privacy Policy</a> |<a href="privacy-policy.html">Terms of
-                                Service</a> | <a href="sitemap.html">Sitemap</a>
+                            <a href="privacy-policy.html">Privacy Policy</a> |<a href="terms-and-conditions.html">Terms
+                                of
+                                Service</a> | <a href="sitemap.html">Sitemap</a>|<a href="admin.html">Admin</a>
                         </p>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-5">
                         <div class="footer-links">
                             <ul>
                                 <li><a target="_blank" href="https://illforddigital.com/">Designed and Developed by:
@@ -2008,6 +3142,84 @@ Blog Area
 
 
 
+    <style>
+        .home_review_cmpy {
+            width: 100%;
+            overflow: hidden;
+            padding-top: 0%;
+            padding-bottom: 3%;
+        }
+
+        .marquee {
+            display: flex;
+            width: 400%;
+            /* Double the width for the loop effect */
+            animation: marquee 20s linear infinite;
+        }
+
+        .marquee-content {
+            display: flex;
+            width: 50%;
+            /* Half the width for the loop effect */
+        }
+
+        .home_review_cmpy_sec {
+            position: relative;
+            padding-left: 4%;
+            display: flex;
+            align-items: center;
+        }
+
+        .home_review_cmpy_sec img {
+            width: 100%;
+        }
+
+        .home_review_overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.7s ease;
+        }
+
+        .home_review_overlay img {
+            width: 100%;
+            height: 100%;
+            padding-left: 1%;
+        }
+
+        .home_review_cmpy_sec:hover .image1 {
+            opacity: 0;
+        }
+
+        .home_review_cmpy_sec:hover .home_review_overlay {
+            opacity: 1;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .marquee {
+                display: flex;
+                width: 1200%;
+            }
+        }
+
+        /* * {
+            border: 1px solid red;
+        } */
+    </style>
+
+
+
 
 
 
@@ -2085,20 +3297,15 @@ Blog Area
 
                     // Reverse to get the latest reviews first
                     reviewsArray.reverse();
-                    console.log(reviewsArray); // Log the reviews array to check the fetched data
-                    console.log(reviewsArray.length);
+
 
                     var messageElements = document.querySelectorAll(".msg");
                     var nameElements = document.querySelectorAll(".nme");
 
                     for (var i = 0; i < 9; i++) {
-                        console.log(i);
                         if (i < reviewsArray.length) {
                             messageElements[i].innerText = reviewsArray[i].message;
                             nameElements[i].innerText = reviewsArray[i].name;
-                        } else {
-                            messageElements[i].innerText = "";
-                            nameElements[i].innerText = "";
                         }
                     }
                 });
@@ -2114,10 +3321,13 @@ Blog Area
 
 
 
+
+
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TBLRWPL" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
 
 
 </body>
