@@ -133,6 +133,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             return false;
         }
     </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
 </head>
 
@@ -319,9 +321,10 @@ Breadcumb
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
                         <!-- captcha here -->
+                        <div class="g-recaptcha" data-sitekey="6LegDBMqAAAAADOu_ySuiTxHoczMAoQdbj4C4X3c"></div>
                     </div>
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-                        <button type="submit" class="appointmentButton">
+                        <button onclick="return validateForm()" type="submit" class="appointmentButton">
                             Appointment
                         </button>
                     </div>
@@ -1495,6 +1498,19 @@ Blog Area
 
 
     </script>
+
+<script>
+    function validateForm() {
+      var response = grecaptcha.getResponse();
+      if (response.length === 0) {
+        // reCAPTCHA not verified
+        alert("Please verify that you're not a robot.");
+        return false;
+      }
+      // reCAPTCHA verified, continue with form submission
+      return true;
+    }
+  </script>
 
 
 
