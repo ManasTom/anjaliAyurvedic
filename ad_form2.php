@@ -1,8 +1,8 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Email configuration
-    $to = "manas@illforddigital.com";
-    $cc = "manas@illforddigital.com";
+    $to = "info@dranjalisayurveda.com";
+    $cc = "anjalidevidr@gmail.com,dranjalisayurveda@gmail.com";
     $subject = "Enquiry from Ad page - Form 2";
     $message = "Name: " . $_POST["name"] . "\n";
     $message .= "Email: " . $_POST["email"] . "\n";

@@ -73,6 +73,29 @@
         gtag('config', 'GT-5DGCGGZK');
     </script>
 
+
+
+
+
+    <!-- Event snippet for Page view conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-16644081946/mmo7CP7eicMZEJqSwoA-',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+
+
+
 </head>
 
 <body>
@@ -206,11 +229,11 @@ Contact Area
                     <h2 style="text-align: center;">THANK YOU</h2>
                     <p style="text-align: center;">Thankyou for connecting with Dr. Anjali's Ayurvedic Centre.</p>
                     <p style="text-align: center;">Our team will get back to you soon.</p>
-                    
+
 
                 </div>
             </div>
-            
+
         </div>
     </div>
 
@@ -307,7 +330,8 @@ Contact Area
                 <div class="row align-items-center">
                     <div class="col-lg-7">
                         <p class="copyright-text text-white">© 2024 Dr. Anjali's Ayurvedic Center. All Rights Reserved.
-                            <a href="privacy-policy.html">Privacy Policy</a> |<a href="terms-and-conditions.html">Terms of
+                            <a href="privacy-policy.html">Privacy Policy</a> |<a href="terms-and-conditions.html">Terms
+                                of
                                 Service</a> | <a href="sitemap.html">Sitemap</a>|<a href="admin.html">Admin</a>
                         </p>
                     </div>
