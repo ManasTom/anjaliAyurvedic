@@ -16650,6 +16650,7 @@ span.select2-selection.select2-selection--single:focus {
   -ms-flex-align: start;
   align-items: flex-start;
   gap: 35px;
+  width: 50% !important;
   /* Large devices */
 }
 
@@ -16663,6 +16664,7 @@ span.select2-selection.select2-selection--single:focus {
 @media (max-width: 768px) {
   .testi-grid.style2 {
     padding: 5px;
+    width: 80% !important;
   }
   .testi-grid.style2 .testi-grid_text {
     font-size: 80% !important;
@@ -33504,6 +33506,7 @@ li {
   margin-bottom: 5px;
   padding-left: 8%;
   padding-right: 8%;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
