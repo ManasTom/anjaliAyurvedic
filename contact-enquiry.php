@@ -3,6 +3,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Email configuration
     $to = "info@dranjalisayurveda.com";
     $cc = "anjalidevidr@gmail.com,dranjalisayurveda@gmail.com";
+    $Bcc = "edb@illforddigital.com";
     $subject = "Message from " . $_POST["name"];
     $message = "Name: " . $_POST["name"] . "\n";
     $message .= "Email: " . $_POST["email"] . "\n";
@@ -13,12 +14,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Additional headers
     $headers = "From: " . $_POST["email"] . "\r\n";
     $headers .= "Cc: $cc\r\n";
+    $headers .= "Bcc: $Bcc\r\n";
     $headers .= "Reply-To: " . $_POST["email"] . "\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
     // Sending email
     if (mail($to, $subject, $message, $headers)) {
-        echo "Your message has been sent successfully.";
+        header("Location: ad-thankyou.html");
     } else {
         echo "Failed to send message. Please try again later.";
     }

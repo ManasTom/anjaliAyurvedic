@@ -32,6 +32,27 @@
   --ripple-ani-duration: 5s;
 }
 
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  padding: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(128, 128, 128, 0);
+  border-radius: 10px;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4CBB16;
+  border-radius: 10px;
+}
+
+
 .home3 {
   --theme-color: #F9F3F0;
 }
@@ -7657,11 +7678,11 @@ ol.wp-block-rss {
   position: absolute;
   top: 0;
   left: 0;
-  width: 59%;
+  width: 100% !important;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.795);
-  -webkit-clip-path: polygon(0% 0%, 100% 0, 94% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 100% 0, 94% 100%, 0% 100%);
+  background-color: rgba(255, 255, 255, 0.829);
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%);
   z-index: -1;
   /* Medium Large devices */
 }
@@ -7694,11 +7715,11 @@ ol.wp-block-rss {
   position: absolute;
   top: 0;
   right: 0;
-  width: 25%;
+  width: 100% !important;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.795);
+  background-color: rgba(255, 255, 255, 0);
   -webkit-clip-path: polygon(0 0, 100% 1%, 100% 100%, 25% 100%);
-  clip-path: polygon(0 0, 100% 1%, 100% 100%, 16% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
   z-index: -1;
 }
 
@@ -10373,7 +10394,7 @@ ul.comment-list:has(> .th-comment-item ~ .th-comment-item):first-child>.th-post-
 
 
 @media (max-width: 320px) {
-  .hero-style4 .hero-title  {
+  .hero-style4 .hero-title {
     font-size: 34px;
     line-height: 100%;
   }
@@ -16650,8 +16671,12 @@ span.select2-selection.select2-selection--single:focus {
   -ms-flex-align: start;
   align-items: flex-start;
   gap: 35px;
-  width: 50% !important;
+
   /* Large devices */
+}
+
+.testi-grid.style2.ir {
+  width: 40% !important;
 }
 
 @media (max-width: 1199px) {
@@ -16664,10 +16689,14 @@ span.select2-selection.select2-selection--single:focus {
 @media (max-width: 768px) {
   .testi-grid.style2 {
     padding: 5px;
-    width: 80% !important;
   }
+
   .testi-grid.style2 .testi-grid_text {
     font-size: 80% !important;
+  }
+
+  .testi-grid.style2.ir {
+    width: 90% !important;
   }
 }
 
@@ -32993,7 +33022,7 @@ span.select2-selection.select2-selection--single:focus {
   background-color: var(--theme-color);
 }
 
-.th-hero-slide{
+.th-hero-slide {
   height: 110vh;
 }
 
@@ -33057,12 +33086,13 @@ span.select2-selection.select2-selection--single:focus {
   overflow: hidden;
 }
 
-.rwpr3{
+.rwpr3 {
   padding-top: 0px;
+  line-height: 120% !important;
 }
 
 @media (max-width: 1200px) {
-  .rwpr3{
+  .rwpr3 {
     padding-top: 150px !important;
   }
 }
@@ -33509,6 +33539,8 @@ li {
   text-align: center;
 }
 
+
+
 @media (max-width: 768px) {
   .review_quotes {
     font-family: var(--title-font);
@@ -33526,7 +33558,8 @@ li {
 }
 
 .service-card-content .short {
-  max-height: 200px; /* Adjust based on how much content you want to show */
+  max-height: 200px;
+  /* Adjust based on how much content you want to show */
   overflow: hidden;
   position: relative;
 }
@@ -33542,14 +33575,92 @@ li {
 }
 
 
-.home_service_card_bottom_img{
+.home_service_card_bottom_img {
   position: absolute;
   bottom: -10%;
 }
 
 @media (max-width: 400px) {
-  .home_service_card_bottom_img{
+  .home_service_card_bottom_img {
     height: 80% !important;
     width: 150% !important;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ad_header_items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ad_appointment_button {
+  border: none;
+  outline: none;
+  background-color: var(--theme-color);
+  padding: 1% 4% 1% 4%;
+  color: #fff;
+  margin-top: 1%;
+  border-radius: 0.2rem;
+}
+
+
+.packages_container{
+  width: 100%;
+  height: max-content;
+  padding: 2% 8%;
+}
+
+.package_card_col{
+  padding: 3% 2%;
+}
+
+.package_card{
+  background-image: url(../img/packages_card_bg.png);
+  background-size: cover;
+  /* Ensures the image covers the entire div */
+  background-position: center;
+  /* Centers the image */
+  background-repeat: no-repeat;
+  /* Prevents the image from repeating */
+  overflow: hidden;
+
+  border-radius: 1.5rem;
+  width: 100%;
+  height: 100%;
+  padding: 8%;
+}
+
+.package_card h5{
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+border-bottom: 2px solid #fff;
+}
+
+.package_card li{
+  color: #fff;
+  line-height: 200%;
+}
+
+
+* {
+  /* border: 1px solid red; */
 }

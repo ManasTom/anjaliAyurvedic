@@ -1,6 +1,8 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Disallow: /login/
+Disallow: /login
 Disallow: /admin
+Disallow: /thankyou
+Disallow: /ad-thankyou
 Sitemap: https://dranjalisayurveda.com/sitemap.xml
