@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $to = "info@dranjalisayurveda.com";
         $cc = "anjalidevidr@gmail.com,dranjalisayurveda@gmail.com";
         $Bcc = "edb@illforddigital.com";
-        $subject = "New Appointment Request from Ad page - Form 1";
+        $subject = "DAAC - New Appointment Request from Ad page - Form 1";
         $message = "Name: $name\nPhone: $phone\nTreatment: $treatment\nEmail: $email\nAppointment Date: $date\nMessage: $message";
         $headers = "From: noreply@dranjalisayurveda.com" . "\r\n".
                    "Cc: $cc"."\r\n".

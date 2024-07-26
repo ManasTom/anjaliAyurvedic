@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $cc = "anjalidevidr@gmail.com,dranjalisayurveda@gmail.com";
     $Bcc = "edb@illforddigital.com";
     //$cc = "anjalidevidr@gmail.com,dranjalisayurveda@gmail.com";
-    $subject = "Enquiry from " . $_POST["name"];
+    $subject = "DAAC - Enquiry from " . $_POST["name"];
     $message = "Name: " . $_POST["name"] . "\n";
     $message .= "Email: " . $_POST["email"] . "\n";
     $message .= "Phone Number: " . $_POST["number"] . "\n";
