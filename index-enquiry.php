@@ -2,7 +2,8 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Email configuration
     $to = "info@dranjalisayurveda.com";
-    $cc = "anjalidevidr@gmail.com,dranjalisayurveda@gmail.com,edb@illforddigital.com";
+    $cc = "anjalidevidr@gmail.com,dranjalisayurveda@gmail.com";
+    $Bcc = "edb@illforddigital.com";
     //$cc = "anjalidevidr@gmail.com,dranjalisayurveda@gmail.com";
     $subject = "Enquiry from " . $_POST["name"];
     $message = "Name: " . $_POST["name"] . "\n";
