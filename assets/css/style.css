@@ -2146,7 +2146,7 @@ textarea.is-invalid {
 .scroll-top {
   position: fixed;
   right: 30px;
-  bottom: 30px;
+  bottom: 80px;
   height: 50px;
   width: 50px;
   cursor: pointer;
@@ -2224,7 +2224,7 @@ textarea.is-invalid {
   display: block;
   color: #ffffff;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
   font-family: var(--body-font);
   position: relative;
   margin-bottom: 8px;
@@ -19310,6 +19310,12 @@ span.select2-selection.select2-selection--single:focus {
   }
 }
 
+@media (max-width: 768px) {
+  p.mb-40 {
+    font-size: 80% !important;
+  }
+}
+
 .global-img {
   position: relative;
   overflow: hidden;
@@ -20585,7 +20591,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .accordion-card .accordion-button {
-  font-size: 20px;
+  font-size: 20px !important;
   font-weight: 400;
   font-family: var(--body-font);
   border: none;
@@ -20692,6 +20698,15 @@ span.select2-selection.select2-selection--single:focus {
 .accordion-card .faq-text {
   font-size: 16px;
   margin-bottom: -0.48em;
+}
+
+@media (max-width: 768px) {
+  .accordion-card .faq-text {
+    font-size: 15px;
+  }
+  .accordion-card .accordion-button {
+    font-size: 16px !important;
+  }
 }
 
 .accordion-card .faq-img {
@@ -33148,18 +33163,19 @@ span.select2-selection.select2-selection--single:focus {
   padding: 0% 15% 0% 15%;
   font-size: 110%;
   margin: 0;
+  font-weight: 400;
 }
 
 @media (max-width: 660px) {
   .visionAndMission p {
-    padding: 0% 15% 0% 15%;
+    padding: 0% 5% 0% 5% !important;
     font-size: 100%;
   }
 }
 
 @media (max-width: 370px) {
   .visionAndMission p {
-    padding: 0% 5% 0% 5%;
+    padding: 0% 5% 0% 5% !important;
     font-size: 100%;
   }
 }
@@ -33622,17 +33638,17 @@ li {
 }
 
 
-.packages_container{
+.packages_container {
   width: 100%;
   height: max-content;
   padding: 2% 8%;
 }
 
-.package_card_col{
+.package_card_col {
   padding: 3% 2%;
 }
 
-.package_card{
+.package_card {
   background-image: url(../img/packages_card_bg.png);
   background-size: cover;
   /* Ensures the image covers the entire div */
@@ -33648,17 +33664,25 @@ li {
   padding: 8%;
 }
 
-.package_card h5{
+.package_card h5 {
   color: #fff;
   font-weight: 500;
   text-align: center;
-border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 
-.package_card li{
+.package_card li {
   color: #fff;
   line-height: 200%;
 }
+
+@media (max-width: 768px) {
+
+  .choose-content p {
+    font-size: 80%;
+  }
+}
+
 
 
 * {
