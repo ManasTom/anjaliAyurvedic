@@ -658,7 +658,7 @@ $robotsMeta = isset($_POST['robotsMetaInput']) ? $_POST['robotsMetaInput'] : 'in
                         <a href="../packages.html">Packages</a>
                     </li>
                     <li>
-                        <a href="blog/index.html">Blog</a>
+                        <a href="index.html">Blog</a>
                     </li>
                     <li>
                         <a href="../contact.html">Contact Us</a>
@@ -728,7 +728,7 @@ Header Area
                                     </li>
                                     <li><a href="../doctors.html">Our Doctors</a></li>
                                     <li><a href="../packages.html">Packages</a></li>
-                                    <li><a href="blog/index.html">Blog</a></li>
+                                    <li><a href="index.html">Blog</a></li>
                                     <li><a href="../contact.html">Contact Us</a></li>
                                 </ul>
 

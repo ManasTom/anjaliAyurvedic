@@ -2,35 +2,51 @@ let username = 'user 01';
 
 document.getElementById("displayUserName").innerText = username;
 
-// ************************************************************************************
+// ****************************
 // script for quill editor
-// ************************************************************************************
+// ****************************
 
 const toolbarOptions = [
     ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
-    // ['blockquote', 'code-block'],
-    ['link', 'image', 'video'],
+    ['link', 'image', 'video'],                       // media buttons
 
     [{ 'header': 1 }, { 'header': 2 }],               // custom button values
     [{ 'list': 'ordered' }, { 'list': 'bullet' }, { 'list': 'check' }],
-    [{ 'script': 'sub' }, { 'script': 'super' }],      // superscript/subscript
-    [{ 'indent': '-1' }, { 'indent': '+1' }],          // outdent/indent
-    // [{ 'direction': 'rtl' }],                         // text direction
+    [{ 'script': 'sub' }, { 'script': 'super' }],     // superscript/subscript
+    [{ 'indent': '-1' }, { 'indent': '+1' }],         // outdent/indent
+    [{ 'header': [1, 2, 3, 4, 5, 6, false] }],        // header levels
 
-    // [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
-    [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
-
-    [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
+    [{ 'color': [] }, { 'background': [] }],          // color & background
     [{ 'font': [] }],
     [{ 'align': [] }],
-
-    // ['clean']                                         // remove formatting button
 ];
+
 const quill = new Quill('#bed_content_editor', {
     modules: {
         toolbar: toolbarOptions
     },
     theme: 'snow',
+});
+
+// Custom Image Handler to Support PNG, JPG, and WebP
+quill.getModule('toolbar').addHandler('image', () => {
+    const input = document.createElement('input');
+    input.setAttribute('type', 'file');
+    input.setAttribute('accept', 'image/png, image/jpeg, image/webp'); // Allow WebP
+
+    input.onchange = () => {
+        const file = input.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (event) => {
+                const range = quill.getSelection(); // Get the current cursor position
+                quill.insertEmbed(range.index, 'image', event.target.result); // Insert image
+            };
+            reader.readAsDataURL(file); // Convert the file to Base64
+        }
+    };
+
+    input.click(); // Trigger the file input dialog
 });
 
 
